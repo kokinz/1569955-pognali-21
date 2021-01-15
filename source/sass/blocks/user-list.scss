@@ -1,0 +1,69 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+
+  background-color: $basic-white;
+  list-style: none;
+}
+
+.user-list__link {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+
+  height: 45px;
+  padding: 14px;
+  padding-left: 60px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $special-blue;
+}
+
+.user-list__link--login {
+  width: 270px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 51px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $basic-yellow;
+}
+
+.user-list__link--phone::before {
+  content: "";
+
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 0;
+  top: 0;
+
+  background-image: url(../../img/icon-phone.png);
+  background-repeat: no-repeat;
+}
+
+.user-list__link--mail::before {
+  content: "";
+
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 0;
+  top: 0;
+
+  background-image: url(../../img/icon-mail.png);
+  background-repeat: no-repeat;
+}

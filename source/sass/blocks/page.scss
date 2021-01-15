@@ -1,0 +1,24 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  min-width: $mobile-width;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: $main-font;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 300;
+  font-style: normal;
+
+  color: $basic-white;
+  background-color: $basic-blue-dark;
+}
