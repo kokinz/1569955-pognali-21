@@ -1,0 +1,60 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 30px 0 0;
+  margin-left: -25px;
+  height: 386px;
+  padding: 0 30px;
+
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+
+  background-image: url(../../img/traveller-illustration-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.promo__contact-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__contact-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.promo__contact-link--phone {
+  background-image: url(../../img/icon-phone-btn.png);
+  background-repeat: no-repeat;
+}
+
+.promo__contact-link--mail {
+  background-image: url(../../img/icon-mail-btn.png);
+  background-repeat: no-repeat;
+}
+
+.promo__contact-link--login {
+  width: 190px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $basic-yellow;
+}
