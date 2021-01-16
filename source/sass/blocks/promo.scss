@@ -3,11 +3,16 @@
   flex-direction: column;
 }
 
+.promo__title-wrapper {
+  background-image: url(../../img/globe-back-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0% -60px;
+}
+
 .promo__title {
   box-sizing: border-box;
   width: $mobile-width;
-  margin: 30px 0 0;
-  margin-left: -25px;
+  margin: 30px auto 0;
   height: 386px;
   padding: 0 30px;
 
@@ -17,13 +22,14 @@
 
   background-image: url(../../img/traveller-illustration-mobile.png);
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 63% 131px;
 }
 
 .promo__contact-list {
   display: flex;
 
-  margin: 0;
+  margin: 0 auto;
+  margin-top: -20px;
   padding: 0;
   list-style: none;
 }
