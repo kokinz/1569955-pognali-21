@@ -1,0 +1,102 @@
+.add-profile {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -36px;
+
+  border-radius: 0 0 30px 30px;
+
+  background-color: $additional-white;
+}
+
+.add-profile__wrapper {
+  background-image: url(../../img/rates-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 195px 73px;
+}
+
+.add-profile__title {
+  width: 60px;
+  margin: 87px auto 10px 26px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $special-orange;
+}
+
+.add-profile__price-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 47px 24px 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+
+  list-style: none;
+
+  color: $special-grey;
+  counter-reset: plan;
+}
+
+.add-profile__price-item {
+  position: relative;
+
+  margin-bottom: 28px;
+
+  &::after {
+    content: counter(plan);
+
+    position: absolute;
+
+    counter-increment: plan;
+    box-sizing: border-box;
+
+    right: -24px;
+    top: -10px;
+    width: 34px;
+    height: 34px;
+    padding-top: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: $special-orange;
+
+    color: $basic-white;
+  }
+}
+
+.add-profile__price-item:nth-child(2n)::after {
+  background-color: $special-yellow-dark;
+}
+
+.add-profile__price-item:nth-child(3n)::after {
+  background-color: $basic-yellow;
+}
+
+.add-profile__price {
+  display: block;
+
+  margin-top: 6px;
+}
+
+.add-profile__business-tariffs {
+  display: block;
+
+  width: 220px;
+  margin: 17px auto 39px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $special-blue-dark;
+}

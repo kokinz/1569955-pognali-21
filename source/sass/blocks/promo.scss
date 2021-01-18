@@ -84,7 +84,7 @@
 .promo__review-text {
   box-sizing: border-box;
   width: $mobile-width;
-  margin: 0 auto 19px;
+  margin: 0 auto 18px;
   padding: 0 100px 0 50px;
 }
 
@@ -92,7 +92,7 @@
   box-sizing: border-box;
   width: $mobile-width;
   display: block;
-  margin: 0 auto 109px;
+  margin: 0 auto 110px;
   padding: 0 100px 0 50px;
 
   font-weight: 700;
@@ -119,9 +119,9 @@
   box-sizing: border-box;
   width: 270px;
   min-height: 80px;
-  padding-left: 25px;
-  padding-top: 20px;
-  padding-right: 95px;
+  padding-left: 24px;
+  padding-top: 21px;
+  padding-right: 103px;
   border-radius: 10px 10px 0 0;
 
   font-weight: 700;
@@ -131,4 +131,44 @@
 
   color: $basic-blue-dark;
   background-color: $special-orange;
+
+  &:nth-child(2n) {
+    background-color: $additional-yellow;
+  }
+
+  &:nth-child(3n) {
+    background-color: $special-yellow-dark;
+  }
+
+  &:last-child {
+    margin-bottom: 39px;
+
+    background-color: $basic-yellow;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  &:not(:last-child) {
+    min-height: 90px;
+  }
+
+  &:not(:first-child) {
+    margin-top: -10px;
+  }
+
+  &::after {
+    position: absolute;
+
+    counter-increment: guide;
+    content: counter(guide);
+
+    top: 21px;
+    right: 21px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+
+    color: $basic-white;
+  }
 }

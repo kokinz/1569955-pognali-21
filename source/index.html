@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -90,185 +91,204 @@
         </ul>
 
         <blockquote class="promo__review">
-          <p class="promo__review-text">«Лучшее приложение, что я видел в жизни!»</p>
+          <p class="promo__review-text"><span class="symbol">«</span>Лучшее приложение, что я видел в жизни!<span class="symbol">»</span></p>
 
-          <cite class="promo__review-author">
-            Мурат Эльтазин главный редактор газеты «гаджетлайф»
-          </cite>
+          <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты <span class="symbol">«</span>гаджетлайф<span class="symbol">»</span></cite>
         </blockquote>
 
         <ol class="promo__instruction-list">
           <li class="promo__instruction-item">Выберите направление</li>
-          <li class="promo__instruction-item">Изучите идеи для путешественников</li>
-          <li class="promo__instruction-item">Найдите тех, кто похож на вас</li>
+          <li class="promo__instruction-item">Изучите идеи путешественников</li>
+          <li class="promo__instruction-item">Находите тех, кто похож на вас</li>
           <li class="promo__instruction-item">Путешествуйте вместе!</li>
         </ol>
       </section>
 
       <section class="about-service">
-        <h2 class="about-service__title">О сервисе</h2>
+        <div class="about-service__wrapper container">
+          <h2 class="about-service__title">О сервисе</h2>
 
-        <p class="about-service__description">
-          Любое путешествие веселее с попутчиками, которые на одной волне с
-          тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-          чужих.
-        </p>
+          <p class="about-service__description">
+            Любое путешествие веселее<br>с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
 
-        <b class="about-service__slogan">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный
-          трип!
-        </b>
+          <b class="about-service__slogan">
+            А если найдете кого-то близкого по духу <span class="symbol">—</span> скорее зовите в совместный трип!
+          </b>
 
-        <a class="about-service__button-details button" href="">Подробнее</a>
+          <a class="about-service__button-details button" href="">Подробнее</a>
+        </div>
       </section>
 
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
+        <div class="directions__wrapper container">
+          <h2 class="directions__title">Направления</h2>
 
-        <p class="directions__description">
-          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-        </p>
+          <p class="directions__description">
+            Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          </p>
 
-        <ul class="directions__list">
-          <li class="directions__item">
-            <h3 class="directions__country">Тайланд</h3>
+          <ul class="directions__list">
+            <li class="directions__item">
+              <div class="directions__image-wrapper">
+                <img src="img/thailand-mobile@1x.png" alt="Тайланд" width="270" height="110">
 
-            <p class="directions__slogan">Джугли зовут!</p>
+                <img class="directions__image-flag" src="img/Thailand-flag.png" alt="Флаг Тайланда">
+              </div>
+              <h3 class="directions__country">Таиланд</h3>
 
-            <span class="directions__views">18321</span>
-          </li>
-          <li class="directions__item">
-            <h3 class="directions__country">Франция</h3>
+              <p class="directions__slogan">Джунгли зовут!</p>
 
-            <p class="directions__slogan">Трэ бьен, манифик!</p>
+              <span class="directions__views">18321</span>
+            </li>
+            <li class="directions__item">
+              <div class="directions__image-wrapper">
+                <img src="img/france-mobile@1x.png" alt="Франция" width="270" height="110">
 
-            <span class="directions__views">12518</span>
-          </li>
-          <li class="directions__item">
-            <h3 class="directions__country">Чехия</h3>
+                <img class="directions__image-flag" src="img/France-flag.png" alt="Флаг Франции">
+              </div>
+              <h3 class="directions__country">Франция</h3>
 
-            <p class="directions__slogan">Закоулки старой Европы</p>
+              <p class="directions__slogan">Трэ бьен, манифик!</p>
 
-            <span class="directions__views">5326</span>
-          </li>
-        </ul>
+              <span class="directions__views">12518</span>
+            </li>
+            <li class="directions__item">
+              <div class="directions__image-wrapper">
+                <img src="img/czech-mobile@1x.png" alt="Чехия" width="270" height="110">
 
-        <a class="directions__show-all button" href="form.html">Показать все</a>
+                <img class="directions__image-flag" src="img/Czech-flag.png" alt="Флаг Чехии">
+              </div>
+              <h3 class="directions__country">Чехия</h3>
+
+              <p class="directions__slogan">Закоулки старой Европы</p>
+
+              <span class="directions__views">5326</span>
+            </li>
+          </ul>
+
+          <a class="directions__show-all button" href="form.html">Показать все</a>
+        </div>
       </section>
 
       <section class="travelers">
-        <h2 class="travelers__title">Попутчики</h2>
+        <div class="travelers__wrapper container">
+          <h2 class="travelers__title">Попутчики</h2>
 
-        <p class="travelers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="travelers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
 
-        <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
+          <b class="travelers__slogan">Теперь можно легко найти единомышленников!</b>
 
-        <ul class="travelers__list">
-          <li class="travelers__item">
-            <p class="travelers__level level">
-              <b class="travelers__level-number level-number">99</b>
-              level
-            </p>
+          <ul class="travelers__list">
+            <li class="travelers__item">
+              <p class="travelers__level level level--99">
+                <b class="travelers__level-number level-number">99</b>
 
-            <img class="travelers__photo" src="https://via.placeholder.com/150x105">
+                <b class="travelers__level-word level-word">level</b>
+              </p>
 
-            <ul class="travelers__countries">
-              <li>
-                <img class="travelers__flag" src="https://via.placeholder.com/15x15">
-              </li>
-              <li>
-                <img class="travelers__flag" src="https://via.placeholder.com/15x15">
-              </li>
-              <li>
-                <img class="travelers__flag" src="https://via.placeholder.com/15x15">
-              </li>
-            </ul>
+              <img class="travelers__photo" src="img/Firsova-mobile@1x.png" alt="Фото Профиля">
 
-            <p class="travelers__user-name">Таня Фирсова</p>
+              <ul class="travelers__countries-list">
+                <li class="travelers__countries-item">
+                  <img class="travelers__flag" src="img/Sri-Lanka-flag.png" alt="Флаг страны" width="35" height="25">
+                </li>
+                <li class="travelers__countries-item">
+                  <img class="travelers__flag" src="img/Thailand-flag.png" alt="Флаг страны" width="35" height="25">
+                </li>
+                <li class="travelers__countries-item">
+                  <img class="travelers__flag" src="img/Seychelles-flag.png" alt="Флаг страны" width="35" height="25">
+                </li>
+              </ul>
 
-            <p class="travelers__tags">
-              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-            </p>
+              <p class="travelers__user-name"><span class="travelers__user-wrapper">Таня Фирсова</span></p>
 
-            <ul class="travelers__transport-list">
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-            </ul>
-          </li>
+              <p class="travelers__tags">
+                #ЗОЖ #ПП #Фитнес #пляж &nbsp;&nbsp;#авокадо #смузи
+              </p>
 
-          <li class="travelers__item">
-            <p class="travelers__level level">
-              <b class="travelers__level-number level-number">80</b>
+              <ul class="travelers__transport-list">
+                <li class="travelers__transport-item travelers__transport-item--active">
+                  <img class="travelers__transport-plane" src="img/icon-plane.svg" alt="Авиаперелет">
+                </li>
+                <li class="travelers__transport-item">
+                  <img class="travelers__transport-bus" src="img/icon-bus.svg" alt="Автотранспорт">
+                </li>
+                <li class="travelers__transport-item">
+                  <img class="travelers__transport-bike" src="img/icon-bicycle.svg" alt="Велосипед">
+                </li>
+                <li class="travelers__transport-item">
+                  <img class="travelers__transport-run" src="img/icon-run.svg" alt="Пешком">
+                </li>
+              </ul>
+            </li>
 
-              level
-            </p>
+            <li class="travelers__item">
+              <p class="travelers__level level level--80">
+                <b class="travelers__level-number level-number">80</b>
 
-            <img class="travelers__photo" src="https://via.placeholder.com/150x105">
+                <b class="travelers__level-word level-word">level</b>
+              </p>
 
-            <ul class="travelers__countries">
-              <li>
-                <img class="travelers__flag" src="https://via.placeholder.com/15x15">
-              </li>
-              <li>
-                <img class="travelers__flag" src="https://via.placeholder.com/15x15">
-              </li>
-            </ul>
+              <img class="travelers__photo" src="img/Demin-mobile@1x.png" alt="Фото Профиля">
 
-            <p class="travelers__user-name">Петя Демин</p>
+              <ul class="travelers__countries-list">
+                <li class="travelers__countries-item">
+                  <img class="travelers__flag" src="img/Belgium-flag.png" alt="Флаг страны" width="35" height="25">
+                </li>
+                <li class="travelers__countries-item">
+                  <img class="travelers__flag" src="img/Czech-flag.png" alt="Флаг страны" width="35" height="25">
+                </li>
+              </ul>
 
-            <p class="travelers__tags">
-              #бургер #бар #футбол #концерт #крафт
-            </p>
+              <p class="travelers__user-name"><span class="travelers__user-wrapper travelers__user-wrapper--online">Петя Демин</span></p>
 
-            <ul class="travelers__transport-list">
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-              <li class="travelers__transport-item">
-                <img class="travelers__transport-image" src="https://via.placeholder.com/15x15">
-              </li>
-            </ul>
-          </li>
-        </ul>
+              <p class="travelers__tags">
+                #бургер #бар #футбол &nbsp;&nbsp;#концерт #крафт
+              </p>
 
-        <a class="travelers__show-all button" href="catalog.html">Показать всех</a>
+              <ul class="travelers__transport-list">
+                <li class="travelers__transport-item travelers__transport-item--active">
+                  <img class="travelers__transport-plane" src="img/icon-plane.svg" alt="Авиаперелет">
+                </li>
+                <li class="travelers__transport-item travelers__transport-item--active">
+                  <img class="travelers__transport-bus" src="img/icon-bus.svg" alt="Автотранспорт">
+                </li>
+                <li class="travelers__transport-item">
+                  <img class="travelers__transport-bike" src="img/icon-bicycle.svg" alt="Велосипед">
+                </li>
+                <li class="travelers__transport-item travelers__transport-item--active">
+                  <img class="travelers__transport-run" src="img/icon-run.svg" alt="Пешком">
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a class="travelers__show-all button" href="catalog.html">Показать всех</a>
+        </div>
       </section>
 
       <section class="add-profile">
-        <h2 class="add-profile__title">Добавьте свой профиль!</h2>
+        <div class="add-profile__wrapper container">
+          <h2 class="add-profile__title">Добавьте свой профиль</h2>
 
-        <ol class="add-profile__price-list">
-          <li class="add-profile__price-item">
-            Базовое размещение
-            <span class="add-profile__price">Бесплатно</span>
-          </li>
-          <li class="add-profile__price-item">
-            Вывод на первых позициях
-            <span class="add-profile__price">99 руб./мес</span>
-          </li>
-          <li class="add-profile__price-item">
-            Кастомный цвет карточки
-            <span class="add-profile__price">59 руб./мес</span>
-          </li>
-        </ol>
+          <ol class="add-profile__price-list">
+            <li class="add-profile__price-item">
+              Базовое размещение
+              <span class="add-profile__price">Бесплатно</span>
+            </li>
+            <li class="add-profile__price-item">
+              Вывод на первых позициях
+              <span class="add-profile__price">99 руб./мес</span>
+            </li>
+            <li class="add-profile__price-item">
+              Кастомный цвет карточки
+              <span class="add-profile__price">59 руб./мес</span>
+            </li>
+          </ol>
 
-        <a class="add-profile__business-tariffs" href="">Показать тарифы для бизнеса</a>
+          <a class="add-profile__business-tariffs" href="">Показать тарифы для бизнеса</a>
+        </div>
       </section>
 
       <section class="sign-up">
