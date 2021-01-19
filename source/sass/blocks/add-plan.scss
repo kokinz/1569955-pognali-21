@@ -1,0 +1,191 @@
+.add-plan {
+  position: relative;
+
+  z-index: 2;
+  margin-top: -26px;
+
+  background-color: $basic-grey-dark;
+}
+
+.add-plan__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.add-plan__title {
+  margin-top: 28px;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $basic-blue;
+}
+
+.add-plan__progress-list {
+  position: absolute;
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  right: 42px;
+  top: 39px;
+
+  list-style: none;
+}
+
+.add-plan__progress-link {
+  display: block;
+
+  width: 6px;
+  height: 6px;
+  margin-left: 15px;
+
+  border-radius: 50%;
+  background-color: #1d2e5b;
+
+  opacity: 0.2;
+}
+
+.add-plan__progress-link--current {
+  opacity: 1;
+}
+
+.add-plan__steps-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.add-plan__steps-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  width: 270px;
+  padding: 2px 24px 11px 25px;
+  margin-bottom: 10px;
+
+  background-color: $basic-white;
+  border-radius: 10px;
+}
+
+.add-plan__steps-title {
+  margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+
+
+  color: $basic-blue;
+}
+
+.add-plan__steps-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special-grey;
+}
+
+.add-plan__navigation {
+  display: none;
+}
+
+.travel-form__field {
+  border: none;
+}
+
+.travel-form__label-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+}
+
+.travel-form__label-persons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+
+  opacity: 0.3;
+}
+
+.travel-form__label-days {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+
+  opacity: 0.3;
+}
+
+.travel-form__input-wrapper {
+  display: flex;
+
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  margin-bottom: 21px;
+
+  justify-content: space-between;
+
+  align-items: center;
+  background-color: $basic-white;
+  border: 1px solid $basic-grey-light;
+  border-radius: 4px;
+}
+
+.travel-form__button {
+  display: block;
+
+  box-sizing: border-box;
+  width: 42px;
+  height: 43px;
+  padding: 0;
+
+  border: none;
+  background-color: $basic-white;
+  opacity: 0.2;
+
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  cursor: pointer;
+}
+
+.travel-form__input {
+  width: 100px;
+
+  font-family: $main-font;
+
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $basic-blue;
+  border: none;
+}

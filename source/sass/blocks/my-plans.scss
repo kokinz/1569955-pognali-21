@@ -1,0 +1,114 @@
+.my-plans {
+  position: relative;
+
+  min-height: 410px;
+  padding-bottom: 45px;
+  margin-top: -27px;
+  z-index: 1;
+
+  border-radius: 20px 20px 0 0;
+  background-color: $special-blue-light;
+}
+
+.my-plans__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-plans__title {
+  margin-top: 26px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $basic-blue;
+}
+
+.my-plans__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+
+  list-style: none;
+  counter-reset: plans;
+}
+
+.my-plans__item {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 154px;
+  margin-bottom: 10px;
+
+  background: $basic-white;
+  border-radius: 10px;
+}
+
+.my-plans__countries {
+  position: relative;
+
+  padding-top: 7px;
+  padding-left: 42px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: none;
+  letter-spacing: 0.1px;
+
+  color: $basic-blue;
+
+  &::before {
+    position: absolute;
+
+    counter-increment: plans;
+    content: counter(plans) ".";
+
+    top: 7px;
+    left: 24px;
+    width: 12px;
+    height: 13px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.my-plans__companions {
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+.my-plans__dates {
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+.my-plans__change {
+  padding: 5px 0;
+  margin-top: 18px;
+  margin-left: 25px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $basic-black;
+
+  opacity: 0.3;
+}
