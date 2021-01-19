@@ -22,3 +22,34 @@
   color: $basic-white;
   background-color: $additional-grey;
 }
+
+.page__main-title {
+  position: relative;
+
+  z-index: 2;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: -51px;
+  padding-bottom: 17px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: $basic-white;
+
+  &::after {
+    position: absolute;
+
+    content: "";
+
+    min-width: 214px;
+    width: 67%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+
+    border-radius: 4px;
+    background-color: $special-orange;
+  }
+}

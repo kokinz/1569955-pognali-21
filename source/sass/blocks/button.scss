@@ -1,0 +1,32 @@
+.button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+
+  min-width: 270px;
+  min-height: 62px;
+  margin: 25px auto;
+  padding: 21px 23px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  border-radius: 10px;
+
+  color: $basic-blue;
+  background-color: $basic-yellow;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 19px;
+    top: 25px;
+    width: 13px;
+    height: 13px;
+
+    background-image: url(../../img/triangle-button.svg);
+    background-repeat: no-repeat;
+  }
+}

@@ -2,6 +2,8 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/container.scss";
+@import "blocks/button.scss";
+@import "blocks/level.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
@@ -15,4 +17,5 @@
 @import "blocks/sign-up.scss";
 @import "blocks/location.scss";
 @import "blocks/map.scss";
-@import "blocks/page-footer.scss"
+@import "blocks/page-footer.scss";
+@import "blocks/profile.scss";

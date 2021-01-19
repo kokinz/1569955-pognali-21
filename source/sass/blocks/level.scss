@@ -1,0 +1,124 @@
+.level {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  padding-top: 10px;
+
+  box-sizing: border-box;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+
+
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../../img/level-99-small.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+
+    left: 15px;
+    top: 36px;
+    width: 30px;
+    height: 1px;
+
+    background-color: $basic-white;
+    opacity: 0.3;
+  }
+}
+
+.level--big {
+  width: 100px;
+  height: 100px;
+
+  background-color: transparent;
+
+  &::after {
+    left: 22px;
+    top: 56px;
+    width: 51px;
+
+    background-color: $special-grey;
+  }
+}
+
+.level--80::before {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/level-80-small.svg);
+}
+
+.level--big, .level--80::before {
+  background-image: url(../../img/level-80-big.svg);
+}
+
+.level-number {
+  margin-top: 3px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $basic-white;
+}
+
+.level-number--big {
+  margin-top: 6px;
+
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+
+  text-align: center;
+
+  color: $basic-blue-dark;
+}
+
+.level-word {
+  margin-top: 1px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.level-word--big {
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: $special-grey;
+}

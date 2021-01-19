@@ -1,0 +1,149 @@
+.profile {
+  background-color: $basic-blue-light;
+}
+
+.profile__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__photo {
+  position: absolute;
+
+  z-index: 1;
+  display: block;
+  width: 100px;
+  height: 100px;
+  right: 43px;
+  top: 22px;
+}
+
+.profile__photo-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+.profile__level  {
+  left: 42px;
+  top: 22px;
+}
+
+.profile__change-photo {
+  box-sizing: border-box;
+
+  min-height: 40px;
+  height: 40px;
+  padding: 8px 20px;
+  padding-bottom: 12px;
+  margin-top: 140px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: $basic-blue-dark;
+  border: none;
+  border-radius: 21px;
+
+  background-color: $special-blue-light;
+}
+
+.profile__tags-title {
+  position: relative;
+
+  box-sizing: border-box;
+  z-index: 1;
+  width: 70px;
+  margin: 0 auto;
+  padding-bottom: 1px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+  background-color: $basic-blue-light;
+}
+
+.profile__tags-textarea {
+  box-sizing: border-box;
+  width: 270px;
+  height: 89px;
+  margin-top: -10px;
+  padding: 25px;
+  padding-top: 24px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: rgba(68, 68, 68, 0.6);
+  background-color: $basic-blue-light;
+  border: 1px solid $basic-grey-light;
+  border-radius: 10px;
+
+  resize: none;
+  overflow: hidden;
+}
+
+.profile__transport {
+  margin-top: 9px;
+}
+
+.profile__transport-title {
+  position: relative;
+
+  box-sizing: border-box;
+  z-index: 1;
+  width: 110px;
+  margin: 0 auto;
+  padding-bottom: 1px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+  background-color: $basic-blue-light;
+}
+
+.profile__transport-buttons {
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 270px;
+  height: 63px;
+  margin-top: -10px;
+  padding-top: 13px;
+
+  background-color: $basic-blue-light;
+  border: 1px solid $basic-grey-light;
+  border-radius: 10px;
+}
+
+.profile__transport-label {
+  box-sizing: border-box;
+  width: 33px;
+  height: 33px;
+  padding-left: 8px;
+  padding-top: 0;
+
+  border-radius: 50px;
+
+  background-color: $basic-white;
+}
