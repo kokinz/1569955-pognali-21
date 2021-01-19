@@ -1,4 +1,27 @@
 .sign-up__title {
+  margin-top: 70px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  color: $special-orange;
+}
+
+.sign-up__description {
+  padding: 0 36px 0 34px;
+
+  font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $basic-white;
+}
+
+.sign-up__link {
+  text-decoration: underline;
+
+  color: $basic-yellow;
 }
