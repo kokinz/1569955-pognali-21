@@ -1,7 +1,9 @@
 .add-profile {
+  position: relative;
   display: flex;
   flex-direction: column;
 
+  z-index: 3;
   margin-top: -36px;
 
   border-radius: 0 0 30px 30px;
@@ -27,6 +29,7 @@
 }
 
 .add-profile__price-list {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -41,12 +44,34 @@
 
   color: $special-grey;
   counter-reset: plan;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 13px;
+
+    background-color: $additional-grey;
+  }
 }
 
 .add-profile__price-item {
   position: relative;
 
   margin-bottom: 28px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    top: -13px;
+
+    background-color: $additional-grey;
+  }
 
   &::after {
     content: counter(plan);
