@@ -4,6 +4,7 @@
   z-index: 2;
   margin-top: -26px;
 
+  border-radius: 20px 20px 0 0;
   background-color: $basic-grey-dark;
 }
 
@@ -68,7 +69,7 @@
 
   box-sizing: border-box;
   width: 270px;
-  padding: 2px 24px 11px 25px;
+  padding: 2px 0 11px 0;
   margin-bottom: 10px;
 
   background-color: $basic-white;
@@ -77,6 +78,8 @@
 
 .add-plan__steps-title {
   margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 25px;
 
   font-weight: 700;
   font-size: 20px;
@@ -87,6 +90,9 @@
 }
 
 .add-plan__steps-description {
+  margin-top: 7px;
+  padding: 0 25px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -99,7 +105,19 @@
 }
 
 .travel-form__field {
+  margin: 0;
+  padding: 0 25px;
+
   border: none;
+}
+
+.travel-form__label {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 3px;
+
+  height: 20px;
 }
 
 .travel-form__label-name {
@@ -147,7 +165,8 @@
   box-sizing: border-box;
   width: 220px;
   height: 43px;
-  margin-bottom: 21px;
+  margin-top: 5px;
+  margin-bottom: 17px;
 
   justify-content: space-between;
 
@@ -158,20 +177,39 @@
 }
 
 .travel-form__button {
+  position: relative;
   display: block;
 
   box-sizing: border-box;
-  width: 42px;
-  height: 43px;
+  width: 41px;
+  height: 41px;
   padding: 0;
 
   border: none;
+  border-radius: 4px;
   background-color: $basic-white;
-  opacity: 0.2;
 
   background-repeat: no-repeat;
   background-size: 14px 14px;
   cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 14px;
+    height: 2px;
+    top: 21px;
+    left: 15px;
+
+    background-color: $basic-grey;
+  }
+}
+
+.travel-form__button--add::after {
+  transform: rotate(90deg);
 }
 
 .travel-form__input {
