@@ -3,6 +3,7 @@
 
   z-index: 2;
   margin-top: -26px;
+  padding-bottom: 70px;
 
   border-radius: 20px 20px 0 0;
   background-color: $basic-grey-dark;
@@ -95,6 +96,7 @@
 
 .add-plan__steps-description {
   margin-top: 7px;
+  margin-bottom: 0;
   padding: 0 25px;
 
   font-weight: 400;
@@ -114,6 +116,34 @@
 
   border: none;
 }
+
+.travel-form__field--companions {
+  margin-top: 16px;
+}
+
+.travel-form__field--country {
+  margin-bottom: -3px;
+}
+
+.travel-form__field--outline {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 12px;
+    top: 0px;
+    bottom: 0;
+    left: 11px;
+    margin-top: 31px;
+    margin-bottom: -30px;
+
+    border: 2px solid $basic-blue;
+    border-right: none;
+  }
+}
+
 
 .travel-form__label {
   display: flex;
@@ -452,7 +482,7 @@
   box-sizing: border-box;
   width: 220px;
   margin: 0 auto;
-  margin-top: 6px;
+  margin-top: 22px;
   padding: 0;
 
   list-style: none;
@@ -653,4 +683,105 @@
   &::after {
     transform: rotate(90deg);
   }
+}
+
+.travel-form__country-label {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: unset;
+
+  margin-top: 22px;
+  margin-left: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: $basic-blue;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+    left: -13px;
+    top: 7px;
+    border-radius: 50%;
+
+    background-color: $basic-blue;
+  }
+}
+
+.travel-form__country-name {
+  position: relative;
+
+  width: 173px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 52px;
+    height: 36px;
+    right: 0;
+    top: -7px;
+
+    background-image: url(../../img/fade-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 14px 0;
+  }
+}
+
+.travel-form__country-flag {
+  margin-left: 2px;
+  margin-top: -3px;
+}
+
+.travel-form__country-plans {
+  margin-top: 11px;
+  padding: 9px 13px;
+  width: 220px;
+  height: 220px;
+
+  font-family: $main-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special-grey;
+
+  border: 1px solid $basic-grey-light;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  resize: none;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.travel-form__submit-button {
+  box-sizing: border-box;
+
+  width: 230px;
+  margin: 18px auto 12px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+  background-color: $basic-yellow;
 }

@@ -9,6 +9,11 @@
   background-color: $basic-white;
 }
 
+.page-footer--inner-page {
+  z-index: 2;
+  margin-top: -37px;
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
