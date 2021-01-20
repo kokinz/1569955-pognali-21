@@ -202,7 +202,7 @@
                   <div class="travel-form__input-wrapper">
                     <button class="travel-form__button travel-form__button--subtract" type="button" aria-label="Убавить"></button>
 
-                    <input class="travel-form__input" name="companions" id="companions" value="2">
+                    <input class="travel-form__input" type="number" name="companions" id="companions" value="2">
 
                     <button class="travel-form__button travel-form__button--add" type="button" aria-label="Прибавить"></button>
                   </div>
@@ -218,15 +218,15 @@
                   <div class="travel-form__input-wrapper">
                     <button class="travel-form__button travel-form__button--subtract" type="button" aria-label="Убавить"></button>
 
-                    <input class="travel-form__input" name="days" id="days" value="3">
+                    <input class="travel-form__input" type="number" name="days" id="days" value="3">
 
                     <button class="travel-form__button travel-form__button--add" type="button" aria-label="Прибавить"></button>
                   </div>
                 </fieldset>
 
                 <fieldset class="travel-form__field travel-form__field--kids">
-                  <input class="travel-form__checkbox" type="checkbox" checked name="kids" id="kids">
-                  <label class="travel-form__label travel-form__label--kids" for="kids">Можно с детьми</label>
+                  <input class="travel-form__input-checkbox travel-form__input-checkbox--kids visually-hidden" tabindex="-1" type="checkbox" checked name="kids" id="kids">
+                  <label class="travel-form__label travel-form__label--kids" tabindex="0" for="kids">Можно с детьми</label>
                 </fieldset>
 
                 <div class="travel-form__calendar calendar">
@@ -294,7 +294,7 @@
                   </ul>
                 </div>
 
-                <a class="button travel-form__next-step" href="#route">Следующий шаг</a>
+                <a class="travel-form__next-step" href="#route">Следующий шаг</a>
               </li>
 
               <li class="add-plan__steps-item add-plan__steps-item--route" id="route">
@@ -318,45 +318,47 @@
                   </li>
                 </ul>
 
-                <ul class="travel-form__route-list route-list">
-                  <li class="route-list__country route-list__country--selected">
-                    <span class="route-list__country-name">Босния и Герцеговина</span>
+                <ul class="travel-form__route-list">
+                  <li class="travel-form__route-item travel-form__route-item--selected">
+                    <span class="travel-form__route-name">Босния и Герцеговина</span>
 
-                    <div class="route-list__country-flag">
-                      <img src="https://via.placeholder.com/15x15" alt="Флаг страны">
+                    <div class="travel-form__route-flag">
+                      <img src="img/Bosnia-flag.png" alt="Флаг страны">
                     </div>
 
-                    <button class="route-list__country-selection" type="button" aria-label="Выбрать страну"></button>
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
 
-                    <button class="route-list__country-delete" type="button" aria-label="Удалить страну"></button>
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
                   </li>
 
-                  <li class="route-list__country route-list__country--selected">
-                    <span class="route-list__country-name">Чехословакия</span>
+                  <li class="travel-form__route-item travel-form__route-item--selected">
+                    <span class="travel-form__route-name">Чехия</span>
 
-                    <div class="route-list__country-flag">
-                      <img src="https://via.placeholder.com/15x15" alt="Флаг страны">
+                    <div class="travel-form__route-flag">
+                      <img src="img/Czech-flag.png" alt="Флаг страны">
                     </div>
 
-                    <button class="route-list__country-selection" type="button" aria-label="Выбрать страну"></button>
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
 
-                    <button class="route-list__country-delete" type="button" aria-label="Удалить страну"></button>
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
                   </li>
 
-                  <li class="route-list__country">
-                    <span class="route-list__country-name">Выберите страну</span>
+                  <li class="travel-form__route-item">
+                    <span class="travel-form__route-name">Выберите страну</span>
 
-                    <button class="route-list__country-selection" type="button" aria-label="Выбрать страну"></button>
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
 
-                    <button class="route-list__country-delete" type="button" aria-label="Удалить страну"></button>
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
+                  </li>
+
+                  <li class="travel-form__route-item">
+                    <button class="travel-form__add-country" type="button">Добавить страну</button>
                   </li>
                 </ul>
 
-                <button class="travel-form__add-country" type="button">Добавить страну</button>
+                <a class="travel-form__next-step" href="#plans">Следующий шаг</a>
 
-                <a class="button travel-form__prev-step" href="#plans">Следующий шаг</a>
-
-                <a class="button travel-form__next-step" href="#dates">На шаг назад</a>
+                <a class="travel-form__prev-step" href="#dates">На шаг назад</a>
               </li>
 
               <li class="add-plan__steps-item add-plan__steps-item--plans" id="plans">

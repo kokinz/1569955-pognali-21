@@ -22,6 +22,21 @@ img {
   overflow: hidden;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-controls input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.price-controls input[type="number"]:hover,
+.price-controls input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
 .symbol {
   font-family: sans-serif;
 }
