@@ -23,6 +23,10 @@
   background-color: $additional-grey;
 }
 
+.page__main--inner-page {
+  background-color: $basic-blue-light;
+}
+
 .page__main-title {
   position: relative;
 
@@ -52,4 +56,8 @@
     border-radius: 4px;
     background-color: $special-orange;
   }
+}
+
+.page__main-link {
+  display: none;
 }

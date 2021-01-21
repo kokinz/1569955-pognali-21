@@ -74,12 +74,32 @@
 }
 
 .level--80::before {
-  width: 100px;
-  height: 100px;
   background-image: url(../../img/level-80-small.svg);
 }
 
-.level--big, .level--80::before {
+.level--big.level--80::before {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/level-80-big.svg);
+}
+
+.level--25::before {
+  background-image: url(../../img/level-25.svg);
+}
+
+.level--big.level--25::before {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../img/level-80-big.svg);
+}
+
+.level--50::before {
+  background-image: url(../../img/level-50.svg);
+}
+
+.level--big.level--50::before {
+  width: 100px;
+  height: 100px;
   background-image: url(../../img/level-80-big.svg);
 }
 
