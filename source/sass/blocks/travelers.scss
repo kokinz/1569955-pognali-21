@@ -6,6 +6,10 @@
 
   border-radius: 0 0 30px 30px;
   background-color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+  }
 }
 
 .travelers__wrapper {
@@ -42,6 +46,15 @@
     border-radius: 0 20px 20px 0;
     background-color: $additional-blue-dark;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .travelers__description {
@@ -55,6 +68,11 @@
   line-height: 22px;
 
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
 .travelers__slogan {
@@ -69,6 +87,11 @@
   line-height: 22px;
 
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 24px;
+  }
 }
 
 .travelers__list {

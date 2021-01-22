@@ -2,13 +2,17 @@
   display: flex;
   justify-content: center;
   height: 21px;
-  margin: 0 auto 21px;
+  margin: 0 auto 42px;
   padding: 0;
 
   text-align: center;
 
   background-color: $basic-white;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .social-list__link {

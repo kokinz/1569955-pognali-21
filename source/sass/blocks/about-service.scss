@@ -5,6 +5,12 @@
   border-radius: 0 0 30px 30px;
 
   background-color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $additional-blue-light;
+
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .about-service__wrapper {
@@ -13,6 +19,31 @@
   background-image: url(../../img/about-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: $tablet-width;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-image: none;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      width: 376px;
+      height: 548px;
+      right: 8px;
+      top: 105px;
+
+      background-image: url(../../img/about-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
 }
 
 .about-service__title {
@@ -37,6 +68,27 @@
     border-radius: 0 20px 20px 0;
     background-color: $additional-blue-dark;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 686px;
+    height: 212px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+    padding-left: 33px;
+    padding-top: 36px;
+
+    border-radius: 20px;
+
+    font-size: 45px;
+    line-height: 45px;
+
+    background-color: $additional-blue-dark;
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .about-service__description {
@@ -45,6 +97,14 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+    padding-left: 75px;
+    padding-right: 392px;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .about-service__slogan {
@@ -54,8 +114,39 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 392px;
+    padding-left: 75px;
+    padding-top: 14px;
+    margin-bottom: 53px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .about-service__button-details {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    width: 276px;
+    height: 80px;
+    margin-left: 75px;
+    margin-bottom: 79px;
+    padding-top: 27px;
+    padding-left: 31px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+
+    &::after {
+      right: 34px;
+      top: 34px;
+    }
+  }
 }

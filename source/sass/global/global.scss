@@ -40,3 +40,25 @@ input::-webkit-inner-spin-button {
 .symbol {
   font-family: sans-serif;
 }
+
+.br {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .br--mobile {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .br--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .br--desktop {
+    display: block;
+  }
+}

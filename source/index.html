@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--closed-menu">
       <div class="page-header__container container">
-        <a class="page-header__logo page-header__logo--closed-menu">
-          <img src="img/logo-mobile-white.png" width="100" height="15" alt="Логотип сайта">
+        <a class="page-header__logo">
         </a>
 
-        <button class="page-header__nav-toggle page-header__nav-toggle--closed-menu" type="button" aria-label="Скрыть/показать меню"></button>
+        <button class="page-header__nav-toggle" type="button" aria-label="Скрыть/показать меню"></button>
 
         <nav class="page-header__main-nav">
-          <ul class="site-list">
+          <ul class="site-list container">
             <li class="site-list__item">
               <a class="site-list__link" href="service.html">
                 О сервисе
@@ -35,7 +34,7 @@
             </li>
           </ul>
 
-          <ul class="user-list">
+          <ul class="user-list container">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--login" href="login.html">
                 Авторизация
@@ -93,7 +92,7 @@
         <blockquote class="promo__review">
           <p class="promo__review-text"><span class="symbol">«</span>Лучшее приложение, что я видел в жизни!<span class="symbol">»</span></p>
 
-          <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты <span class="symbol">«</span>гаджетлайф<span class="symbol">»</span></cite>
+          <cite class="promo__review-author">Мурат Эльтазин главный&nbsp;редактор газеты <span class="symbol">«</span>гаджетлайф<span class="symbol">»</span></cite>
         </blockquote>
 
         <ol class="promo__instruction-list">
@@ -109,7 +108,7 @@
           <h2 class="about-service__title">О сервисе</h2>
 
           <p class="about-service__description">
-            Любое путешествие веселее<br>с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+            Любое путешествие веселее<br class="br br--mobile"> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий<br class="br br--tablet"> и черпайте вдохновение в чужих.
           </p>
 
           <b class="about-service__slogan">
@@ -125,45 +124,74 @@
           <h2 class="directions__title">Направления</h2>
 
           <p class="directions__description">
-            Мы не продаем туры<br>и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+            Мы не продаем туры<br class="br br--mobile br--tablet"> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
           </p>
 
           <ul class="directions__list">
             <li class="directions__item">
               <div class="directions__image-wrapper">
-                <img src="img/thailand-mobile@1x.png" alt="Тайланд" width="270" height="110">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/thailand-tablet@1x.png 1x, img/thailand-tablet@2x.png 2x">
+                  <img class="directions__image" src="img/thailand-mobile@1x.png" srcset="img/thailand-mobile@2x.png 2x" width="270" height="110" alt="Тайланд">
+                </picture>
 
-                <img class="directions__image-flag" src="img/Thailand-flag.png" alt="Флаг Тайланда">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/Thailand-flag-tablet.png">
+                  <img class="directions__image-flag" src="img/Thailand-flag.png" width="270" height="110" alt="Флаг Тайланда">
+                </picture>
               </div>
-              <h3 class="directions__country">Таиланд</h3>
 
-              <p class="directions__slogan">Джунгли зовут!</p>
+              <div class="directions__text-wrapper">
+                <h3 class="directions__country">Таиланд</h3>
 
-              <span class="directions__views">18321</span>
+                <p class="directions__slogan">Джунгли зовут!</p>
+
+                <span class="directions__views">18321</span>
+              </div>
             </li>
+
             <li class="directions__item">
               <div class="directions__image-wrapper">
-                <img src="img/france-mobile@1x.png" alt="Франция" width="270" height="110">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/france-tablet@1x.png 1x, img/france-tablet@2x.png 2x">
+                  <img class="directions__image" src="img/france-mobile@1x.png" srcset="img/france-mobile@2x.png 2x" width="270" height="110" alt="Франция">
+                </picture>
 
-                <img class="directions__image-flag" src="img/France-flag.png" alt="Флаг Франции">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/France-flag-tablet.png">
+                  <img class="directions__image-flag" src="img/France-flag.png" width="270" height="110" alt="Флаг Франции">
+                </picture>
               </div>
-              <h3 class="directions__country">Франция</h3>
 
-              <p class="directions__slogan">Трэ бьен, манифик!</p>
+              <div class="directions__text-wrapper">
+                <h3 class="directions__country">Франция</h3>
 
-              <span class="directions__views">12518</span>
+                <p class="directions__slogan">Трэ бьен, манифик!</p>
+
+                <span class="directions__views">12518</span>
+              </div>
             </li>
+
             <li class="directions__item">
               <div class="directions__image-wrapper">
-                <img src="img/czech-mobile@1x.png" alt="Чехия" width="270" height="110">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/czech-tablet@1x.png 1x, img/czech-tablet@2x.png 2x">
+                  <img class="directions__image" src="img/czech-mobile@1x.png" srcset="img/czech-mobile@2x.png 2x" width="270" height="110" alt="Чехия">
+                </picture>
 
-                <img class="directions__image-flag" src="img/Czech-flag.png" alt="Флаг Чехии">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/Czech-flag-tablet.png">
+                  <img class="directions__image-flag" src="img/Czech-flag.png" width="270" height="110" alt="Флаг Чехии">
+                </picture>
               </div>
-              <h3 class="directions__country">Чехия</h3>
 
-              <p class="directions__slogan">Закоулки старой Европы</p>
+              <div class="directions__text-wrapper">
+                <h3 class="directions__country">Чехия</h3>
 
-              <span class="directions__views">5326</span>
+                <p class="directions__slogan">Закоулки<br class="br br--tablet"> старой Европы</p>
+
+                <span class="directions__views">5326</span>
+              </div>
             </li>
           </ul>
 
