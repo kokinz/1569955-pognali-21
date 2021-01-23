@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 25px;
-  margin-bottom: 41px;
+  padding: 0;
+  margin-bottom: 30px;
 
   background-color: $basic-white;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    width: 688px;
     background-color: transparent;
+    margin-top: 140px;
+  }
+}
+
+.page-header--closed-menu .user-list {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -18,7 +26,7 @@
   position: relative;
   box-sizing: border-box;
 
-  height: 45px;
+  min-height: 45px;
   padding: 14px;
   padding-left: 60px;
 
@@ -27,6 +35,23 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $special-blue;
+
+  &:hover, &:focus {
+    color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(255, 215, 75, 0.7);;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $special-yellow-dark;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -49,6 +74,15 @@
 
   background-color: $basic-yellow;
 
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
@@ -65,28 +99,77 @@
   }
 }
 
-.user-list__link--phone::before {
-  content: "";
-
+.user-list__icon-wrapper {
   position: absolute;
+
+  box-sizing: border-box;
   width: 45px;
   height: 45px;
   left: 0;
   top: 0;
+  padding-left: 14px;
+  padding-top: 14px;
 
-  background-image: url(../../img/icon-phone.png);
-  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  background-color: $basic-blue-extra;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    left: 57px;
+    padding-left: 22px;
+    padding-top: 22px;
+  }
 }
 
-.user-list__link--mail::before {
-  content: "";
+.user-list__icon-wrapper--mail {
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+  }
+}
 
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 0;
-  top: 0;
+.user-list__icon--phone {
+  width: 16px;
+  height: 16px;
 
-  background-image: url(../../img/icon-mail.png);
-  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 23px;
+  }
+}
+
+.user-list__icon--mail {
+  width: 18px;
+  height: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 19px;
+  }
+}
+
+.page-header--opened-menu .user-list__link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 148px;
+    min-height: 68px;
+    padding-top: 22px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.page-header--opened-menu .user-list__link--login {
+  @media (min-width: $tablet-width) {
+    right: 0;
+    top: -53px;
+    min-height: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

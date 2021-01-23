@@ -7,6 +7,11 @@
 
   border-radius: 0 0 30px 30px;
   background-color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .sign-up__wrapper {
@@ -24,6 +29,13 @@
   text-align: center;
 
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 132px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .sign-up__description {
@@ -37,6 +49,14 @@
   text-align: center;
 
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    padding: 0 35px;
+
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .sign-up__link {
@@ -57,6 +77,10 @@
 
   &::after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }
 
@@ -85,6 +109,19 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 536px;
+    height: 80px;
+    margin-top: 37px;
+    margin-left: 36px;
+    padding-left: 36px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .sign-up__submit {
@@ -108,14 +145,40 @@
     content: "";
 
     position: absolute;
-    right: 22px;
-    top: 24px;
-    width: 12px;
-    height: 14px;
+    right: 10px;
+    top: 25px;
 
-    background-image: url(../../img/triangle-button.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-left: 12px solid #192144;
+    border-right: 12px solid transparent;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    &::after {
+      border-left: 12px solid rgba(29, 46, 91, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    right: 36px;
+    top: 37px;
+
+    border-radius: 0 20px 20px 0;
+
+    &::after {
+      right: 33px;
+      top: 34px;
+    }
   }
 }
 
@@ -135,22 +198,36 @@
   letter-spacing: 0.01em;
 
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 113px;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 .sign-up__contact-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   list-style: none;
 
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    margin-bottom: 53px;
+  }
 }
 
 .sign-up__contact-link {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  padding-top: 12px;
 
   text-transform: uppercase;
 
@@ -159,4 +236,28 @@
   &::before {
     top: 2px;
   }
+
+  &:active {
+    color: rgba(255, 215, 75, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    min-height: 68px;
+    padding-left: 126px;
+
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+    }
+  }
+}
+
+.sign-up__contact-wrapper--phone {
+  padding-top: 16px;
 }

@@ -203,6 +203,10 @@
   }
 }
 
+.directions__item--czech .directions__slogan {
+  padding-bottom: 4px;
+}
+
 .directions__views {
   position: absolute;
   z-index: 1;
@@ -257,8 +261,8 @@
   @media (min-width: $tablet-width) {
     width: 619px;
     height: 82px;
-    margin-top: 46px;
-    margin-bottom: 79px;
+    margin-top: 45px;
+    margin-bottom: 80px;
     padding-top: 28px;
     padding-left: 33px;
 

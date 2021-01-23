@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
 
+  box-sizing: border-box;
+  margin-top: -30px;
+  padding-top: 30px;
+
   background-color: $special-blue;
 
   @media (min-width: $tablet-width) {
     background-color: $additional-blue-light;
+    padding-top: 41px;
   }
 }
 
 .promo__title-wrapper {
+  margin-top: -30px;
+  padding-top: 30px;
+
   background-color: $additional-blue;
   background-image: url(../../img/globe-back-mobile@1x.png);
   background-repeat: no-repeat;
@@ -65,19 +73,66 @@
 }
 
 .promo__contact-link {
+  position: relative;
   display: block;
+
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .promo__contact-link--phone {
-  background-image: url(../../img/icon-phone-btn.png);
-  background-repeat: no-repeat;
+  background-color: $special-orange;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+
+    background-image: url(../../img/icon-phone-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $special-orange-dark;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .promo__contact-link--mail {
-  background-image: url(../../img/icon-mail-btn.png);
-  background-repeat: no-repeat;
+  background-color: $special-yellow-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+
+    background-image: url(../../img/icon-mail-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $special-orange;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .promo__contact-link--login {
@@ -93,6 +148,15 @@
   text-transform: uppercase;
 
   background-color: $basic-yellow;
+
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 .promo__review  {

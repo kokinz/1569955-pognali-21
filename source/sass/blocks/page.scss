@@ -27,14 +27,24 @@
   background-color: $basic-blue-light;
 }
 
+.page__main-title-wrapper {
+  position: relative;
+  margin-top: -30px;
+  padding-top: 30px;
+
+  border-radius: 0 0 20px 20px;
+
+  background-color: $additional-blue-light;
+}
+
 .page__main-title {
   position: relative;
 
   z-index: 2;
   width: 270px;
   margin: 0 auto;
-  margin-top: -51px;
-  padding-bottom: 17px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 
   font-weight: 700;
   font-size: 36px;
@@ -47,11 +57,11 @@
 
     content: "";
 
-    min-width: 214px;
+    min-width: 100%;
     width: 67%;
     height: 5px;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
 
     border-radius: 4px;
     background-color: $special-orange;

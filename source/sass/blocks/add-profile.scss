@@ -9,12 +9,23 @@
   border-radius: 0 0 30px 30px;
 
   background-color: $additional-white;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    background-color: $basic-blue-light;
+  }
 }
 
 .add-profile__wrapper {
   background-image: url(../../img/rates-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 195px 73px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 591px;
+
+    background-position: bottom 45px right 85px;
+  }
 }
 
 .add-profile__title {
@@ -26,6 +37,15 @@
   line-height: 24px;
 
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 77px;
+    padding-top: 19px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .add-profile__price-list {
@@ -54,6 +74,29 @@
     bottom: 13px;
 
     background-color: $additional-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 65px;
+
+    &::before {
+      width: 560.31px;
+      bottom: -3px;
+      left: 90px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 25px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: $additional-grey-extra;
+    }
   }
 }
 
@@ -97,20 +140,67 @@
 
     color: $basic-white;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    min-height: 66px;
+    padding-left: 90px;
+    padding-top: 20px;
+    margin-bottom: 0;
+
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 560.31px;
+      top: 1px;
+    }
+
+    &::after {
+      width: 68px;
+      height: 68px;
+
+      right: auto;
+      left: 0;
+      top: 0;
+      padding-top: 20px;
+      padding-left: 1px;
+
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
 }
 
 .add-profile__price-item:nth-child(2n)::after {
   background-color: $special-yellow-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
 }
 
 .add-profile__price-item:nth-child(3n)::after {
   background-color: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
 }
 
 .add-profile__price {
   display: block;
 
   margin-top: 6px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-right: 11px;
+
+    text-align: right;
+  }
 }
 
 .add-profile__business-tariffs {
@@ -124,4 +214,44 @@
   line-height: 16px;
 
   color: $special-blue-dark;
+
+  &:hover,
+  &:focus {
+    color: rgba(19, 37, 118, 0.7);
+  }
+
+  &:active {
+    color: rgba(19, 37, 118, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 100%;
+    min-height: 68px;
+    margin-top: 36px;
+    padding-top: 24px;
+    padding-left: 89px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+
+      border-radius: 50%;
+
+      background-color: $additional-grey-extra;
+      background-image: url(../../img/icon-businessman.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }

@@ -62,3 +62,13 @@ input::-webkit-inner-spin-button {
     display: block;
   }
 }
+
+.bs {
+  display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .bs--tablet {
+    display: inline-block;
+  }
+}

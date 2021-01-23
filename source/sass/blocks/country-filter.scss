@@ -24,9 +24,9 @@
 }
 
 .country-filter__title {
-  margin-top: -30px;
   margin-top: -11px;
   padding-left: 27px;
+  padding-top: 2px;
 
   font-weight: 700;
   font-size: 16px;
@@ -37,7 +37,7 @@
 
   background-image: url(../../img/icon-filter.svg);
   background-repeat: no-repeat;
-  background-position: 0 4px;
+  background-position: 0 6px;
 }
 
 .country-filter__continent-list {
@@ -68,7 +68,7 @@
   width: 17px;
   height: 17px;
   right: 29px;
-  top: -14px;
+  top: -12px;
 
   border: none;
   background-color: transparent;

@@ -1,4 +1,8 @@
 .page-header {
+  position: relative;
+
+  z-index: 7;
+
   color: $basic-white;
   background-color: $additional-blue;
   background-repeat: no-repeat;
@@ -12,14 +16,14 @@
   position: relative;
 
   z-index: 1;
-  min-height: 143px;
+  min-height: 72px;
 
-  border-radius: 0 0 20px 20px;
   background-color: $additional-blue-light;
 }
 
 .page-header--opened-menu {
   background-color: $basic-white;
+  border-radius: 0 0 30px 30px;
 }
 
 .page-header__container {
@@ -61,6 +65,13 @@
   margin-bottom: 5px;
 
   background-image:  url(../../img/logo-mobile-blue.png);
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    margin-top: 45px;
+
+    background-image: url(../../img/logo-tablet-blue.png);
+  }
 }
 
 .page-header__nav-toggle {
@@ -114,7 +125,26 @@
     background-color: $basic-white;
   }
 
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.6;
+    }
 
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-header--opened-menu .page-header__nav-toggle {
@@ -152,6 +182,37 @@
 
     background-color: $basic-grey;
   }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $basic-black;
+      opacity: 0.6;
+    }
+
+    &::before {
+      background-color: $basic-black;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $basic-black;
+      opacity: 0.1;
+    }
+
+    &::before {
+      background-color: $basic-black;
+      opacity: 0.1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 168px;
+    margin-top: 55px;
+  }
 }
 
 
@@ -165,16 +226,18 @@
 }
 
 .page-header--opened-menu .page-header__main-nav {
-  position: absolute;
+  position: relative;
   display: block;
 
   z-index: 10;
-  top: 62px;
-  left: 0;
-  right: 0;
+  width: 270px;
   padding-top: 30px;
 
   border-radius: 0 0 20px 20px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+  }
 }

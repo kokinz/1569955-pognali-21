@@ -7,6 +7,12 @@
 
   border-radius: 30px 30px 0 0;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -77px;
+    min-height: 140px;
+    border-radius: 56px 56px 0 0;
+  }
 }
 
 .page-footer--inner-page {
@@ -17,35 +23,89 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-footer__logo {
   display: block;
 
-  margin: 27px auto;
-  width: 96px;
+  margin: 37px auto 17px;
+  width: 100px;
   height: 15px;
+
+  background-image: url(../../img/logo-mobile-blue.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+    margin-top: 56px;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-image: url(../../img/logo-tablet-blue.png);
+  }
 }
 
 .page-footer__social-list {
   margin-top: 23px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 46px;
+  }
 }
 
-.page-footer__social-item {
+.page-footer__social-link {
   box-sizing: border-box;
 
   width: 45px;
   height: 45px;
-  padding-left: 5px;
-  padding-top: 13px;
+  padding-left: 0;
+  padding-top: 6px;
 
   border-radius: 50%;
   background-color: $basic-yellow;
+  background-image: none;
+
+  &:hover, &:focus {
+    opacity: 1;
+    background-color: $special-yellow-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.page-footer__social-link:active svg {
+  opacity: 0.3;
 }
 
 .page-footer__social-link--vkontakte {
   margin: 0;
+  padding-top: 5px;
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+  }
+}
+
+.page-footer__social-link--facebook {
+  padding-left: 8px;
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+}
+
+.page-footer__social-link--instagram {
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
 }
 
 .page-footer__copyright-link {
@@ -53,7 +113,7 @@
   display: block;
 
   box-sizing: border-box;
-  margin-top: 49px;
+  margin-top: 25px;
   min-height: 34px;
   padding-top: 8px;
   padding-right: 35px;
@@ -77,5 +137,21 @@
     top: -14px;
 
     background-color: $additional-grey-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin-top: 55px;
+    padding-right: 51px;
+    padding-left: 6px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    background-position: 133px 7px;
+
+    &::before {
+      display: none;
+    }
   }
 }

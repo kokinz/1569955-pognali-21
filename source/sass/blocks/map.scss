@@ -4,17 +4,10 @@
   margin-top: -52px;
   padding: 0;
 
-  &::after {
-    content: "";
 
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    top: 148px;
-    left: 158px;
-
-    background-image: url(../../img/icon-map-pin.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  @media (min-width: $tablet-width) {
+    margin-top: -47px;
   }
 }
+
+
