@@ -14,6 +14,12 @@
     border-radius: 0 0 60px 60px;
     background-color: $basic-blue-light;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -64px;
+    padding-top: 64px;
+    min-height: 750px;
+  }
 }
 
 .add-profile__wrapper {
@@ -25,6 +31,11 @@
     min-height: 591px;
 
     background-position: bottom 45px right 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/rates-desktop@1x.png);
+    background-position: bottom 163px right 133px;
   }
 }
 
@@ -45,6 +56,14 @@
 
     font-size: 45px;
     line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-top: 103px;
+
+    text-align: center;
   }
 }
 
@@ -96,6 +115,19 @@
       height: 285px;
       border-radius: 20px;
       background-color: $additional-grey-extra;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 335px;
+    padding-left: 70px;
+    padding-top: 136px;
+
+    &::after {
+      right: 184px;
+      top: 87px;
+      width: 446px;
+      height: 300px;
     }
   }
 }
@@ -253,5 +285,10 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    margin-left: 71px;
   }
 }

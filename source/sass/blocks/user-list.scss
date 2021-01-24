@@ -131,11 +131,23 @@
     padding-left: 22px;
     padding-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    left: 4px;
+    top: -6px;
+  }
 }
 
 .user-list__icon-wrapper--mail {
   @media (min-width: $tablet-width) {
     padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 29px;
+    padding-top: 35px;
   }
 }
 
@@ -147,6 +159,11 @@
     width: 24px;
     height: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 30px;
+  }
 }
 
 .user-list__icon--mail {
@@ -156,6 +173,11 @@
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 37px;
+    height: 25px;
   }
 }
 

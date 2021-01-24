@@ -12,6 +12,10 @@
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 810px;
+  }
 }
 
 .sign-up__wrapper {
@@ -36,6 +40,10 @@
     font-size: 45px;
     line-height: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 164px;
+  }
 }
 
 .sign-up__description {
@@ -56,6 +64,14 @@
 
     font-size: 28px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 21px 4px;
+    width: 655px;
   }
 }
 
@@ -122,6 +138,12 @@
 
     border-radius: 20px 0 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+    margin-top: 41px;
+    margin-left: 73px;
+  }
 }
 
 .sign-up__submit {
@@ -180,10 +202,35 @@
       top: 34px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding-right: 115px;
+    margin-top: 41px;
+    width: 324px;
+
+    &::after {
+      right: 22px;
+    }
+  }
 }
 
 .sign-up__submit-text {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $basic-blue;
+    vertical-align: top;
+    text-align: left;
+  }
 }
 
 .sign-up__have-questions {
@@ -206,6 +253,11 @@
     font-size: 28px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 127px;
+    padding-left: 0;
+  }
 }
 
 .sign-up__contact-list {
@@ -220,6 +272,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 33px;
     margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
   }
 }
 
@@ -256,8 +316,20 @@
 
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 434px;
+    min-height: 90px;
+    padding-top: 27px;
+    margin: 0;
+  }
 }
 
 .sign-up__contact-wrapper--phone {
   padding-top: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 25px;
+    padding-top: 32px;
+  }
 }

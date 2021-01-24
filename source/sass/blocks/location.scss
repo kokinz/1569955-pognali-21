@@ -11,11 +11,21 @@
   @media (min-width: $tablet-width) {
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -60px;
+    padding-top: 60px;
+    min-height: 201px;
+  }
 }
 
 .location__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .location__address {
@@ -50,6 +60,17 @@
 
     background-size: 68px 68px;
     background-position: 35px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 345px;
+    padding-top: 52px;
+    margin-top: 32px;
+
+    background-image: url(../../img/icon-map-desktop.png);
+    background-size: 90px 90px;
+    background-position: 223px 22px;
   }
 }
 
@@ -98,6 +119,19 @@
     &::after {
       right: 31px;
       top: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+    margin-left: auto;
+    margin-right: 76px;
+    margin-bottom: 30px;
+    width: 324px;
+    height: 80px;
+
+    &::after {
+      right: 19px;
     }
   }
 }
