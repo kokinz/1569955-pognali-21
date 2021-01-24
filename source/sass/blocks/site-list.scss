@@ -11,6 +11,30 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    width: 585px;
+    padding-left: 146px;
+
+    background-color: $additional-blue-extra;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 60px;
+      height: 2px;
+      left: 40;
+      top: 51px;
+
+      background-color: $basic-white;
+    }
+  }
 }
 
 .site-list__link {
@@ -25,7 +49,9 @@
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
+
   color: $special-blue;
+
   text-transform: uppercase;
   text-align: center;
 
@@ -49,6 +75,20 @@
     line-height: 71px;
     min-height: 75px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 20px;
+    min-width: 92px;
+    margin-top: 41px;
+    margin-right: 34px;
+    margin-bottom: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $basic-white;
   }
 }
 

@@ -10,6 +10,11 @@
   @media (min-width: $tablet-width) {
     background-color: $additional-blue-light;
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    background-color: $additional-blue-extra;
+  }
 }
 
 .page-header--inner-page {
@@ -34,6 +39,10 @@
   justify-content: space-between;
 
   background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .page-header__logo {
@@ -52,6 +61,14 @@
     margin-top: 45px;
 
     background-image: url(../../img/logo-tablet-white.png);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+    margin-top: 47px;
+
+    background-image: url(../../img/logo-desktop-white.png);
   }
 }
 
@@ -91,6 +108,10 @@
     margin-right: auto;
     margin-left: 166px;
     margin-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -215,13 +236,18 @@
   }
 }
 
-
-
 .page-header__main-nav {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1120px;
   }
 }
 

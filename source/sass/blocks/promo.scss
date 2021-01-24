@@ -12,6 +12,35 @@
     background-color: $additional-blue-light;
     padding-top: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    z-index: 7;
+    min-height: 653px;
+    border-radius: 0 0 60px 60px;
+
+    background-color: $additional-blue-extra;
+    background-image: url(../../img/traveller-illustration-desktop.png), url(../../img/globe-back-desktop@1x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 431px 640px, 1440px 750px;
+    background-position: calc(50% + 100px) calc(50% + 6px), center -97px;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    width: $desktop-width;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
 }
 
 .promo__title-wrapper {
@@ -26,6 +55,10 @@
   @media (min-width: $tablet-width) {
     background-color: $additional-blue-light;
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 
@@ -55,12 +88,21 @@
 
     background-image: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-top: 69px;
+    padding: 0 290px 0 66px;
+
+    text-align: left;
+  }
 }
 
 .promo__contact-list {
   display: flex;
   z-index: 1;
 
+  width: 270px;
   margin: 0 auto;
   margin-top: -20px;
   padding: 0;
@@ -69,6 +111,16 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+
+    top: -27px;
+    width: 290px;
+    left: calc(50% + 373px);
   }
 }
 
@@ -79,6 +131,11 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    min-width: 50px;
+    min-height: 50px;
+  }
 }
 
 .promo__contact-link--phone {
@@ -105,6 +162,13 @@
 
   &:active::before {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -133,6 +197,13 @@
   &:active::before {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .promo__contact-link--login {
@@ -157,6 +228,13 @@
   &:active {
     color: rgba(22, 28, 53, 0.3);
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__review  {
@@ -178,6 +256,14 @@
     background-repeat: no-repeat, no-repeat;
     background-position: calc(50% + 87px) 16px, 50% -6px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    padding-bottom: 0;
+
+    background-color: transparent;
+    background-image: none;
+  }
 }
 
 .promo__review-text {
@@ -193,6 +279,13 @@
 
     font-size: 28px;
     line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    padding: 0;
+    padding-left: 61px;
+    padding-top: 53px;
   }
 }
 
@@ -212,6 +305,13 @@
 
     font-size: 21px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    padding: 0;
+    padding-left: 67px;
+    padding-top: 26px;
   }
 }
 
@@ -234,6 +334,12 @@
 
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    padding: 0;
+    margin-top: 8px;
   }
 }
 
@@ -266,6 +372,14 @@
 
       border-radius: 20px 20px 0 0;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 375px;
+
+      &::after {
+        left: 300px;
+      }
+    }
   }
 
   &:nth-child(3n) {
@@ -273,6 +387,14 @@
 
     @media (min-width: $tablet-width) {
       border-radius: 0 0 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 375px;
+
+      &::after {
+        left: 300px;
+      }
     }
   }
 
@@ -285,11 +407,19 @@
     @media (min-width: $tablet-width) {
       border-radius: 0 0 20px 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 315px;
+      border-radius: 20px;
+
+      &::after {
+        left: 270px;
+      }
+    }
   }
 
   &:not(:last-child) {
     min-height: 90px;
-
   }
 
   &:not(:first-child) {
@@ -297,6 +427,12 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -30px;
+
+      border-radius: 20px;
     }
   }
 
@@ -324,6 +460,14 @@
       font-size: 30px;
       line-height: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 269px;
+      top: 27px;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -337,5 +481,13 @@
     line-height: 24px;
 
     border-radius: 20px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 345px;
+    height: 107px;
+    padding-top: 28px;
+
+    border-radius: 20px 0 0 20px;
   }
 }
