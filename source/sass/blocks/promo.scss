@@ -53,6 +53,7 @@
   background-position: 0% -60px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     background-color: $additional-blue-light;
     background-image: none;
   }
@@ -91,7 +92,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-top: 69px;
+    margin-top: 39px;
     padding: 0 290px 0 66px;
 
     text-align: left;
@@ -121,6 +122,15 @@
     top: -27px;
     width: 290px;
     left: calc(50% + 373px);
+  }
+}
+
+.page-header--inner-page .promo__contact-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    top: 69px;
   }
 }
 

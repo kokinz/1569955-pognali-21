@@ -12,6 +12,10 @@
     margin-top: -92px;
     padding-top: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .add-plan__wrapper {
@@ -38,6 +42,10 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
   }
 }
 
@@ -105,6 +113,26 @@
     border-radius: 30px;
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 60px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 998px;
+      height: 1px;
+      top: 272px;
+      left: 160px;
+
+      background-color: $additional-grey;
+    }
+  }
 }
 
 .add-plan__steps-item--route {
@@ -114,11 +142,23 @@
     padding-top: 2px;
     min-height: 786px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-top: 44px;
+    padding-bottom: 8px;
+    flex-direction: column;
+  }
 }
 
 .add-plan__steps-item--plans {
   @media (min-width: $tablet-width) {
     margin-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+    flex-direction: column;
   }
 }
 
@@ -140,6 +180,18 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 144px;
+    margin-top: 95px;
+    height: 34px;
+  }
+}
+
+.add-plan__steps-item--route .add-plan__steps-title {
+  @media (min-width: $desktop-width) {
+    height: 40px;
   }
 }
 
@@ -164,14 +216,88 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-right: 570px;
+    padding-left: 160px;
+  }
 }
 
 .add-plan__steps-item--route .add-plan__steps-description {
   @media (min-width: $tablet-width) {
     padding-right: 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 720px;
+    margin-top: 22px;
+  }
+}
+
+.add-plan__steps-item--plans .add-plan__steps-description {
+  @media (min-width: $desktop-width) {
+    padding-right: 680px;
+    height: 50px;
+  }
 }
 
 .add-plan__navigation {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 98px;
+    right: 205px;
+    padding: 0;
+
+    list-style: none;
+  }
+}
+
+.add-plan__navigation-item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.add-plan__navigation-link {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-left: 50px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.6);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+
+      opacity: 0.3;
+      background-color: $basic-blue;
+
+    }
+  }
+}
+
+.add-plan__navigation-link--current {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+
+    &::before {
+      opacity: 1;
+    }
+  }
 }

@@ -14,17 +14,19 @@
         <button class="page-header__nav-toggle page-header__nav-toggle--closed-menu" type="button" aria-label="Скрыть/показать меню"></button>
 
         <nav class="page-header__main-nav">
-          <ul class="site-list">
+          <ul class="site-list site-list--inner-page">
             <li class="site-list__item">
               <a class="site-list__link" href="service.html">
                 <span class="site-list__link-text" data-hover="О сервисе">О сервисе</span>
               </a>
             </li>
+
             <li class="site-list__item">
               <a class="site-list__link" href="">
                 <span class="site-list__link-text" data-hover="Направления">Направления</span>
               </a>
             </li>
+
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
                 <span class="site-list__link-text" data-hover="Попутчики">Попутчики</span>
@@ -33,7 +35,7 @@
           </ul>
 
           <ul class="user-list container">
-            <li class="user-list__item">
+            <li class="user-list__item user-list__item--login">
               <a class="user-list__link user-list__link--login" href="login.html">
                 Авторизация
               </a>
@@ -85,6 +87,19 @@
                   <path d="M17.9043 7.41252C18.6148 7.41252 19.1907 6.83658 19.1907 6.12612C19.1907 5.41566 18.6148 4.83972 17.9043 4.83972C17.1939 4.83972 16.6179 5.41566 16.6179 6.12612C16.6179 6.83658 17.1939 7.41252 17.9043 7.41252Z" fill="#192144"/>
                 </svg>
                 </a>
+            </li>
+          </ul>
+          <ul class="promo__contact-list">
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
+            </li>
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
+            </li>
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--login" href="login.html">
+                Авторизация
+              </a>
             </li>
           </ul>
         </nav>
@@ -227,15 +242,15 @@
           <form class="add-plan__form travel-form" action="https://echo.htmlacademy.ru" method="GET">
             <ol class="add-plan__steps-list">
               <li class="add-plan__steps-item add-plan__steps-item--dates" id="dates">
-                <h3 class="add-plan__steps-title">Шаг 1. <br class="steps-title__break-row">Даты пребывания</h3>
+                <h3 class="add-plan__steps-title">Шаг 1. <br class="br br--mobile br--tablet">Даты пребывания</h3>
 
                 <p class="add-plan__steps-description">
-                  Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                  Укажите предпочтительное количество попутчиков, которых <br class="br br--desktop"> вы хотели бы позвать в поездку, и ее предполагаемую длительность.
                 </p>
 
                 <ul class="add-plan__navigation">
-                  <li class="add-plan__navigation-item add-plan__navigation-item--current">
-                    <a class="add-plan__navigation-link" href="#dates">Даты</a>
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link add-plan__navigation-link--current" href="#dates">Даты</a>
                   </li>
 
                   <li class="add-plan__navigation-item">
@@ -248,7 +263,7 @@
                 </ul>
 
                 <fieldset class="travel-form__field travel-form__field--companions">
-                  <label class="travel-form__label" for="companions">
+                  <label class="travel-form__label travel-form__label--companions" for="companions">
                     <span class="travel-form__label-name">Ищу попутчиков:</span>
 
                     <span class="travel-form__label-persons">Чел.</span>
@@ -264,7 +279,7 @@
                 </fieldset>
 
                 <fieldset class="travel-form__field travel-form__field--days">
-                  <label class="travel-form__label" for="days">
+                  <label class="travel-form__label travel-form__label--days" for="days">
                     <span class="travel-form__label-name">Длительность:</span>
 
                     <span class="travel-form__label-days">Дн.</span>
@@ -310,7 +325,7 @@
                     <li class="calendar__date calendar__date--disabled">26</li>
                     <li class="calendar__date calendar__date--disabled">27</li>
                     <li class="calendar__date calendar__date--disabled">28</li>
-                    <li class="calendar__date calendar__date--disabled">1</li>
+                    <li class="calendar__date calendar__date--disabled">1<span class="br br--desktop">&ensp;Мар</span></li>
                     <li class="calendar__date calendar__date--disabled">2</li>
                     <li class="calendar__date calendar__date--disabled">3</li>
                     <li class="calendar__date calendar__date--disabled">4</li>
@@ -335,13 +350,13 @@
                     <li class="calendar__date calendar__date--disabled">23</li>
                     <li class="calendar__date calendar__date--disabled">24</li>
                     <li class="calendar__date calendar__date--disabled">25</li>
-                    <li class="calendar__date calendar__date--selected calendar__date--current">26</li>
+                    <li class="calendar__date calendar__date--selected calendar__date--current calendar__date--first">26<span class="calendar__first-date">Заезд</span></li>
                     <li class="calendar__date calendar__date--selected">27</li>
-                    <li class="calendar__date calendar__date--selected calendar__date--last">28</li>
+                    <li class="calendar__date calendar__date--selected calendar__date--last">28<span class="calendar__last-date">Выезд</span></li>
                     <li class="calendar__date">29</li>
                     <li class="calendar__date">30</li>
                     <li class="calendar__date">31</li>
-                    <li class="calendar__date calendar__date--first">1</li>
+                    <li class="calendar__date">1<span class="br br--desktop">&ensp;Апр</span></li>
                     <li class="calendar__date">2</li>
                     <li class="calendar__date">3</li>
                     <li class="calendar__date">4</li>
@@ -353,7 +368,7 @@
               </li>
 
               <li class="add-plan__steps-item add-plan__steps-item--route" id="route">
-                <h3 class="add-plan__steps-title">Шаг 2. <br class="steps-title__break-row">Маршрут</h3>
+                <h3 class="add-plan__steps-title">Шаг 2. <br class="br br--mobile br--tablet">Маршрут</h3>
 
                 <p class="add-plan__steps-description">
                   Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
@@ -423,7 +438,7 @@
               </li>
 
               <li class="add-plan__steps-item add-plan__steps-item--plans" id="plans">
-                <h3 class="add-plan__steps-title">Шаг 3. <br class="steps-title__break-row">Развлечения</h3>
+                <h3 class="add-plan__steps-title">Шаг 3. <br class="br br--mobile br--tablet">Развлечения</h3>
 
                 <p class="add-plan__steps-description">
                   Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.

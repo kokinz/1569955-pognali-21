@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     min-height: 535px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 293px;
+    margin-top: -60px;
+    padding-top: 60px;
+  }
 }
 
 .profile__wrapper {
@@ -16,6 +22,14 @@
 
   min-height: 400px;
   padding-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 732px 384px;
+    column-gap: 140px;
+    padding-bottom: 0;
+    min-height: 233px;
+  }
 }
 
 .profile__photo {
@@ -34,6 +48,13 @@
     right: 75px;
     top: 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    right: 155px;
+    top: -190px;
+  }
 }
 
 
@@ -49,6 +70,12 @@
     height: 94px;
     border-radius: 0 0 10px 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+  }
 }
 
 .profile__level  {
@@ -58,6 +85,41 @@
   @media (min-width: $tablet-width) {
     left: 72px;
     top: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 6;
+    width: 96px;
+    height: 96px;
+    left: auto;
+    right: 391px;
+    top: -150px;
+
+    &::after {
+      top: 57px;
+      left: 23px;
+      height: 2px;
+      background-color: $basic-white;
+      opacity: 0.3;
+    }
+
+    &::before {
+      background-size: 96px 96px;
+    }
+  }
+}
+
+.profile__level-number {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    margin-top: 10px;
+  }
+}
+
+.profile__level-word {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    margin-top: 4px;
   }
 }
 
@@ -97,6 +159,26 @@
     line-height: 18px;
     letter-spacing: 0.09em;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 6;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    height: 47px;
+    top: 0;
+    right: 155px;
+    border-radius: 0 0 21px 21px;
+
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .change-photo__hide-text {
+    display: none;
+  }
 }
 
 .profile__tags {
@@ -132,6 +214,12 @@
     line-height: 20px;
     letter-spacing: 0.1em;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 57px;
+    left: 87px;
+    width: 80px;
+  }
 }
 
 .profile__tags-textarea {
@@ -166,6 +254,12 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
+    margin-top: 71px;
+    width: 732px;
+  }
 }
 
 .profile__transport {
@@ -179,6 +273,16 @@
     height: 95px;
     left: 227px;
     top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 384px;
+    height: 94px;
+    margin-top: 63px;
+    margin-left: 64px;
+    left: auto;
+    top: auto;
   }
 }
 
@@ -211,6 +315,11 @@
     line-height: 20px;
     letter-spacing: 0.08em;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    left: 123px;
+  }
 }
 
 .profile__transport-buttons {
@@ -233,6 +342,10 @@
     height: 95px;
     padding-top: 25px;
     margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
   }
 }
 

@@ -37,6 +37,12 @@
   }
 }
 
+.site-list--inner-page {
+  @media (min-width: $desktop-width) {
+    background-color: $special-blue;
+  }
+}
+
 .site-list__link {
   position: relative;
 

@@ -14,6 +14,13 @@
     padding-top: 29px;
     min-height: 550px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -60px;
+    padding-top: 50px;
+    min-height: 410px;
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .my-plans__wrapper {
@@ -35,6 +42,12 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+    padding-left: 72px;
+    margin-bottom: 0;
   }
 }
 
@@ -58,6 +71,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 64px;
+    margin-top: 52px;
+  }
 }
 
 .my-plans__item {
@@ -79,6 +97,12 @@
     width: 618px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 97px;
+    margin-bottom: 15px;
   }
 }
 
@@ -146,6 +170,20 @@
       background-color: $basic-grey-light;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    padding-left: 95px;
+
+    &::before {
+      left: 43px;
+      right: auto;
+      top: 37px;
+    }
+  }
 }
 
 .my-plans__companions {
@@ -160,6 +198,11 @@
     line-height: 20px;
     letter-spacing: 0.1em;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 122px;
+    padding-top: 38px;
+  }
 }
 
 .my-plans__dates {
@@ -171,6 +214,11 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.08em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 25px;
+    padding-top: 38px;
   }
 }
 
@@ -199,5 +247,10 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 83px;
+    padding-top: 36px;
   }
 }

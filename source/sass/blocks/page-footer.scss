@@ -28,6 +28,10 @@
     margin-top: -46px;
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -35px;
+  }
 }
 
 .page-footer__wrapper {

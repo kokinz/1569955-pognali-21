@@ -16,6 +16,12 @@
     width: 538px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+      margin-top: 32px;
+      width: 1000px;
+      padding: 0;
+  }
 }
 
 .calendar__month {
@@ -42,6 +48,7 @@
 
   opacity: 0.3;
 
+  cursor: pointer;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 13px;
@@ -60,6 +67,10 @@
     background-size: 30px 36px;
     background-position: 12px 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: -6px 26px;
+  }
 }
 
 .calendar__month-button--next {
@@ -69,6 +80,10 @@
   @media (min-width: $tablet-width) {
     background-size: 30px 36px;
     background-position: -2px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 15px 26px;
   }
 }
 
@@ -91,12 +106,23 @@
     padding: 0 42px;
     margin-top: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    padding-left: 176px;
+    margin-top: 16px;
+  }
 }
 
 .calendar__day-week {
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 142px;
+    padding-left: 1px;
   }
 }
 
@@ -126,10 +152,16 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 34px 0 161px;
+    margin-top: 20px;
+  }
 }
 
 .calendar__date {
   position: relative;
+  display: flex;
 
   box-sizing: border-box;
 
@@ -171,6 +203,37 @@
       margin-left: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
+    height: 72px;
+    padding-left: 13px;
+    padding-top: 12px;
+
+    text-align: left;
+
+    &:nth-child(7n+1) {
+      width: 143px;
+      margin-left: 0;
+    }
+  }
+}
+
+.calendar__last-date,
+.calendar__first-date {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    bottom: 11px;
+    left: 11px;
+  }
+}
+
+.calendar__last-date {
+  @media (min-width: $desktop-width) {
+    bottom: 13px;
+    left: 14px;
+  }
 }
 
 .calendar__date--disabled {
@@ -197,5 +260,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 22px;
     border: 4px solid $special-orange-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-top: 8px;
   }
 }
