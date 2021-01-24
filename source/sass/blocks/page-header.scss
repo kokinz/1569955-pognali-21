@@ -24,6 +24,11 @@
   min-height: 72px;
 
   background-color: $additional-blue-light;
+
+  @media (min-width: $tablet-width) {
+    min-height: 215px;
+    border-radius: 0 0 30px 30px;
+  }
 }
 
 .page-header--opened-menu {
@@ -73,7 +78,11 @@
 }
 
 .page-header__logo--inner-page {
-  margin: 20px 0;
+  margin: 20px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 45px 0 0;
+  }
 }
 
 .page-header--opened-menu .page-header__logo {

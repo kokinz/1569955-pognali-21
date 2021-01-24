@@ -35,14 +35,21 @@
   border-radius: 0 0 20px 20px;
 
   background-color: $additional-blue-light;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 46px;
+  }
 }
 
 .page__main-title {
   position: relative;
 
+  display: inline-block;
   z-index: 2;
-  width: 270px;
+  width: auto;
   margin: 0 auto;
+  margin-left: calc(50% - 135px);
   padding-top: 20px;
   padding-bottom: 15px;
 
@@ -65,6 +72,19 @@
 
     border-radius: 4px;
     background-color: $special-orange;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: calc(50% - 309px);
+    padding-bottom: 69px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    &::after {
+      height: 6px;
+    }
   }
 }
 

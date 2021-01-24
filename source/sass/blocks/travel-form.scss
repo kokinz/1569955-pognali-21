@@ -3,6 +3,11 @@
   padding: 0 25px;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 618px;
+  }
 }
 
 .travel-form__field--companions {
@@ -13,25 +18,65 @@
   margin-bottom: -3px;
 }
 
+.travel-form__field--days {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-top: -31px;
+  }
+}
+
+.travel-form__calendar {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .travel-form__field--outline {
   position: relative;
 
   &::before {
     content: "";
-
     position: absolute;
-    width: 12px;
+
+    width: 11px;
     top: 0px;
-    bottom: 0;
-    left: 11px;
+    bottom: 0px;
+    left: 10px;
+    right: auto;
     margin-top: 31px;
     margin-bottom: -30px;
 
-    border: 2px solid $basic-blue;
+    border: 2px solid #1D2E5B;
     border-right: none;
+
+    @media (min-width: $tablet-width) {
+      width: 1px;
+      top: 3px;
+      bottom: -29px;
+      right: 45px;
+      left: auto;
+      margin-top: 31px;
+      margin-bottom: -30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+    margin-bottom: 22px;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 532px;
+      height: 1px;
+      top: -13px;
+      left: 44px;
+
+      background-color: $additional-grey;
+    }
   }
 }
-
 
 .travel-form__label {
   display: flex;
@@ -40,6 +85,29 @@
   margin-top: 3px;
 
   height: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 538px;
+    height: 68px;
+    margin: 0 auto;
+
+    font-size: 20px;
+    line-height: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 538px;
+      height: 1px;
+      top: 24px;
+      left: 0;
+
+      background-color: $additional-grey;
+    }
+  }
 }
 
 .travel-form__label-name {
@@ -51,6 +119,16 @@
   text-transform: uppercase;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+    padding-top: 20px;
+    padding-left: 1px;
+    margin-top: 29px;
+
+    font-size: 20px;
+    line-height: 18px;
+  }
 }
 
 .travel-form__label-persons {
@@ -65,6 +143,17 @@
   color: $basic-blue;
 
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+    padding-top: 20px;
+    padding-right: 5px;
+    margin-top: 29px;
+
+    height: 68px;
+    font-size: 20px;
+    line-height: 18px;
+  }
 }
 
 .travel-form__label-days {
@@ -79,6 +168,16 @@
   color: $basic-blue;
 
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-right: -2px;
+
+    font-size: 20px;
+    line-height: 18px;
+    text-align: right;
+    text-transform: uppercase;
+  }
 }
 
 .travel-form__input-wrapper {
@@ -96,6 +195,14 @@
   background-color: $basic-white;
   border: 1px solid $basic-grey-light;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 538px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
 }
 
 .travel-form__button {
@@ -128,6 +235,18 @@
 
     background-color: $basic-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 68px;
+
+    &::before,
+    &::after {
+      width: 20px;
+      top: 34px;
+      left: 22px;
+    }
+  }
 }
 
 .travel-form__button--add::after {
@@ -148,6 +267,11 @@
 
   color: $basic-blue;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 60px;
+  }
 }
 
 .travel-form__label--kids {
@@ -160,6 +284,7 @@
   line-height: 15px;
 
   color: $basic-blue;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -175,6 +300,21 @@
     border: 1px solid $basic-grey-light;
     border-radius: 4px;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding-left: 59px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }
 
 .travel-form__input-checkbox--kids:checked + .travel-form__label--kids::after {
@@ -187,8 +327,17 @@
   width: 9px;
   height: 9px;
 
+  background-color: transparent;
+
   background-image: url(../../img/icon-check-mark.svg);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    background-size: 18px 17px;
+  }
 }
 
 .travel-form__calendar {
@@ -212,9 +361,55 @@
   color: $basic-blue;
 
   background-color: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    order: 1;
+    width: 284px;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: 43px;
+    margin-top: 24px;
+    margin-bottom: 45px;
+    padding-top: 28px;
+    padding-left: 35px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 22px;
+      top: 34px;
+
+      border-left: 12px solid #192144;
+      border-right: 12px solid transparent;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $special-yellow-dark;
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+
+      &::after {
+        border-left: 12px solid rgba(29, 46, 91, 0.3);
+      }
+    }
+  }
 }
 
 .travel-form__prev-step {
+  order: 1;
   box-sizing: border-box;
   width: 221px;
   margin: 0 auto 1px;
@@ -231,6 +426,34 @@
   color: $basic-blue;
 
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 200px;
+    height: 40px;
+    padding-left: 21px;
+    margin-top: -102px;
+    margin-right: 21px;
+    margin-bottom: 59px;
+
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      left: -13px;
+      top: 9px;
+
+      border-right: 12px solid #192144;
+      border-left: 12px solid transparent;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
+  }
 }
 
 .travel-form__route-list {
@@ -244,6 +467,39 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 538px;
+    margin-top: 35px;
+    padding-top: 42px;
+    margin-left: 42px;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      width: 532px;
+      height: 1px;
+
+      background-color: $additional-grey;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      right: 139px;
+      width: 1px;
+      height: 407px;
+
+      background-color: $additional-grey;
+    }
+  }
 }
 
 .travel-form__route-item {
@@ -288,12 +544,36 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    height: 69px;
+
+    &::after {
+      z-index: 2;
+      background-color: $basic-white;
+      border: 1px solid $basic-grey-light;
+      width: 14px;
+      height: 14px;
+      right: 133px;
+      top: 25px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .travel-form__route-item--selected::after {
   z-index: 2;
   background-color: $basic-blue;
   border: none;
+
+  width: 8px;
+  height: 8px;
+  right: 49px;
+  top: 17px;
 }
 
 .travel-form__route-item--selected .travel-form__route-flag {
@@ -302,10 +582,28 @@
 
 .travel-form__route-item--selected .travel-form__route-name {
   width: 168px;
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+    padding: 24px 27px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .travel-form__route-item--selected .travel-form__route-selection {
   right: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 9px;
+    right: 196px;
+    top: 30px;
+    background-size: 16px 16px;
+  }
 }
 
 .travel-form__route-name {
@@ -342,6 +640,16 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+    height: 70px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    padding: 24px 27px;
+  }
 }
 
 .travel-form__route-flag {
@@ -358,6 +666,14 @@
   border: 1px solid $basic-grey-light;
   border-radius: 4px;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    padding: 0;
+    margin-left: 53px;
+    margin-top: 12px;
+  }
 }
 
 .travel-form__route-selection {
@@ -379,6 +695,14 @@
   background-image: url(../../img/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 9px;
+    right: 196px;
+    top: 30px;
+    background-size: 16px 16px;
+  }
 }
 
 .travel-form__route-delete {
@@ -401,6 +725,17 @@
   background-image: url(../../img/icon-close.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 24px;
+    right: 2px;
+    top: 21px;
+
+    opacity: 0.3;
+    background-size: 22px 24px;
+    background-color: transparent;
+  }
 }
 
 .travel-form__add-country {
@@ -441,6 +776,30 @@
   &::after {
     transform: rotate(90deg);
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+    height: 70px;
+    padding-left: 26px;
+    width: 369px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    background-color: $special-blue-light;
+
+    &::before,
+    &::after {
+      width: 21px;
+      right: 25px;
+      top: 34px;
+
+      background-color: $basic-black;
+      opacity: 0.3;
+    }
+  }
 }
 
 .travel-form__country-label {
@@ -472,6 +831,18 @@
 
     background-color: $basic-blue;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+
+    &::before {
+      right: 15px;
+      left: auto;
+      top: 11px;
+      width: 14px;
+      height: 14px;
+    }
+  }
 }
 
 .travel-form__country-name {
@@ -493,11 +864,27 @@
     background-repeat: no-repeat;
     background-position: 14px 0;
   }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    width: 420px;
+    height: 50px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .travel-form__country-flag {
   margin-left: 2px;
   margin-top: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+    margin-right: 48px;
+    margin-top: -7px;
+  }
 }
 
 .travel-form__country-plans {
@@ -522,6 +909,18 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 17px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .travel-form__submit-button {
@@ -542,4 +941,37 @@
 
   color: $basic-blue;
   background-color: $basic-yellow;
+
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    order: 1;
+
+    width: 284px;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: 43px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-top: 9px;
+    padding-left: 35px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      right: 22px;
+      top: 34px;
+
+      border-left: 12px solid #192144;
+      border-right: 12px solid transparent;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
+  }
 }

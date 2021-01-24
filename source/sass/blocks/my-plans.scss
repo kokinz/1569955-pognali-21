@@ -8,6 +8,12 @@
 
   border-radius: 20px 20px 0 0;
   background-color: $special-blue-light;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -61px;
+    padding-top: 29px;
+    min-height: 550px;
+  }
 }
 
 .my-plans__wrapper {
@@ -23,6 +29,13 @@
   line-height: 24px;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .my-plans__list {
@@ -41,6 +54,10 @@
 
   list-style: none;
   counter-reset: plans;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .my-plans__item {
@@ -52,6 +69,17 @@
 
   background: $basic-white;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    min-height: 152px;
+    width: 618px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .my-plans__countries {
@@ -84,16 +112,66 @@
     line-height: 16px;
     letter-spacing: 0.2px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    margin-top: 38px;
+    margin-left: 39px;
+    margin-bottom: 39px;
+    width: 600px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      left: auto;
+      right: 36px;
+      top: 3px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 618px;
+      height: 1px;
+      left: -39px;
+      top: 59px;
+
+      opacity: 0.3;
+      background-color: $basic-grey-light;
+    }
+  }
 }
 
 .my-plans__companions {
   padding-top: 5px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+
+    width: 150px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .my-plans__dates {
   padding-top: 5px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .my-plans__change {
@@ -111,4 +189,15 @@
   color: $basic-black;
 
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    padding-top: 4px;
+    padding-left: 31px;
+    width: 110px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }

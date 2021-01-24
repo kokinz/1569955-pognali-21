@@ -7,6 +7,11 @@
 
   border-radius: 20px 20px 0 0;
   background-color: $basic-grey-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -92px;
+    padding-top: 40px;
+  }
 }
 
 .add-plan__wrapper {
@@ -25,6 +30,15 @@
   line-height: 24px;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: 33px;
+    margin-bottom: 59px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .add-plan__progress-list {
@@ -37,6 +51,11 @@
   top: 39px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    right: 73px;
+    top: 26px;
+  }
 }
 
 .add-plan__progress-link {
@@ -50,6 +69,10 @@
   background-color: #1d2e5b;
 
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 29px;
+  }
 }
 
 .add-plan__progress-link--current {
@@ -75,10 +98,28 @@
 
   background-color: $basic-white;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width)  {
+    width: 618px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 39px;
+  }
 }
 
 .add-plan__steps-item--route {
   padding-top: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    min-height: 786px;
+  }
+}
+
+.add-plan__steps-item--plans {
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+  }
 }
 
 .add-plan__steps-title {
@@ -92,6 +133,14 @@
 
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+    margin-left: 14px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .add-plan__steps-description {
@@ -104,6 +153,23 @@
   line-height: 22px;
 
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 618px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0 54px 0 42px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.add-plan__steps-item--route .add-plan__steps-description {
+  @media (min-width: $tablet-width) {
+    padding-right: 140px;
+  }
 }
 
 .add-plan__navigation {

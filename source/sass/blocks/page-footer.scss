@@ -23,6 +23,11 @@
 .page-footer--inner-page {
   z-index: 2;
   margin-top: -37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -46px;
+    padding-top: 0;
+  }
 }
 
 .page-footer__wrapper {

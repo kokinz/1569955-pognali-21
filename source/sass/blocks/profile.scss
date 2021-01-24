@@ -2,6 +2,10 @@
   background-color: $basic-blue-light;
   margin-top: -32px;
   padding-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 535px;
+  }
 }
 
 .profile__wrapper {
@@ -23,7 +27,15 @@
   height: 100px;
   right: 43px;
   top: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    right: 75px;
+    top: 64px;
+  }
 }
+
 
 .profile__photo-image {
   display: block;
@@ -31,11 +43,22 @@
   height: 100px;
 
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .profile__level  {
   left: 42px;
   top: 22px;
+
+  @media (min-width: $tablet-width) {
+    left: 72px;
+    top: 61px;
+  }
 }
 
 .profile__change-photo {
@@ -56,11 +79,29 @@
   color: $basic-blue-dark;
   border: none;
   border-radius: 21px;
+  cursor: pointer;
 
   background-color: $special-blue-light;
 
   &::after{
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 209px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+  }
+}
+
+.profile__tags {
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -82,6 +123,15 @@
 
   color: $basic-blue;
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -2px;
+    left: 309px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .profile__tags-textarea {
@@ -104,10 +154,32 @@
 
   resize: none;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    height: 95px;
+    margin-top: 27px;
+    margin-left: 35px;
+    padding: 40px;
+    padding-top: 33px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .profile__transport {
   margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    box-sizing: border-box;
+    width: 308px;
+    height: 95px;
+    left: 227px;
+    top: 46px;
+  }
 }
 
 .profile__transport-title {
@@ -128,6 +200,17 @@
 
   color: $basic-blue;
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: auto;
+    bottom: -18px;
+    left: 98px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .profile__transport-buttons {
@@ -143,6 +226,14 @@
   background-color: $basic-blue-light;
   border: 1px solid $basic-grey-light;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 308px;
+    height: 95px;
+    padding-top: 25px;
+    margin-top: 9px;
+  }
 }
 
 .profile__transport-label {
@@ -155,4 +246,21 @@
   border-radius: 50px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+    padding-top: 7px;
+    padding-left: 12px;
+  }
+}
+
+.profile__transport-icon {
+  width: 17px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
 }
