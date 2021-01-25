@@ -11,8 +11,9 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
+    min-height: auto;
     margin-top: 41px;
-    padding: 0 34px;
+    padding: 0;
   }
 }
 
@@ -30,6 +31,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 35px;
     margin-bottom: 25px;
+    margin-left: 33px;
 
     font-size: 30px;
     line-height: 30px;
@@ -38,11 +40,24 @@
 }
 
 .companion-filter__form {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 617px;
+      height: 1px;
+      top: 14px;
+      left: 35px;
+
+      background-color: $basic-yellow-dark;
+    }
   }
 }
 
@@ -80,8 +95,18 @@
   color: $basic-blue;
 
   @media (min-width: $tablet-width) {
+    margin-left: 33px;
+
     font-size: 20px;
     line-height: 20px;
+
+    border: none;
+  }
+}
+
+.companion-filter__fieldset-title--transport {
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
   }
 }
 
@@ -125,15 +150,19 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    width: 501px;
+    width: 527px;
+    margin-top: 26px;
     margin-left: auto;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .companion-filter__checkbox {
   @media (min-width: $tablet-width) {
     width: 167px;
+    height: 24px;
+    margin-right: 3px;
   }
 }
 
@@ -164,9 +193,21 @@
     border-radius: 4px;
 
     background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      bottom: 0;
+      top: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 164px;
+    margin-top: 0;
+    padding-left: 37px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -185,6 +226,14 @@
   background-image: url(../../img/icon-check-mark.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    bottom: -4px;
+
+    background-size: 11px 11.3px;
+  }
 }
 
 .companion-filter__checkboxes--transport {
@@ -193,6 +242,21 @@
   margin-bottom: 14px;
   padding-left: 1px;
   padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.companion-filter__checkboxes--transport .companion-filter__checkbox {
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    height: 45px;
+    margin-right: 0;
+  }
+
 }
 
 .companion-filter__label--transport {
@@ -213,6 +277,20 @@
 
   &::before {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 43px;
+    margin-right: 0;
+    padding-top: 9px;
+    padding-left: 10px;
+  }
+}
+
+.companion-filter__label-icon {
+  @media (min-width: $tablet-width) {
+    width: 23px;
   }
 }
 
@@ -242,6 +320,13 @@
     width: 1px;
 
     background-image: linear-gradient(to bottom, $basic-grey-light 12px, $basic-white 12px 22px, $basic-grey-light 22px);
+
+    @media (min-width: $tablet-width) {
+      left: 73px;
+      height: 44px;
+
+      background-image: linear-gradient(to bottom, #CBCED9 13px, #FFFFFF 13px 31px, #CBCED9 22px);
+    }
   }
 
   &::after {
@@ -255,6 +340,28 @@
     height: 1px;
 
     background-color: $basic-grey-light;
+
+    @media (min-width: $tablet-width) {
+      top: 21px;
+      left: 64px;
+      width: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+
+    width: 148px;
+    height: 46px;
+    margin-top: 13px;
+    margin-left: 62px;
+  }
+}
+
+.companion-filter__level-range {
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+    margin-left: 64px;
   }
 }
 
@@ -275,6 +382,12 @@
   border: none;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 41px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .companion-filter__level-scale {
@@ -282,6 +395,11 @@
   height: 2px;
 
   background-color: $additional-yellow-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 281px;
+    height: 3px;
+  }
 }
 
 .companion-filter__level-bar {
@@ -290,6 +408,10 @@
   height: 2px;
 
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+  }
 }
 
 .companion-filter__level-toggle {
@@ -306,6 +428,12 @@
   border: none;
   border-radius: 50%;
   background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .companion-filter__level-toggle--min {
@@ -339,5 +467,18 @@
 
   &::after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-top: 49px;
+    margin-bottom: 37px;
+    width: 617px;
+    height: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-radius: 25px;
   }
 }

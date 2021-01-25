@@ -71,6 +71,10 @@
 
     background-color: $special-grey;
   }
+
+  &::before {
+    background-image: url(../../img/level-99.svg);
+  }
 }
 
 .level--80::before {

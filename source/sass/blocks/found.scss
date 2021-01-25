@@ -5,6 +5,10 @@
   margin-top: 23px;
   margin-bottom: 20px;
   padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+  }
 }
 
 .found-companion {
@@ -27,6 +31,14 @@
 
     border-radius: 50%;
     background-color: $basic-red;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -41,10 +53,21 @@
   margin-left: 18px;
 
   vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    margin-left: 35px;
+  }
 }
 
 .found-companion__photo {
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
 }
 
 .found-companion__name-link {
@@ -61,6 +84,31 @@
   vertical-align: top;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: auto;
+    margin-left: 25px;
+    margin-top: 31px;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      right: -31px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background-color: $basic-red;
+    }
+  }
 }
 
 .found-companion__tags {
@@ -74,7 +122,18 @@
   line-height: 18px;
 
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    top: 76px;
+    left: 234px;
+    width: 230px;
+
+    font-size: 20px;
+    line-height: 23px;
   }
+}
 
 .found-companion__countries {
   position: relative;
@@ -116,6 +175,19 @@
 
     background-color: $basic-blue-light;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 85px;
+    margin-top: 14px;
+
+    &::before {
+      width: 71px;
+    }
+
+    &::after {
+      width: 500px;
+    }
+  }
 }
 
 .found-companion__countries-list {
@@ -126,16 +198,36 @@
   margin-top: 19px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 21px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    width: 570px;
+  }
 }
 
 .found-companion__countries-item {
   display: flex;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
 }
 
 .found-companion__countries-flag {
   width: 26px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
+  }
 }
 
 .found-companion__countries-name {
@@ -148,6 +240,11 @@
   text-transform: uppercase;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .found-companion__wrapper {
@@ -155,14 +252,32 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    flex-direction: column;
+
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 250px;
+  }
 }
 
 .found-companion__wrapper--demin {
   margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -1px;
+  }
 }
 
 .found-companion__wrapper--rogovaya {
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .found-companion__transport-wrapper {
@@ -170,6 +285,10 @@
   flex-direction: column;
 
   width: 194px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .found-companion__transport {
@@ -214,6 +333,10 @@
 
     background-color: $basic-blue-light;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .found-companion__transport-list {
@@ -224,6 +347,16 @@
   margin-left: 21px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+
+    width: 60px;
+    height: 128px;
+    margin: 0;
+    margin-left: 39px;
+    margin-top: 34px;
+  }
 }
 
 .found-companion__transport-item {
@@ -239,6 +372,16 @@
 
   border-radius: 50%;
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.found-companion__transport-icon {
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 .found-companion__level-title {
@@ -268,9 +411,13 @@
 
     background-color: $basic-blue-light;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.found-companion__level {
+.found-companion .found-companion__level {
   width: 45px;
   height: 45px;
   padding-top: 9px;
@@ -289,6 +436,38 @@
   &::after {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+
+    width: 64px;
+    height: 64px;
+    top: 166px;
+    right: 23px;
+
+    &::before {
+      width: 64px;
+      height: 64px;
+      left: 0;
+      top: 0;
+
+      background-size: 64px 64px;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      display: block;
+
+      left: 18px;
+      top: 39px;
+      width: 28px;
+      height: 1px;
+
+      background-color: $special-grey;
+    }
+  }
 }
 
 .found-companion__level-number {
@@ -297,6 +476,14 @@
 
 .found-companion__level-word {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 3px;
+
+    color: $basic-black;
+    opacity: 0.4;
+  }
 }
 
 .found-companion__button {
@@ -315,8 +502,22 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #1D2E5B;
-  background-color: #FFD74B;
+  color: $basic-blue;
+  background-color: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 254px;
+    top: 153px;
+    padding-top: 16px;
+
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .found-companion__likes-wrapper {
@@ -328,6 +529,13 @@
   height: 32px;
   left: 68px;
   top: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 105px;
+    height: 50px;
+    left: 404px;
+    top: 174px;
+  }
 }
 
 .found-companion__likes-lebel {
@@ -344,6 +552,14 @@
   background-image: url(../../img/likes-no-fill.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+
+    background-size: 22px;
+    background-position: 15px 13px;
+  }
 }
 
 .found-companion__likes-input:checked + .found-companion__likes-lebel {
@@ -367,6 +583,14 @@
   text-transform: uppercase;
 
   color: $basic-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-left: 6px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .found__show-more {
@@ -416,10 +640,76 @@
 
     background-color: $basic-blue;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 182px;
+    padding-left: 43px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 26px;
+      height: 2px;
+      top: 10px;
+      left: -5px;
+    }
+
+    &::after {
+      width: 26px;
+      height: 2px;
+      top: 10px;
+      left: -5px;
+    }
+  }
+}
+
+.found__pagination {
+  width: 688px;
+  height: 100px;
+  border-radius: 20px;
+  margin-top: 25px;
+
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 88px;
+  }
 }
 
 .found__pagination-list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: 28px;
+    margin-top: 25px;
+
+    list-style: none;
+  }
+}
+
+.found__pagination-link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    border-radius: 50%;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $basic-blue;
+  }
 }
 
 .found__pagination-arrows {
@@ -431,6 +721,13 @@
 
   border-radius: 20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 21px;
+    margin-top: 24px;
+  }
 }
 
 .found__pagination-arrow {
@@ -439,6 +736,10 @@
   height: 51px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+  }
 }
 
 .found__pagination-back {
@@ -457,4 +758,8 @@
   background-image: url(../../img/icon-triangle-right.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

@@ -1035,7 +1035,7 @@
         </fieldset>
 
         <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
-          <h3 class="companion-filter__fieldset-title">Транспорт:</h3>
+          <h3 class="companion-filter__fieldset-title companion-filter__fieldset-title--transport">Транспорт:</h3>
 
           <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
 
@@ -1044,7 +1044,7 @@
               <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-plane" value="plane" tabindex="-1" checked>
 
               <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-plane" aria-label="Авиаперелет">
-                <img src="img/icon-plane.svg" width="17" height="16" alt="Авиаперелет">
+                <img class="companion-filter__label-icon" src="img/icon-plane.svg" width="17" height="16" alt="Авиаперелет">
               </label>
             </li>
 
@@ -1052,7 +1052,7 @@
               <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bus" value="bus" tabindex="-1" checked>
 
               <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bus" aria-label="Автотранспорт">
-                <img src="img/icon-bus.svg" width="17" height="16" alt="Автотранспорт">
+                <img class="companion-filter__label-icon" src="img/icon-bus.svg" width="17" height="16" alt="Автотранспорт">
               </label>
             </li>
 
@@ -1060,7 +1060,7 @@
               <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bike" value="bike" tabindex="-1">
 
               <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bike" aria-label="Велосипед">
-                <img src="img/icon-bicycle.svg" width="17" height="16" alt="Велосипед">
+                <img class="companion-filter__label-icon" src="img/icon-bicycle.svg" width="17" height="16" alt="Велосипед">
               </label>
             </li>
 
@@ -1068,7 +1068,7 @@
               <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot" tabindex="-1" checked>
 
               <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-on-foot" aria-label="Пешком">
-                <img src="img/icon-run.svg" width="17" height="16" alt="Пешком">
+                <img class="companion-filter__label-icon" src="img/icon-run.svg" width="17" height="16" alt="Пешком">
               </label>
             </li>
           </ul>
@@ -1091,7 +1091,7 @@
 
           <div class="companion-filter__level-range">
             <div class="companion-filter__level-scale">
-              <div class="companion-filter__level-bar" style="width: 69%; margin-left: 31%">
+              <div class="companion-filter__level-bar" style="width: 68%; margin-left: 32%">
                 <button class="companion-filter__level-toggle companion-filter__level-toggle--min" type="button" aria-label="Кнопка-ползунок Минимальный левел"></button>
 
                 <button class="companion-filter__level-toggle companion-filter__level-toggle--max" type="button" aria-label="Кнопка-ползунок Максимальный левел"></button>
@@ -1111,7 +1111,10 @@
 
       <article class="found-companion">
         <a class="found-companion__image-link" href="">
-          <img class="found-companion__photo" src="img/Firsova-rounded@1x.png" width="70" height="70" alt="Фото попутчика">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Firsova-tablet@1x.png 1x, img/Firsova-tablet@2x.png 2x">
+            <img class="found-companion__photo" src="img/Firsova-rounded@1x.png" srcset="img/Firsova-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+          </picture>
         </a>
 
         <a class="found-companion__name-link" href="">Таня Фирсова</a>
@@ -1149,19 +1152,19 @@
 
             <ul class="found-companion__transport-list">
               <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Пешком">
-                <img src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
               </li>
             </ul>
           </div>
@@ -1192,7 +1195,10 @@
 
       <article class="found-companion">
         <a class="found-companion__image-link" href="">
-          <img class="found-companion__photo" src="img/Demin-rounded@1x.png" width="70" height="70" alt="Фото попутчика">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
+            <img class="found-companion__photo" src="img/Demin-rounded@1x.png" srcset="img/Demin-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+          </picture>
         </a>
 
         <a class="found-companion__name-link" href="">Петя Демин</a>
@@ -1227,19 +1233,19 @@
 
             <ul class="found-companion__transport-list">
               <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Пешком">
-                <img src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
               </li>
             </ul>
           </div>
@@ -1269,7 +1275,10 @@
 
       <article class="found-companion">
         <a class="found-companion__image-link" href="">
-          <img class="found-companion__photo" src="img/Smolov-rounded@1x.png" width="70" height="70" alt="Фото попутчика">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Smolov-tablet@1x.png 1x, img/Smolov-tablet@2x.png 2x">
+            <img class="found-companion__photo" src="img/Smolov-rounded@1x.png" srcset="img/Smolov-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+          </picture>
         </a>
 
         <a class="found-companion__name-link" href="">Марк Смолов</a>
@@ -1307,19 +1316,19 @@
 
             <ul class="found-companion__transport-list">
               <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Пешком">
-                <img src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
               </li>
             </ul>
           </div>
@@ -1349,7 +1358,10 @@
 
       <article class="found-companion found-companion--online">
         <a class="found-companion__image-link" href="">
-          <img class="found-companion__photo" src="img/Rogovaya-rounded@1x.png" width="70" height="70" alt="Фото попутчика">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/Rogovaya-tablet@1x.png 1x, img/Rogovaya-tablet@2x.png 2x">
+            <img class="found-companion__photo" src="img/Rogovaya-rounded@1x.png" srcset="img/Rogovaya-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+          </picture>
         </a>
 
         <a class="found-companion__name-link" href="">Лариса Роговая</a>
@@ -1382,19 +1394,19 @@
 
             <ul class="found-companion__transport-list">
               <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
               </li>
 
               <li class="found-companion__transport-item" aria-label="Пешком">
-                <img src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
               </li>
             </ul>
           </div>

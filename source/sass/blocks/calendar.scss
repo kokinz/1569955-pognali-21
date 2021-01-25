@@ -161,7 +161,7 @@
 
 .calendar__date {
   position: relative;
-  display: flex;
+  display: block;
 
   box-sizing: border-box;
 
@@ -219,6 +219,12 @@
   }
 }
 
+.calendar__date .br--desktop {
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .calendar__last-date,
 .calendar__first-date {
   @media (min-width: $desktop-width) {
@@ -255,7 +261,8 @@
 
   z-index: 1;
   padding-top: 6px;
-  border: 2px solid $special-orange-light;
+  outline: 2px solid $special-orange-light;
+  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     padding-top: 22px;
@@ -265,5 +272,14 @@
   @media (min-width: $desktop-width) {
     padding-left: 10px;
     padding-top: 8px;
+  }
+}
+
+.calendar__first-date,
+.calendar__last-date {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
