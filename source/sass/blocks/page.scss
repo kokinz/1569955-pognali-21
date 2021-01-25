@@ -37,8 +37,12 @@
   background-color: $additional-blue-light;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
     margin-top: -60px;
     padding-top: 46px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,4 +103,25 @@
 
 .page__main-link {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    box-sizing: border-box;
+    width: 176px;
+    height: 20px;
+    margin-top: 42px;
+    margin-right: 74px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: $basic-white;
+
+    background-image: url(../../img/arrow-back.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
 }

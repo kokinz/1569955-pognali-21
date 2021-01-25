@@ -8,6 +8,12 @@
 
   border-radius: 20px;
   background-color: $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    margin-top: 41px;
+    padding: 0 34px;
+  }
 }
 
 .companion-filter__title {
@@ -20,11 +26,24 @@
   letter-spacing: 0.02em;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+  }
 }
 
 .companion-filter__form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 }
 
 .companion-filter__fieldset {
@@ -33,6 +52,12 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .companion-filter__fieldset--opened .companion-filter__checkboxes {
@@ -53,6 +78,11 @@
   border-top: 1px solid $basic-yellow-dark;
 
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .companion-filter__details-button {
@@ -69,6 +99,10 @@
   background-position: center;
 
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .companion-filter__fieldset--opened .companion-filter__details-button {
@@ -85,6 +119,22 @@
   margin-bottom: 12px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 501px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.companion-filter__checkbox {
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
 }
 
 .companion-filter__label {
@@ -114,6 +164,11 @@
     border-radius: 4px;
 
     background-color: $basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

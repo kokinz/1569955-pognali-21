@@ -4,6 +4,14 @@
   border-radius: 0 0 20px 20px;
 
   background-color: $additional-grey-extra;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+    margin-top: -40px;
+    padding-top: 70px;
+
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .country-filter--opened .country-filter__button-open {
@@ -14,6 +22,12 @@
 .country-filter--closed .country-filter__continent-list,
 .country-filter--closed .country-filter__letter-wrapper {
   display: none;
+}
+
+.country-filter--closed .country-filter__continent-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .country-filter__wrapper {
@@ -38,6 +52,10 @@
   background-image: url(../../img/icon-filter.svg);
   background-repeat: no-repeat;
   background-position: 0 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .country-filter__continent-list {
@@ -45,6 +63,11 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    margin-left: 31px;
+  }
 }
 
 .country-filter__continent-item {
@@ -63,6 +86,20 @@
   opacity: 1;
 }
 
+.country-filter__continent-link {
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: $special-blue;
+  }
+}
+
 .country-filter__button {
   position: absolute;
   width: 17px;
@@ -72,6 +109,15 @@
 
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 20px;
+    padding: 0;
+    padding-right: 64px;
+    margin-top: 43px;
+    margin-right: 32px;
+  }
 }
 
 .country-filter__button-close {
@@ -117,6 +163,13 @@
     border-radius: 50%;
 
     background-color: $special-blue;
+
+    @media (min-width: $tablet-width) {
+      width: 6px;
+      height: 6px;
+      right: 12px;
+      top: 8px;
+    }
   }
 
   &::before {
@@ -132,11 +185,31 @@
 
     box-shadow: -7px 0 0 $special-blue;
     background-color: $special-blue;
+
+    @media (min-width: $tablet-width) {
+      width: 6px;
+      height: 6px;
+      right: 24px;
+      top: 8px;
+      box-shadow: -12px 0 0 $special-blue;
+    }
   }
 }
 
 .country-filter__button-text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: $special-blue;
+  }
 }
 
 .country-filter__letter-wrapper {
