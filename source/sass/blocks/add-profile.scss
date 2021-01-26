@@ -16,9 +16,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -64px;
+    margin-top: 0;
     padding-top: 64px;
-    min-height: 750px;
+    min-height: 686px;
   }
 }
 
@@ -61,7 +61,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
-    margin-top: 103px;
+    margin-top: 38px;
 
     text-align: center;
   }
@@ -294,13 +294,11 @@
 }
 
 .add-profile__business-modal {
-
-  display: flex;
   flex-direction: column;
   position: absolute;
 
   z-index: 100;
-  top: -12px;
+  top: -11px;
   left: calc(50% - 135px);
   width: 270px;
   margin: 0 auto;
@@ -310,6 +308,21 @@
   border-radius: 20px;
 
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  @media (min-width: $tablet-width) {
+    top: 0px;
+    left: calc(50% - 344px);
+    width: 688px;
+
+    box-shadow: 0px 4px 22px rgba(29, 46, 91, 0.18);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 99px;
+    left: calc(50% - 356px);
+    width: 748px;
+    border-radius: 28px;
+  }
 }
 
 .add-profile__business-title {
@@ -320,6 +333,12 @@
   line-height: 24px;
   text-align: center;
   color: $special-orange;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .add-profile__business-list {
@@ -328,6 +347,29 @@
   padding-top: 18px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 506px;
+      height: 1px;
+      top: 13px;
+      left: 90px;
+
+      background-color: $basic-black;
+      opacity: 0.05;
+
+      @media (min-width: $desktop-width) {
+        width: 624px;
+        left: 62px;
+      }
+    }
+  }
 }
 
 .add-profile__business-item {
@@ -338,6 +380,36 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 18px;
+
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 506px;
+      height: 1px;
+      top: 50px;
+      left: 90px;
+
+      background-color: $basic-black;
+      opacity: 0.05;
+
+      @media (min-width: $desktop-width) {
+        width: 624px;
+        left: 62px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .add-profile__business-name {
@@ -346,6 +418,20 @@
   line-height: 22px;
 
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-left: 65px;
+    margin-top: 9px;
+
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 33px;
+    margin-top: 6px;
+  }
 }
 
 .add-profile__business-price {
@@ -354,13 +440,32 @@
   line-height: 22px;
 
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: 68px;
+
+    font-size: 22px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: 33px;
+  }
 }
 
 .add-profile__business-button {
+  box-sizing: border-box;
   width: 270px;
   height: 59px;
   margin-top: 25px;
-  border-radius: 10px;
+  padding-top: 20px;
+  border-radius: 0 0 20px 20px;
 
   font-family: $main-font;
   font-style: normal;
@@ -373,4 +478,20 @@
   color: $basic-blue;
   background-color: $additional-white-dark;
 
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    height: 108px;
+    margin-top: 48px;
+    padding-top: 39px;
+    border-radius: 0 0 20px 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 748px;
+    border-radius: 0 0 28px 28px;
+  }
 }

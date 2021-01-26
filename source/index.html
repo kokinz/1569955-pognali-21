@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--closed-menu">
+    <header class="page-header page-header--closed-menu page-header--dynamic">
       <div class="page-header__container container">
         <a class="page-header__logo"></a>
 
@@ -87,6 +87,19 @@
                   <path d="M12.0093 7.75648C12.8504 7.75648 13.6727 8.0059 14.372 8.4732C15.0714 8.94051 15.6165 9.6047 15.9384 10.3818C16.2603 11.1589 16.3445 12.014 16.1804 12.839C16.0163 13.6639 15.6112 14.4217 15.0165 15.0165C14.4217 15.6112 13.6639 16.0163 12.839 16.1804C12.014 16.3445 11.1589 16.2602 10.3818 15.9384C9.60472 15.6165 8.94052 15.0714 8.47321 14.372C8.00591 13.6726 7.75649 12.8504 7.75649 12.0093C7.75522 11.4504 7.86436 10.8968 8.07764 10.3803C8.29091 9.86376 8.60412 9.39443 8.99928 8.99927C9.39444 8.60411 9.86377 8.2909 10.3803 8.07762C10.8969 7.86435 11.4504 7.75521 12.0093 7.75648ZM12.0093 6.31648C10.883 6.31458 9.78137 6.64684 8.84393 7.27122C7.90649 7.89559 7.17533 8.78402 6.74299 9.82408C6.31064 10.8641 6.19653 12.0091 6.4151 13.114C6.63368 14.2189 7.17511 15.2342 7.97088 16.0313C8.76665 16.8284 9.78099 17.3715 10.8855 17.592C11.9901 17.8124 13.1352 17.7002 14.176 17.2697C15.2168 16.8391 16.1065 16.1094 16.7324 15.173C17.3584 14.2366 17.6925 13.1356 17.6925 12.0093C17.6938 11.2621 17.5477 10.5221 17.2626 9.83146C16.9776 9.14084 16.5592 8.51319 16.0313 7.98444C15.5035 7.45569 14.8765 7.03621 14.1864 6.75C13.4962 6.46379 12.7564 6.31647 12.0093 6.31648Z" fill="#192144"/>
                   <path d="M17.9043 7.41252C18.6148 7.41252 19.1907 6.83658 19.1907 6.12612C19.1907 5.41566 18.6148 4.83972 17.9043 4.83972C17.1939 4.83972 16.6179 5.41566 16.6179 6.12612C16.6179 6.83658 17.1939 7.41252 17.9043 7.41252Z" fill="#192144"/>
                 </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="promo__contact-list promo__contact-list--dynamic">
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
+            </li>
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
+            </li>
+            <li class="promo__contact-item">
+              <a class="promo__contact-link promo__contact-link--login" href="login.html">
+                Авторизация
               </a>
             </li>
           </ul>
@@ -232,24 +245,24 @@
         <section class="travelers">
           <div class="travelers__wrapper container">
             <h2 class="travelers__title">Попутчики</h2>
-  
+
             <p class="travelers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br class="br br--tablet br--desktop"> а другому маршрут для хайкинга.</p>
-  
+
             <b class="travelers__slogan">Теперь можно легко<br class="br br--tablet br--desktop"> найти единомышленников!</b>
-  
+
             <ul class="travelers__list">
               <li class="travelers__item">
                 <p class="travelers__level level level--99">
                   <b class="travelers__level-number level-number">99</b>
-  
+
                   <b class="travelers__level-word level-word">level</b>
                 </p>
-  
+
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/Firsova-tablet@1x.png 1x, img/Firsova-tablet@2x.png 2x">
                   <img class="travelers__photo" src="img/Firsova-mobile@1x.png" srcset="img/Firsova-mobile@2x.png 2x" alt="Фото Профиля">
                 </picture>
-  
+
                 <ul class="travelers__countries-list">
                   <li class="travelers__countries-item">
                     <img class="travelers__flag" src="img/Sri-Lanka-flag.png" alt="Флаг страны" width="35" height="25">
@@ -261,13 +274,13 @@
                     <img class="travelers__flag" src="img/Seychelles-flag.png" alt="Флаг страны" width="35" height="25">
                   </li>
                 </ul>
-  
+
                 <p class="travelers__user-name">
                   <span class="travelers__user-wrapper">Таня Фирсова</span>
                 </p>
-  
+
                 <p class="travelers__tags">#ЗОЖ #ПП #Фитнес #пляж &ensp;#авокадо #смузи</p>
-  
+
                 <ul class="travelers__transport-list">
                   <li class="travelers__transport-item travelers__transport-item--active">
                     <img class="travelers__transport-plane" src="img/icon-plane.svg" alt="Авиаперелет">
@@ -283,19 +296,19 @@
                   </li>
                 </ul>
               </li>
-  
+
               <li class="travelers__item">
                 <p class="travelers__level level level--80">
                   <b class="travelers__level-number level-number">80</b>
-  
+
                   <b class="travelers__level-word level-word">level</b>
                 </p>
-  
+
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
                   <img class="travelers__photo" src="img/Demin-mobile@1x.png" srcset="img/Demin-mobile@2x.png 2x" alt="Фото Профиля">
                 </picture>
-  
+
                 <ul class="travelers__countries-list">
                   <li class="travelers__countries-item">
                     <img class="travelers__flag" src="img/Belgium-flag.png" alt="Флаг страны" width="35" height="25">
@@ -304,15 +317,15 @@
                     <img class="travelers__flag" src="img/Czech-flag.png" alt="Флаг страны" width="35" height="25">
                   </li>
                 </ul>
-  
+
                 <p class="travelers__user-name">
                   <span class="travelers__user-wrapper travelers__user-wrapper--online">Петя Демин</span>
                 </p>
-  
+
                 <p class="travelers__tags">
                   #бургер #бар #футбол &nbsp;&nbsp;#концерт #крафт
                 </p>
-  
+
                 <ul class="travelers__transport-list">
                   <li class="travelers__transport-item travelers__transport-item--active">
                     <img class="travelers__transport-plane" src="img/icon-plane.svg" alt="Авиаперелет">
@@ -329,12 +342,12 @@
                 </ul>
               </li>
             </ul>
-  
+
             <a class="travelers__show-all button" href="catalog.html">Показать всех</a>
           </div>
         </section>
       </div>
-      
+
 
       <section class="add-profile">
         <div class="add-profile__wrapper container">
@@ -357,7 +370,7 @@
 
           <a class="add-profile__business-tariffs" href="">Показать тарифы для бизнеса</a>
 
-          <div class="add-profile__business-modal">
+          <div class="add-profile__business-modal modal-closed">
             <h2 class="add-profile__business-title">Бизнес-тарифы</h2>
 
             <ul class="add-profile__business-list">
@@ -384,7 +397,7 @@
         </div>
       </section>
 
-      
+
 
       <section class="sign-up">
         <div class="sign-up__wrapper container">

@@ -85,4 +85,8 @@
     margin-bottom: 82px;
     padding-left: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -27,6 +27,12 @@
   }
 }
 
+.page-header--opened-menu .user-list {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .user-list__link {
   display: block;
   position: relative;

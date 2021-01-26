@@ -72,3 +72,11 @@ input::-webkit-inner-spin-button {
     display: inline-block;
   }
 }
+
+.modal-closed {
+  display: none;
+}
+
+.modal-opened {
+  display: flex;
+}

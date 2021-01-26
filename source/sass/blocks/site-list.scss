@@ -37,6 +37,15 @@
   }
 }
 
+.page-header--dynamic .site-list {
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 19px;
+      background-color: $special-blue;
+    }
+  }
+}
+
 .site-list--inner-page {
   @media (min-width: $desktop-width) {
     background-color: $special-blue;
@@ -98,6 +107,14 @@
   }
 }
 
+.page-header--dynamic .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $special-blue;
+    margin-top: 9px;
+  }
+
+}
+
 .site-list__link-text {
   position: relative;
   display: block;
@@ -124,8 +141,11 @@
 
 @media (min-width: $tablet-width) {
   .page-header--opened-menu .site-list {
-    display: block;
-    width: 100%;
-    margin: 50px auto 50px;
+    @media (max-width: $desktop-width) {
+      display: block;
+      width: 100%;
+      margin: 50px auto 50px;
+    }
+
   }
 }

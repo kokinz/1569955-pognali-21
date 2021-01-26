@@ -134,6 +134,18 @@
   }
 }
 
+.page-header--dynamic .promo__contact-list {
+  @media (min-width: $desktop-width) {
+    position: fixed;
+    display: flex;
+    top: 38px;
+  }
+}
+
+.promo__contact-list--dynamic {
+  display: none;
+}
+
 .promo__contact-link {
   position: relative;
   display: block;

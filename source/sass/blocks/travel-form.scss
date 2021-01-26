@@ -66,7 +66,7 @@
     margin-top: 31px;
     margin-bottom: -30px;
 
-    border: 2px solid #1D2E5B;
+    border: 2px solid $basic-blue;
     border-right: none;
 
     @media (min-width: $tablet-width) {
@@ -741,6 +741,76 @@
     }
   }
 }
+.travel-form__route-item--menu-opened {
+  &::before,
+  &::after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.travel-form__route-item--menu-opened .travel-form__route-name {
+  position: absolute;
+
+  left: -1px;
+  top: -1px;
+  width: 222px;
+  height: 44px;
+  padding-left: 16px;
+
+  color: $basic-white;
+  background-color: $basic-blue;
+  border-radius: 5px 5px 0 0;
+
+  letter-spacing: 0.3px;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 0px;
+    top: -2px;
+    width: 371px;
+    height: 72px;
+    padding-left: 26px;
+
+    letter-spacing: 1.8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0px;
+    top: 1px;
+    width: 731px;
+    height: 72px;
+  }
+}
+
+.travel-form__route-item--menu-opened .travel-form__route-selection {
+  display: none;
+}
+
+.travel-form__route-item--menu-opened .travel-form__route-delete {
+  background-color: transparent;
+  right: 11px;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    right: 192px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 296px;
+  }
+}
 
 .travel-form__route-item--selected::after {
   z-index: 2;
@@ -1228,4 +1298,56 @@
     margin-top: 54px;
     margin-bottom: 94px;
   }
+}
+
+.travel-form__drop-menu {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 42px;
+  width: 220px;
+  min-height: 476px;
+
+  background-color: $basic-white;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  @media (min-width: $tablet-width) {
+    top: 69px;
+    width: 576px;
+    min-height: 414px;
+
+    box-shadow: 0px 8px 16px rgba(54, 80, 148, 0.18);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 1px;
+      height: 420px;
+      right: 205px;
+      top: -6px;
+
+      background-color: $additional-grey-dark;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    top: 72px;
+
+    &::before {
+      height: 476px;
+      right: 240px;
+      top: 0px;
+    }
+  }
+}
+
+.travel-form__drop-menu {
+  display: none;
+}
+
+.travel-form__route-item--menu-opened .travel-form__drop-menu {
+  display: block;
 }
