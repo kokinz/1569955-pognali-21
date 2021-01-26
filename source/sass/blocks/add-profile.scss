@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
 
-  z-index: 3;
-  margin-top: -36px;
+  z-index: 4;
+  margin-top: 0;
 
   border-radius: 0 0 30px 30px;
 
@@ -25,10 +25,10 @@
 .add-profile__wrapper {
   background-image: url(../../img/rates-mobile@1x.png);
   background-repeat: no-repeat;
-  background-position: 195px 73px;
+  background-position: 195px 38px;
 
   @media (min-width: $tablet-width) {
-    min-height: 591px;
+    min-height: 556px;
 
     background-position: bottom 45px right 85px;
   }
@@ -41,7 +41,7 @@
 
 .add-profile__title {
   width: 60px;
-  margin: 87px auto 10px 26px;
+  margin: 50px auto 10px 26px;
 
   font-weight: 700;
   font-size: 24px;
@@ -297,10 +297,10 @@
 
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
 
   z-index: 100;
-  top: 40px;
+  top: -12px;
   left: calc(50% - 135px);
   width: 270px;
   margin: 0 auto;
@@ -313,6 +313,8 @@
 }
 
 .add-profile__business-title {
+  margin-top: 4px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -352,4 +354,23 @@
   line-height: 22px;
 
   color: $special-grey;
+}
+
+.add-profile__business-button {
+  width: 270px;
+  height: 59px;
+  margin-top: 25px;
+  border-radius: 10px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $basic-blue;
+  background-color: $additional-white-dark;
+
 }
