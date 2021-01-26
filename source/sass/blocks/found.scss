@@ -9,6 +9,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+    margin-top: 41px;
+    width: 951px;
+  }
 }
 
 .found-companion {
@@ -40,6 +48,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 31px;
+  }
 }
 
 .found-companion--online::before {
@@ -58,6 +72,24 @@
     margin-top: 35px;
     margin-left: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.found-companion__article-wrapper {
+  display: inline;
+}
+
+.found-companion__article-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 664px;
+  }
 }
 
 .found-companion__photo {
@@ -67,6 +99,14 @@
     width: 190px;
     height: 190px;
     border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 285px;
+    height: 285px;
+
+    border-radius: 0;
   }
 }
 
@@ -109,6 +149,17 @@
       background-color: $basic-red;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-left: 62px;
+    margin-top: 44px;
+
+    &::before {
+      left: -26px;
+      right: auto;
+    }
+  }
 }
 
 .found-companion__tags {
@@ -132,6 +183,12 @@
 
     font-size: 20px;
     line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 90px;
+    left: 321px;
   }
 }
 
@@ -188,6 +245,10 @@
       width: 500px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .found-companion__countries-list {
@@ -208,6 +269,15 @@
     margin-bottom: 25px;
     width: 570px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 230px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 45px;
+    margin-bottom: 0;
+  }
 }
 
 .found-companion__countries-item {
@@ -217,6 +287,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -244,6 +318,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 17px;
   }
 }
 
@@ -357,6 +435,17 @@
     margin-left: 39px;
     margin-top: 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    flex-direction: row;
+
+    width: 140px;
+    height: 30px;
+    margin: 0;
+    bottom: 23px;
+    right: 143px;
+  }
 }
 
 .found-companion__transport-item {
@@ -468,6 +557,13 @@
       background-color: $special-grey;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 40px;
+  }
 }
 
 .found-companion__level-number {
@@ -518,6 +614,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 339px;
+    top: 166px;
+  }
 }
 
 .found-companion__likes-wrapper {
@@ -535,6 +636,11 @@
     height: 50px;
     left: 404px;
     top: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 489px;
+    top: 187px;
   }
 }
 
@@ -662,19 +768,30 @@
       left: -5px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 33px;
+    width: 248px;
+    padding-right: 65px;
+  }
 }
 
 .found__pagination {
-  width: 688px;
-  height: 100px;
-  border-radius: 20px;
-  margin-top: 25px;
-
-  background-color: $basic-white;
-
   @media (min-width: $tablet-width) {
     display: flex;
     margin-bottom: 88px;
+    width: 688px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 25px;
+
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 112px;
+    width: 949px;
   }
 }
 
@@ -694,6 +811,8 @@
 }
 
 .found__pagination-link {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: block;
     box-sizing: border-box;
@@ -712,6 +831,10 @@
   }
 }
 
+.found__pagination-link--current {
+  background-color: $basic-yellow;
+}
+
 .found__pagination-arrows {
   display: flex;
 
@@ -727,6 +850,10 @@
     margin-left: auto;
     margin-right: 21px;
     margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 29px;
   }
 }
 
@@ -749,6 +876,10 @@
   background-image: url(../../img/icon-triangle-left.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .found__pagination-next {

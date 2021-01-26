@@ -28,6 +28,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    margin-left: 28px;
+  }
 }
 
 .country-filter__wrapper {
@@ -35,6 +40,11 @@
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .country-filter__title {
@@ -55,6 +65,22 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    box-sizing: border-box;
+
+    width: 313px;
+    margin-top: 27px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+
+    background-size: 23px 15px;
+    background-position: 20px 4px;
   }
 }
 
@@ -117,6 +143,11 @@
     padding-right: 64px;
     margin-top: 43px;
     margin-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+    margin-right: 80px;
   }
 }
 

@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-radius: 0 0 60px 60px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
@@ -123,5 +123,20 @@
     background-image: url(../../img/arrow-back.svg);
     background-repeat: no-repeat;
     background-position: right top;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: calc(50% - 597px);
+  }
+}
+
+.page__sections-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

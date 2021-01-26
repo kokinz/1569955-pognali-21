@@ -87,6 +87,19 @@
               </a>
           </li>
         </ul>
+        <ul class="promo__contact-list">
+          <li class="promo__contact-item">
+            <a class="promo__contact-link promo__contact-link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
+          </li>
+          <li class="promo__contact-item">
+            <a class="promo__contact-link promo__contact-link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
+          </li>
+          <li class="promo__contact-item">
+            <a class="promo__contact-link promo__contact-link--login" href="login.html">
+              Авторизация
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -933,539 +946,551 @@
         </div>
       </div>
     </section>
+    <div class="page__sections-wrapper">
+      <section class="companion-filter container">
+        <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
 
-    <section class="companion-filter container">
-      <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
+        <form class="companion-filter__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="companion-filter__fieldset">
+            <h3 class="companion-filter__fieldset-title">Хобби:</h3>
 
-      <form class="companion-filter__form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="companion-filter__fieldset">
-          <h3 class="companion-filter__fieldset-title">Хобби:</h3>
+            <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
 
-          <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
+            <ul class="companion-filter__checkboxes">
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="hobby" id="hobby-sport" value="sport" tabindex="-1" checked>
 
-          <ul class="companion-filter__checkboxes">
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="hobby" id="hobby-sport" value="sport" tabindex="-1" checked>
+                <label class="companion-filter__label" for="hobby-sport" tabindex="0">
+                  Спортзал
+                </label>
+              </li>
 
-              <label class="companion-filter__label" for="hobby-sport" tabindex="0">
-                Спортзал
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="hobby" id="hobby-hookah" value="hookah" tabindex="-1">
+
+                <label class="companion-filter__label" for="hobby-hookah" tabindex="0">
+                  Кальян
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden"  type="checkbox"name="hobby" id="hobby-sofa" value="sofa" tabindex="-1">
+
+                <label class="companion-filter__label" for="hobby-sofa" tabindex="0">
+                  Диван
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
+            <h3 class="companion-filter__fieldset-title">Музыка:</h3>
+
+            <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
+
+            <ul class="companion-filter__checkboxes">
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-rock" value="rock" tabindex="-1" checked>
+
+                <label class="companion-filter__label" for="music-rock" tabindex="0">
+                  Тяжелый рок
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-rap" value="rap" tabindex="-1" checked>
+
+                <label class="companion-filter__label" for="music-rap" tabindex="0">
+                  Русский рэп
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-eurodance" value="eurodance" tabindex="-1">
+
+                <label class="companion-filter__label" for="music-eurodance" tabindex="0">
+                  Евроденс
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="companion-filter__fieldset">
+            <h3 class="companion-filter__fieldset-title">Еда:</h3>
+
+            <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
+
+            <ul class="companion-filter__checkboxes">
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-meat" value="meat" tabindex="-1" checked>
+
+                <label class="companion-filter__label" for="food-meat" tabindex="0">
+                  Мясоед
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-proper-nutrition" value="proper-nutrition" tabindex="-1">
+
+                <label class="companion-filter__label" for="food-proper-nutrition" tabindex="0">
+                  Сидит на ПП
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-vegetarian" value="vegetarian" tabindex="-1">
+
+                <label class="companion-filter__label" for="food-vegetarian" tabindex="0">
+                  Веган-сыроед
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
+            <h3 class="companion-filter__fieldset-title companion-filter__fieldset-title--transport">Транспорт:</h3>
+
+            <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
+
+            <ul class="companion-filter__checkboxes companion-filter__checkboxes--transport">
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-plane" value="plane" tabindex="-1" checked>
+
+                <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-plane" aria-label="Авиаперелет">
+                  <img class="companion-filter__label-icon" src="img/icon-plane.svg" width="17" height="16" alt="Авиаперелет">
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bus" value="bus" tabindex="-1" checked>
+
+                <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bus" aria-label="Автотранспорт">
+                  <img class="companion-filter__label-icon" src="img/icon-bus.svg" width="17" height="16" alt="Автотранспорт">
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bike" value="bike" tabindex="-1">
+
+                <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bike" aria-label="Велосипед">
+                  <img class="companion-filter__label-icon" src="img/icon-bicycle.svg" width="17" height="16" alt="Велосипед">
+                </label>
+              </li>
+
+              <li class="companion-filter__checkbox">
+                <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot" tabindex="-1" checked>
+
+                <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-on-foot" aria-label="Пешком">
+                  <img class="companion-filter__label-icon" src="img/icon-run.svg" width="17" height="16" alt="Пешком">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
+            <h3 class="companion-filter__fieldset-title">Левел:</h3>
+
+            <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
+
+            <div class="companion-filter__level">
+              <label class="companion-filter__min-level">
+                <input class="companion-filter__level-input" name="min-level" type="number" value="30" aria-label="Минимальный левел">
               </label>
-            </li>
 
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="hobby" id="hobby-hookah" value="hookah" tabindex="-1">
-
-              <label class="companion-filter__label" for="hobby-hookah" tabindex="0">
-                Кальян
+              <label class="companion-filter__max-level">
+                <input class="companion-filter__level-input" name="max-level" type="number" value="100" aria-label="Максимальный левел">
               </label>
-            </li>
+            </div>
 
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden"  type="checkbox"name="hobby" id="hobby-sofa" value="sofa" tabindex="-1">
+            <div class="companion-filter__level-range">
+              <div class="companion-filter__level-scale">
+                <div class="companion-filter__level-bar" style="width: 68%; margin-left: 32%">
+                  <button class="companion-filter__level-toggle companion-filter__level-toggle--min" type="button" aria-label="Кнопка-ползунок Минимальный левел"></button>
 
-              <label class="companion-filter__label" for="hobby-sofa" tabindex="0">
-                Диван
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
-          <h3 class="companion-filter__fieldset-title">Музыка:</h3>
-
-          <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
-
-          <ul class="companion-filter__checkboxes">
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-rock" value="rock" tabindex="-1" checked>
-
-              <label class="companion-filter__label" for="music-rock" tabindex="0">
-                Тяжелый рок
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-rap" value="rap" tabindex="-1" checked>
-
-              <label class="companion-filter__label" for="music-rap" tabindex="0">
-                Русский рэп
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="music" id="music-eurodance" value="eurodance" tabindex="-1">
-
-              <label class="companion-filter__label" for="music-eurodance" tabindex="0">
-                Евроденс
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="companion-filter__fieldset">
-          <h3 class="companion-filter__fieldset-title">Еда:</h3>
-
-          <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
-
-          <ul class="companion-filter__checkboxes">
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-meat" value="meat" tabindex="-1" checked>
-
-              <label class="companion-filter__label" for="food-meat" tabindex="0">
-                Мясоед
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-proper-nutrition" value="proper-nutrition" tabindex="-1">
-
-              <label class="companion-filter__label" for="food-proper-nutrition" tabindex="0">
-                Сидит на ПП
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input visually-hidden" type="checkbox" name="food" id="food-vegetarian" value="vegetarian" tabindex="-1">
-
-              <label class="companion-filter__label" for="food-vegetarian" tabindex="0">
-                Веган-сыроед
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
-          <h3 class="companion-filter__fieldset-title companion-filter__fieldset-title--transport">Транспорт:</h3>
-
-          <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
-
-          <ul class="companion-filter__checkboxes companion-filter__checkboxes--transport">
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-plane" value="plane" tabindex="-1" checked>
-
-              <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-plane" aria-label="Авиаперелет">
-                <img class="companion-filter__label-icon" src="img/icon-plane.svg" width="17" height="16" alt="Авиаперелет">
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bus" value="bus" tabindex="-1" checked>
-
-              <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bus" aria-label="Автотранспорт">
-                <img class="companion-filter__label-icon" src="img/icon-bus.svg" width="17" height="16" alt="Автотранспорт">
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-bike" value="bike" tabindex="-1">
-
-              <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-bike" aria-label="Велосипед">
-                <img class="companion-filter__label-icon" src="img/icon-bicycle.svg" width="17" height="16" alt="Велосипед">
-              </label>
-            </li>
-
-            <li class="companion-filter__checkbox">
-              <input class="companion-filter__input companion-filter__input--transport visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot" tabindex="-1" checked>
-
-              <label class="companion-filter__label companion-filter__label--transport" tabindex="0" for="transport-on-foot" aria-label="Пешком">
-                <img class="companion-filter__label-icon" src="img/icon-run.svg" width="17" height="16" alt="Пешком">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
-          <h3 class="companion-filter__fieldset-title">Левел:</h3>
-
-          <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
-
-          <div class="companion-filter__level">
-            <label class="companion-filter__min-level">
-              <input class="companion-filter__level-input" name="min-level" type="number" value="30" aria-label="Минимальный левел">
-            </label>
-
-            <label class="companion-filter__max-level">
-              <input class="companion-filter__level-input" name="max-level" type="number" value="100" aria-label="Максимальный левел">
-            </label>
-          </div>
-
-          <div class="companion-filter__level-range">
-            <div class="companion-filter__level-scale">
-              <div class="companion-filter__level-bar" style="width: 68%; margin-left: 32%">
-                <button class="companion-filter__level-toggle companion-filter__level-toggle--min" type="button" aria-label="Кнопка-ползунок Минимальный левел"></button>
-
-                <button class="companion-filter__level-toggle companion-filter__level-toggle--max" type="button" aria-label="Кнопка-ползунок Максимальный левел"></button>
+                  <button class="companion-filter__level-toggle companion-filter__level-toggle--max" type="button" aria-label="Кнопка-ползунок Максимальный левел"></button>
+                </div>
               </div>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <button class="companion-filter__submit button" type="submit">
-          Показать
-        </button>
-      </form>
-    </section>
+          <button class="companion-filter__submit button" type="submit">
+            Показать
+          </button>
+        </form>
+      </section>
 
-    <section class="found container">
-      <h2 class="visually-hidden">Найденные попутчики</h2>
+      <section class="found container">
+        <h2 class="visually-hidden">Найденные попутчики</h2>
 
-      <article class="found-companion">
-        <a class="found-companion__image-link" href="">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/Firsova-tablet@1x.png 1x, img/Firsova-tablet@2x.png 2x">
-            <img class="found-companion__photo" src="img/Firsova-rounded@1x.png" srcset="img/Firsova-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
-          </picture>
-        </a>
+        <article class="found-companion">
+          <a class="found-companion__image-link" href="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/Firsova-desktop@1x.png 1x, img/Firsova-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/Firsova-tablet@1x.png 1x, img/Firsova-tablet@2x.png 2x">
+              <img class="found-companion__photo" src="img/Firsova-rounded@1x.png" srcset="img/Firsova-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+            </picture>
+          </a>
 
-        <a class="found-companion__name-link" href="">Таня Фирсова</a>
+          <div class="found-companion__article-wrapper">
+            <a class="found-companion__name-link" href="">Таня Фирсова</a>
 
-        <p class="found-companion__tags">
-          #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-        </p>
+            <p class="found-companion__tags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
 
-        <h3 class="found-companion__countries">
-          Хочет посетить:
-        </h3>
-
-        <ul class="found-companion__countries-list">
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Sri-Lanka-flag.png" width="26" height="18" alt="Шри-Ланка">
-            <span class="found-companion__countries-name">Шри-Ланка</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Thailand-flag.png" width="26" height="18" alt="Тайланд">
-            <span class="found-companion__countries-name">Тайланд</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Seychelles-flag.png" width="26" height="18" alt="Сейшелы">
-            <span class="found-companion__countries-name">Сейшелы</span>
-          </li>
-        </ul>
-
-        <div class="found-companion__wrapper">
-          <div class="found-companion__transport-wrapper">
-            <h3 class="found-companion__transport">
-              Транспорт:
+            <h3 class="found-companion__countries">
+              Хочет посетить:
             </h3>
 
-            <ul class="found-companion__transport-list">
-              <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+            <ul class="found-companion__countries-list">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Sri-Lanka-flag.png" width="26" height="18" alt="Шри-Ланка">
+                <span class="found-companion__countries-name">Шри-Ланка</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Thailand-flag.png" width="26" height="18" alt="Тайланд">
+                <span class="found-companion__countries-name">Тайланд</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
-              </li>
-
-              <li class="found-companion__transport-item" aria-label="Пешком">
-                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Seychelles-flag.png" width="26" height="18" alt="Сейшелы">
+                <span class="found-companion__countries-name">Сейшелы</span>
               </li>
             </ul>
+
+            <div class="found-companion__wrapper">
+              <div class="found-companion__transport-wrapper">
+                <h3 class="found-companion__transport">
+                  Транспорт:
+                </h3>
+
+                <ul class="found-companion__transport-list">
+                  <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
+                    <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Автотранспорт">
+                    <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Велосипед">
+                    <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Пешком">
+                    <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                  </li>
+                </ul>
+              </div>
+
+              <h3 class="found-companion__level-title">
+                Левел:
+              </h3>
+
+              <p class="found-companion__level level">
+                <b class="found-companion__level-number level-number">99</b>
+
+                <b class="found-companion__level-word level-word">level</b>
+              </p>
+            </div>
+
+            <a class="found-companion__button" href="">Позвать!</a>
+
+            <div class="found-companion__likes-wrapper">
+              <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--firsova" name="companion-like" tabindex="-1" checked>
+
+              <label class="found-companion__likes-lebel" for="companion-like--firsova" tabindex="0">
+              </label>
+
+              <span class="found-companion__likes">1,5 М</span>
+            </div>
           </div>
+        </article>
 
-          <h3 class="found-companion__level-title">
-            Левел:
-          </h3>
+        <article class="found-companion">
+          <a class="found-companion__image-link" href="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/Demin-desktop@1x.png 1x, img/Demin-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
+              <img class="found-companion__photo" src="img/Demin-rounded@1x.png" srcset="img/Demin-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+            </picture>
+          </a>
 
-          <p class="found-companion__level level">
-            <b class="found-companion__level-number level-number">99</b>
+          <div class="found-companion__article-wrapper">
+            <a class="found-companion__name-link" href="">Петя Демин</a>
 
-            <b class="found-companion__level-word level-word">level</b>
-          </p>
-        </div>
+            <p class="found-companion__tags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
 
-        <a class="found-companion__button" href="">Позвать!</a>
-
-        <div class="found-companion__likes-wrapper">
-          <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--firsova" name="companion-like" tabindex="-1" checked>
-
-          <label class="found-companion__likes-lebel" for="companion-like--firsova" tabindex="0">
-          </label>
-
-          <span class="found-companion__likes">1,5 М</span>
-        </div>
-
-      </article>
-
-      <article class="found-companion">
-        <a class="found-companion__image-link" href="">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
-            <img class="found-companion__photo" src="img/Demin-rounded@1x.png" srcset="img/Demin-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
-          </picture>
-        </a>
-
-        <a class="found-companion__name-link" href="">Петя Демин</a>
-
-        <p class="found-companion__tags">
-          #бургер #бар #футбол #концерт #крафт
-        </p>
-
-        <h3 class="found-companion__countries">
-          Хочет посетить:
-        </h3>
-
-        <ul class="found-companion__countries-list">
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Belgium-flag.png" width="26" height="18" alt="Бельгия">
-
-            <span class="found-companion__countries-name">Бельгия</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Czech-flag.png" width="26" height="18" alt="Чехия">
-
-            <span class="found-companion__countries-name">Чехия</span>
-          </li>
-        </ul>
-
-        <div class="found-companion__wrapper found-companion__wrapper--demin">
-          <div class="found-companion__transport-wrapper">
-            <h3 class="found-companion__transport">
-              Транспорт:
+            <h3 class="found-companion__countries">
+              Хочет посетить:
             </h3>
 
-            <ul class="found-companion__transport-list">
-              <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+            <ul class="found-companion__countries-list">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Belgium-flag.png" width="26" height="18" alt="Бельгия">
+
+                <span class="found-companion__countries-name">Бельгия</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
-              </li>
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Czech-flag.png" width="26" height="18" alt="Чехия">
 
-              <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
-              </li>
-
-              <li class="found-companion__transport-item" aria-label="Пешком">
-                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                <span class="found-companion__countries-name">Чехия</span>
               </li>
             </ul>
+
+            <div class="found-companion__wrapper found-companion__wrapper--demin">
+              <div class="found-companion__transport-wrapper">
+                <h3 class="found-companion__transport">
+                  Транспорт:
+                </h3>
+
+                <ul class="found-companion__transport-list">
+                  <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
+                    <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Автотранспорт">
+                    <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Велосипед">
+                    <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Пешком">
+                    <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                  </li>
+                </ul>
+              </div>
+
+              <h3 class="found-companion__level-title">
+                Левел:
+              </h3>
+
+              <p class="found-companion__level level level--80">
+                <b class="found-companion__level-number level-number">80</b>
+
+                <b class="found-companion__level-word level-word">level</b>
+              </p>
+            </div>
+
+            <a class="found-companion__button" href="">Позвать!</a>
+
+            <div class="found-companion__likes-wrapper">
+              <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--demin" name="companion-like" tabindex="-1">
+
+              <label class="found-companion__likes-lebel" for="companion-like--demin" tabindex="0">
+              </label>
+
+              <span class="found-companion__likes">1500</span>
+            </div>
           </div>
+        </article>
 
-          <h3 class="found-companion__level-title">
-            Левел:
-          </h3>
+        <article class="found-companion">
+          <a class="found-companion__image-link" href="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/Smolov-desktop@1x.png 1x, img/Smolov-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/Smolov-tablet@1x.png 1x, img/Smolov-tablet@2x.png 2x">
+              <img class="found-companion__photo" src="img/Smolov-rounded@1x.png" srcset="img/Smolov-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+            </picture>
+          </a>
 
-          <p class="found-companion__level level level--80">
-            <b class="found-companion__level-number level-number">80</b>
+          <div class="found-companion__article-wrapper">
+            <a class="found-companion__name-link" href="">Марк Смолов</a>
 
-            <b class="found-companion__level-word level-word">level</b>
-          </p>
-        </div>
+            <p class="found-companion__tags">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </p>
 
-        <a class="found-companion__button" href="">Позвать!</a>
-
-        <div class="found-companion__likes-wrapper">
-          <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--demin" name="companion-like" tabindex="-1">
-
-          <label class="found-companion__likes-lebel" for="companion-like--demin" tabindex="0">
-          </label>
-
-          <span class="found-companion__likes">1500</span>
-        </div>
-      </article>
-
-      <article class="found-companion">
-        <a class="found-companion__image-link" href="">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/Smolov-tablet@1x.png 1x, img/Smolov-tablet@2x.png 2x">
-            <img class="found-companion__photo" src="img/Smolov-rounded@1x.png" srcset="img/Smolov-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
-          </picture>
-        </a>
-
-        <a class="found-companion__name-link" href="">Марк Смолов</a>
-
-        <p class="found-companion__tags">
-          #рэп #тату #хайпбист #кроссовки #суприм
-        </p>
-
-        <h3 class="found-companion__countries">
-          Хочет посетить:
-        </h3>
-
-        <ul class="found-companion__countries-list">
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/United-States-of-America-flag.png" width="26" height="18" alt="США">
-            <span class="found-companion__countries-name">США</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Australia-flag.png" width="26" height="18" alt="Австралия">
-            <span class="found-companion__countries-name">Австралия</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Dominica-flag.png" width="26" height="18" alt="Доминика">
-            <span class="found-companion__countries-name">Доминика</span>
-          </li>
-        </ul>
-
-        <div class="found-companion__wrapper">
-          <div class="found-companion__transport-wrapper">
-            <h3 class="found-companion__transport">
-              Транспорт:
+            <h3 class="found-companion__countries">
+              Хочет посетить:
             </h3>
 
-            <ul class="found-companion__transport-list">
-              <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+            <ul class="found-companion__countries-list">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/United-States-of-America-flag.png" width="26" height="18" alt="США">
+                <span class="found-companion__countries-name">США</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Australia-flag.png" width="26" height="18" alt="Австралия">
+                <span class="found-companion__countries-name">Австралия</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
-              </li>
-
-              <li class="found-companion__transport-item" aria-label="Пешком">
-                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Dominica-flag.png" width="26" height="18" alt="Доминика">
+                <span class="found-companion__countries-name">Доминика</span>
               </li>
             </ul>
+
+            <div class="found-companion__wrapper">
+              <div class="found-companion__transport-wrapper">
+                <h3 class="found-companion__transport">
+                  Транспорт:
+                </h3>
+
+                <ul class="found-companion__transport-list">
+                  <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
+                    <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Автотранспорт">
+                    <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Велосипед">
+                    <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Пешком">
+                    <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                  </li>
+                </ul>
+              </div>
+
+              <h3 class="found-companion__level-title">
+                Левел:
+              </h3>
+
+              <p class="found-companion__level level level--25">
+                <b class="found-companion__level-number level-number">25</b>
+
+                <b class="found-companion__level-word level-word">level</b>
+              </p>
+            </div>
+
+            <a class="found-companion__button" href="">Позвать!</a>
+
+            <div class="found-companion__likes-wrapper">
+              <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--smolov" name="companion-like" tabindex="-1">
+
+              <label class="found-companion__likes-lebel" for="companion-like--smolov" tabindex="0">
+              </label>
+
+              <span class="found-companion__likes">170</span>
+            </div>
           </div>
+        </article>
 
-          <h3 class="found-companion__level-title">
-            Левел:
-          </h3>
+        <article class="found-companion found-companion--online">
+          <a class="found-companion__image-link" href="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/Rogovaya-desktop@1x.png 1x, img/Rogovaya-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/Rogovaya-tablet@1x.png 1x, img/Rogovaya-tablet@2x.png 2x">
+              <img class="found-companion__photo" src="img/Rogovaya-rounded@1x.png" srcset="img/Rogovaya-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
+            </picture>
+          </a>
 
-          <p class="found-companion__level level level--25">
-            <b class="found-companion__level-number level-number">25</b>
+          <div class="found-companion__article-wrapper">
+            <a class="found-companion__name-link" href="">Лариса Роговая</a>
 
-            <b class="found-companion__level-word level-word">level</b>
-          </p>
-        </div>
+            <p class="found-companion__tags">
+              #образование #карьера #учеба #линкедин
+            </p>
 
-        <a class="found-companion__button" href="">Позвать!</a>
-
-        <div class="found-companion__likes-wrapper">
-          <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--smolov" name="companion-like" tabindex="-1">
-
-          <label class="found-companion__likes-lebel" for="companion-like--smolov" tabindex="0">
-          </label>
-
-          <span class="found-companion__likes">170</span>
-        </div>
-      </article>
-
-      <article class="found-companion found-companion--online">
-        <a class="found-companion__image-link" href="">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/Rogovaya-tablet@1x.png 1x, img/Rogovaya-tablet@2x.png 2x">
-            <img class="found-companion__photo" src="img/Rogovaya-rounded@1x.png" srcset="img/Rogovaya-rounded@2x.png 2x" width="70" height="70" alt="Фото Профиля">
-          </picture>
-        </a>
-
-        <a class="found-companion__name-link" href="">Лариса Роговая</a>
-
-        <p class="found-companion__tags">
-          #образование #карьера #учеба #линкедин
-        </p>
-
-        <h3 class="found-companion__countries">
-          Хочет посетить:
-        </h3>
-
-        <ul class="found-companion__countries-list">
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/United-Kingdom-flag.png" width="26" height="18" alt="Великобритания">
-            <span class="found-companion__countries-name">Великобритания</span>
-          </li>
-
-          <li class="found-companion__countries-item">
-            <img class="found-companion__countries-flag" src="img/Germany-flag.png" width="26" height="18" alt="Германия">
-            <span class="found-companion__countries-name">Германия</span>
-          </li>
-        </ul>
-
-        <div class="found-companion__wrapper found-companion__wrapper--rogovaya">
-          <div class="found-companion__transport-wrapper">
-            <h3 class="found-companion__transport">
-              Транспорт:
+            <h3 class="found-companion__countries">
+              Хочет посетить:
             </h3>
 
-            <ul class="found-companion__transport-list">
-              <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
-                <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+            <ul class="found-companion__countries-list">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/United-Kingdom-flag.png" width="26" height="18" alt="Великобритания">
+                <span class="found-companion__countries-name">Великобритания</span>
               </li>
 
-              <li class="found-companion__transport-item" aria-label="Автотранспорт">
-                <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
-              </li>
-
-              <li class="found-companion__transport-item" aria-label="Велосипед">
-                <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
-              </li>
-
-              <li class="found-companion__transport-item" aria-label="Пешком">
-                <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+              <li class="found-companion__countries-item">
+                <img class="found-companion__countries-flag" src="img/Germany-flag.png" width="26" height="18" alt="Германия">
+                <span class="found-companion__countries-name">Германия</span>
               </li>
             </ul>
+
+            <div class="found-companion__wrapper found-companion__wrapper--rogovaya">
+              <div class="found-companion__transport-wrapper">
+                <h3 class="found-companion__transport">
+                  Транспорт:
+                </h3>
+
+                <ul class="found-companion__transport-list">
+                  <li class="found-companion__transport-item found-companion__transport-item--active" aria-label="Авиаперелет">
+                    <img class="found-companion__transport-icon" src="img/icon-plane.svg" width="14" height="16" alt="Авиаперелет">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Автотранспорт">
+                    <img class="found-companion__transport-icon" src="img/icon-bus.svg" width="13" height="16" alt="Автотранспорт">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Велосипед">
+                    <img class="found-companion__transport-icon" src="img/icon-bicycle.svg" width="14" height="17" alt="Велосипед">
+                  </li>
+
+                  <li class="found-companion__transport-item" aria-label="Пешком">
+                    <img class="found-companion__transport-icon" src="img/icon-run.svg" width="14" height="17" alt="Пешком">
+                  </li>
+                </ul>
+              </div>
+
+              <h3 class="found-companion__level-title">
+                Левел:
+              </h3>
+
+              <p class="found-companion__level level level--50">
+                <b class="found-companion__level-number level-number">50</b>
+
+                <b class="found-companion__level-word level-word">level</b>
+              </p>
+            </div>
+
+            <a class="found-companion__button" href="">Позвать!</a>
+
+            <div class="found-companion__likes-wrapper">
+              <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--rogovaya" name="companion-like" tabindex="-1">
+
+              <label class="found-companion__likes-lebel" for="companion-like--rogovaya" tabindex="0">
+              </label>
+
+              <span class="found-companion__likes">23</span>
+            </div>
           </div>
+        </article>
 
-          <h3 class="found-companion__level-title">
-            Левел:
-          </h3>
+        <a class="found__show-more button" href="">Показать еще</a>
 
-          <p class="found-companion__level level level--50">
-            <b class="found-companion__level-number level-number">50</b>
+        <div class="found__pagination">
+          <ul class="found__pagination-list">
+            <li class="found__pagination-item">
+              <a class="found__pagination-link found__pagination-link--current">1</a>
+            </li>
 
-            <b class="found-companion__level-word level-word">level</b>
-          </p>
+            <li class="found__pagination-item">
+              <a class="found__pagination-link">2</a>
+            </li>
+
+            <li class="found__pagination-item">
+              <a class="found__pagination-link">3</a>
+            </li>
+
+            <li class="found__pagination-item">
+              <a class="found__pagination-link">4</a>
+            </li>
+          </ul>
+
+          <ul class="found__pagination-arrows">
+            <li>
+              <a class="found__pagination-arrow found__pagination-back" href="" aria-label="Назад"></a>
+            </li>
+
+            <li>
+              <a class="found__pagination-arrow found__pagination-next" href="" aria-label="Вперед"></a>
+            </li>
+          </ul>
         </div>
-
-        <a class="found-companion__button" href="">Позвать!</a>
-
-        <div class="found-companion__likes-wrapper">
-          <input class="found-companion__likes-input visually-hidden" type="checkbox" id="companion-like--rogovaya" name="companion-like" tabindex="-1">
-
-          <label class="found-companion__likes-lebel" for="companion-like--rogovaya" tabindex="0">
-          </label>
-
-          <span class="found-companion__likes">23</span>
-        </div>
-      </article>
-
-      <a class="found__show-more button" href="">Показать еще</a>
-
-      <div class="found__pagination">
-        <ul class="found__pagination-list">
-          <li class="found__pagination-item">
-            <a class="found__pagination-link found__pagination-link--current">1</a>
-          </li>
-
-          <li class="found__pagination-item">
-            <a class="found__pagination-link">2</a>
-          </li>
-
-          <li class="found__pagination-item">
-            <a class="found__pagination-link">3</a>
-          </li>
-
-          <li class="found__pagination-item">
-            <a class="found__pagination-link">4</a>
-          </li>
-        </ul>
-
-        <ul class="found__pagination-arrows">
-          <li>
-            <a class="found__pagination-arrow found__pagination-back" href="" aria-label="Назад"></a>
-          </li>
-
-          <li>
-            <a class="found__pagination-arrow found__pagination-next" href="" aria-label="Вперед"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer page-footer--inner-page">

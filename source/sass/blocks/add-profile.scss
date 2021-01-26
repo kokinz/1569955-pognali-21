@@ -292,3 +292,64 @@
     margin-left: 71px;
   }
 }
+
+.add-profile__business-modal {
+
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
+  z-index: 100;
+  top: 40px;
+  left: calc(50% - 135px);
+  width: 270px;
+  margin: 0 auto;
+
+  background-color: $basic-white;
+  padding-top: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+
+.add-profile__business-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $special-orange;
+}
+
+.add-profile__business-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 18px;
+
+  list-style: none;
+}
+
+.add-profile__business-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 22px;
+}
+
+.add-profile__business-name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special-grey;
+}
+
+.add-profile__business-price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special-grey;
+}

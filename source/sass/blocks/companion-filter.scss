@@ -15,6 +15,14 @@
     margin-top: 41px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 285px;
+    margin-top: 41px;
+    margin-left: 84px;
+    height: 814px;
+  }
 }
 
 .companion-filter__title {
@@ -36,6 +44,12 @@
     font-size: 30px;
     line-height: 30px;
     letter-spacing: 0.1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 44px;
+    margin-bottom: 25px;
+    margin-left: 47px;
   }
 }
 
@@ -59,6 +73,14 @@
       background-color: $basic-yellow-dark;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .companion-filter__fieldset {
@@ -72,6 +94,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    min-height: 40px;
   }
 }
 
@@ -102,11 +129,21 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 47px;
+  }
 }
 
 .companion-filter__fieldset-title--transport {
   @media (min-width: $tablet-width) {
     margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 }
 
@@ -127,6 +164,12 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    right: 45px;
+    top: 15px;
   }
 }
 
@@ -156,6 +199,16 @@
     margin-right: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    display: none;
+    box-sizing: border-box;
+    width: 285px;
+    padding-left: 48px;
+    padding-top: 6px;
+
+  }
 }
 
 .companion-filter__checkbox {
@@ -163,6 +216,10 @@
     width: 167px;
     height: 24px;
     margin-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
   }
 }
 
@@ -248,6 +305,13 @@
     margin-left: 16px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin-left: 0;
+    padding-left: 48px;
+    padding-top: 4px;
+  }
 }
 
 .companion-filter__checkboxes--transport .companion-filter__checkbox {
@@ -327,6 +391,10 @@
 
       background-image: linear-gradient(to bottom, #CBCED9 13px, #FFFFFF 13px 31px, #CBCED9 22px);
     }
+
+    @media (min-width: $desktop-width) {
+      left: 94px;
+    }
   }
 
   &::after {
@@ -346,6 +414,10 @@
       left: 64px;
       width: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 94px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -356,12 +428,27 @@
     margin-top: 13px;
     margin-left: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 192px;
+    height: 46px;
+    margin-top: 26px;
+    margin-left: 48px;
+  }
 }
 
 .companion-filter__level-range {
   @media (min-width: $tablet-width) {
     margin-top: 34px;
     margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: 0;
+    width: 192px;
+    bottom: -15px;
+    left: 47px;
   }
 }
 
@@ -381,6 +468,7 @@
 
   border: none;
 
+  cursor: pointer;
   color: $basic-blue;
 
   @media (min-width: $tablet-width) {
@@ -399,6 +487,10 @@
   @media (min-width: $tablet-width) {
     width: 281px;
     height: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 192px;
   }
 }
 
@@ -480,5 +572,12 @@
     line-height: 20px;
 
     border-radius: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+    margin-bottom: 37px;
+    width: 193px;
+    height: 49px;
   }
 }
