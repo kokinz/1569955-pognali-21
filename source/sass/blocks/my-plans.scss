@@ -238,6 +238,17 @@
 
   opacity: 0.3;
 
+  &:hover,
+  &:focus {
+    color: $basic-black;
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: $basic-black;
+    opacity: 0.1;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 2px;
     padding-top: 4px;

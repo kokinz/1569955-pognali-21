@@ -276,6 +276,11 @@
   border: 1px solid $basic-grey-light;
   border-radius: 4px;
 
+  &:hover,
+  &:focus {
+    border: 1px solid $additional-grey-extra-dark;
+  }
+
   @media (min-width: $tablet-width) {
     width: 538px;
     height: 70px;
@@ -292,6 +297,31 @@
     width: 180px;
     height: 70px;
   }
+}
+
+.travel-form__input-wrapper:hover > .travel-form__button,
+.travel-form__input-wrapper:focus > .travel-form__button {
+  outline: none;
+
+  &::after,
+  &::before {
+    background-color: $additional-grey-extra-dark;
+  }
+}
+
+.travel-form__input-wrapper:active {
+  border: 1px solid $basic-blue-dark;
+}
+
+.travel-form__input-wrapper:active > .travel-form__button {
+  &::before,
+  &::after {
+    background-color: $basic-blue-dark;
+  }
+}
+
+.travel-form__button:active {
+  opacity: 0.1;
 }
 
 .travel-form__button {
@@ -376,6 +406,24 @@
     width: 280px;
     margin-left: 180px;
     margin-top: 100px;
+  }
+}
+
+.travel-form__label:hover,
+.travel-form__label:focus {
+  &::before {
+    border: 1px solid $additional-grey-extra-dark;
+  }
+}
+
+.travel-form__label:active {
+  &::before {
+    border: none;
+    background-color: $basic-grey-extra-light;
+  }
+
+  &::after {
+    opacity: 0.3;
   }
 }
 
@@ -812,6 +860,24 @@
   }
 }
 
+.travel-form__route-delete:hover,
+.travel-form__route-delete:focus {
+  opacity: 1;
+}
+
+.travel-form__route-delete:active {
+  opacity: 0.1;
+}
+
+.travel-form__route-selection:hover,
+.travel-form__route-selection:focus {
+  opacity: 1;
+}
+
+.travel-form__route-selection:active {
+  opacity: 0.1;
+}
+
 .travel-form__route-item--selected::after {
   z-index: 2;
   background-color: $basic-blue;
@@ -854,6 +920,10 @@
   @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.travel-form__route-name:hover {
+  border: 1px solid $additional-grey-extra-dark;
 }
 
 .travel-form__route-item--selected .travel-form__route-selection {
@@ -1350,4 +1420,63 @@
 
 .travel-form__route-item--menu-opened .travel-form__drop-menu {
   display: block;
+}
+
+.travel-form__add-country:hover,
+.travel-form__add-country:focus {
+  background-color: $special-blue-light;
+}
+
+.travel-form__add-country:active {
+  &::before,
+  &::after {
+    opacity: 0.1;
+  }
+}
+
+.travel-form__country-plans:hover,
+.travel-form__country-plans:focus {
+  border: 1px solid $additional-grey-extra-dark;
+}
+
+.travel-form__country-plans:active {
+  border: 1px solid $basic-blue-dark;
+  &::placeholder {
+    color: $special-grey;
+    opacity: 1;
+  }
+}
+
+.travel-form__country-plans:invalid {
+  border: 1px solid $special-red;
+  position: relative;
+}
+
+.travel-form__country-plans + .travel-form__country-label::after {
+  content: "Это поле должно быть заполнено";
+
+  position: absolute;
+
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+
+  color: $special-red;
+  background-color: $basic-red-light;
+}
+
+.travel-form__submit-button {
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+
+    &::after {
+      border-left: 12px solid rgba(29, 46, 91, 0.3);
+    }
+  }
 }

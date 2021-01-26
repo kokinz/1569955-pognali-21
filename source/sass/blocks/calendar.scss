@@ -53,6 +53,15 @@
   background-repeat: no-repeat;
   background-position: 0 13px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 40px;
@@ -184,6 +193,23 @@
   border: 1px solid $additional-grey-dark;
 
   cursor: pointer;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: #1D2E5B;
+    position: relative;
+    z-index: 1;
+    padding-top: 6px;
+    outline: 2px solid #FF5C23;
+    outline-offset: -1px;
+
+    border: 4px solid #FF5C23;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+  }
 
   &:nth-child(7n+1) {
     width: 32px;

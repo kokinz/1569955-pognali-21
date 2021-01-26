@@ -149,6 +149,15 @@
     display: none;
   }
 
+  &:hover,
+  &:focus {
+    background-color: $special-grey-extra;
+  }
+
+  &:active {
+    background-color: $special-blue-light;
+  }
+
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 60px;
@@ -242,6 +251,16 @@
 
   resize: none;
   overflow: hidden;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $special-blue-extra;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid $basic-blue-dark;
+  }
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -357,6 +376,7 @@
   padding-top: 0;
 
   border-radius: 50px;
+  cursor: pointer;
 
   background-color: $basic-white;
 
@@ -366,6 +386,38 @@
     padding-top: 7px;
     padding-left: 12px;
   }
+}
+
+.profile__transport-input:checked + .profile__transport-label .profile__transport-icon {
+  fill: #D9D9D9;
+}
+
+.profile__transport-label:hover,
+.profile__transport-label:focus {
+  filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+}
+
+.profile__transport-label:hover .profile__transport-icon,
+.profile__transport-label:focus .profile__transport-icon {
+  opacity: 0.7;
+}
+
+.profile__transport-input:checked + .profile__transport-label:hover .profile__transport-icon,
+.profile__transport-input:checked + .profile__transport-label:focus .profile__transport-icon {
+  opacity: 1;
+  fill: $basic-grey-extra-dark;
+}
+
+.profile__transport-label:active {
+  background-color: $basic-grey-extra-light;
+}
+
+.profile__transport-label:active .profile__transport-icon {
+  opacity: 0.1;
+}
+
+.profile__transport-input:checked + .profile__transport-label:active .profile__transport-icon {
+  opacity: 0.3;
 }
 
 .profile__transport-icon {

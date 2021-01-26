@@ -80,6 +80,10 @@
     transform: translateY(-100%);
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: -8px;
@@ -130,8 +134,9 @@
     top: 100%;
     left: 0;
 
+    color: $basic-yellow;
     content: attr(data-hover);
-    font-weight: 700;
+    font-weight: 500;
 
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);

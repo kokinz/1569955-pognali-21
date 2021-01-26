@@ -121,6 +121,14 @@
 
   color: $basic-blue;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 33px;
 
@@ -237,6 +245,15 @@
   line-height: 20px;
 
   color: $basic-black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
@@ -416,7 +433,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 94px;
+      left: 85px;
     }
   }
 
@@ -471,6 +488,15 @@
   cursor: pointer;
   color: $basic-blue;
 
+  &:hover,
+  &:focus {
+    border: 1px solid $additional-grey-extra-dark;
+  }
+
+  &:active {
+    border: 1px solid $special-blue-dark;
+  }
+
   @media (min-width: $tablet-width) {
     height: 41px;
     font-size: 20px;
@@ -521,6 +547,17 @@
   border-radius: 50%;
   background-color: $basic-blue;
 
+  &:hover,
+  &:focus {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+  }
+
   @media (min-width: $tablet-width) {
     top: -5px;
     width: 13px;
@@ -556,6 +593,16 @@
   border: none;
   border-radius: 25px;
   background-color: $basic-white;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-white;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    background-color: $basic-yellow-dark;
+  }
 
   &::after {
     display: none;

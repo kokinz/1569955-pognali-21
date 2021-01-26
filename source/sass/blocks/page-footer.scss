@@ -185,3 +185,12 @@
     margin-top: 56px;
   }
 }
+
+.page-footer__copyright-link:hover,
+.page-footer__copyright-link:focus {
+  opacity: 0.6;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
+}

@@ -27,6 +27,11 @@
   border-radius: 20px;
   background-color: $basic-white;
 
+  &:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.16));
+  }
+
   &::before {
     content: "";
 
@@ -124,6 +129,15 @@
   vertical-align: top;
 
   color: $basic-blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -601,6 +615,15 @@
   color: $basic-blue;
   background-color: $basic-yellow;
 
+  &:hover,
+  &:focus {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);;
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 254px;
@@ -668,8 +691,27 @@
   }
 }
 
+.found-companion__likes-lebel {
+  background-color: transparent;
+}
+
 .found-companion__likes-input:checked + .found-companion__likes-lebel {
   background-image: url(../../img/likes-fill.svg);
+  background-color: $special-red-dark;
+}
+
+.found-companion__likes-lebel:hover,
+.found-companion__likes-lebel:focus {
+  background-color: $additional-grey-extra;
+}
+
+.found-companion__likes-input:checked + .found-companion__likes-lebel:hover,
+.found-companion__likes-input:checked + .found-companion__likes-lebel:focus {
+  background-color: $special-red-light;
+}
+
+.found-companion__likes-lebel:active {
+  opacity: 0.5;
 }
 
 .found-companion__likes-image {
@@ -718,6 +760,25 @@
   color: $basic-blue;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      border: none;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after,
+    &::before {
+      border: none;
+      opacity: 0.3;
+    }
+  }
 
   &::before {
     content: "";
@@ -813,6 +874,15 @@
 .found__pagination-link {
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: rgba(29, 46, 91, 0.6);
+  }
+
+  &:active {
+    background-color: $basic-yellow;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     box-sizing: border-box;
@@ -844,6 +914,15 @@
 
   border-radius: 20px;
   list-style: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
