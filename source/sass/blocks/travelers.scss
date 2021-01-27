@@ -29,11 +29,21 @@
   background-size: 61px 71px, 143px 143px;
   background-position: 0px 337px, 152px 65px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/rogovaya-back-mobile@2x.png), url(../../img/smolov-back-mobile@2x.png);
+    background-size: 61px auto, 143px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/rogovaya-back-tablet@1x.png), url(../../img/smolov-back-mobile@1x.png);
+    background-image: url(../../img/rogovaya-back-tablet@1x.png), url(../../img/smolov-back-tablet@1x.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 285px 285px, 143px 143px;
     background-position: 409px 140px, 40px 486px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/rogovaya-back-tablet@2x.png), url(../../img/smolov-back-tablet@2x.png);
+      background-size: 285px auto, 143px auto;
+    }
 
     &::before {
       content: "";

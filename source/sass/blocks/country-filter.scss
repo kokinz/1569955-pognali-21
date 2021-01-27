@@ -15,7 +15,17 @@
 }
 
 .country-filter--opened {
+  position: absolute;
+  z-index: 7;
+
+  margin-top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+
   @media (min-width: $desktop-width) {
+    position: static;
+    margin-top: 0;
     margin-bottom: 34px;
     background-color: $basic-blue-light;
   }

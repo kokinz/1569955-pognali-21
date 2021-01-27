@@ -28,12 +28,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.price-controls input[type="number"] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.price-controls input[type="number"]:hover,
-.price-controls input[type="number"]:focus {
+input[type="number"]:hover,
+input[type="number"]:focus {
   -moz-appearance: number-input;
 }
 

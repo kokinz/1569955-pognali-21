@@ -13,3 +13,24 @@
     margin-top: -122px;
   }
 }
+
+.map__image {
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
+
+.map__iframe {
+  display: block;
+  height: 433px;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 587px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 593px;
+  }
+}

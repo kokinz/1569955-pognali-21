@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--closed-menu page-header--dynamic">
+    <header class="page-header page-header--opened-menu page-header--dynamic page-header--no-js">
       <div class="page-header__container container">
         <a class="page-header__logo"></a>
 
@@ -392,7 +391,7 @@
               </li>
             </ul>
 
-            <a class="add-profile__business-button" href="" class="add-profile__business-button">Закрыть окно</a>
+            <a class="add-profile__business-button" href="">Закрыть окно</a>
           </div>
         </div>
       </section>
@@ -454,15 +453,16 @@
 
           <p class="location__address">ул. Большая Конюшенная, 19/8</p>
 
-          <a class="location__button button" tabindex="0">Проложить маршрут</a>
+          <a class="location__button button" tabindex="0" href="https://www.google.ru/maps/dir/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/59.9502109,30.3136832/@59.9384358,30.3222549,16z/data=!4m14!4m13!1m10!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!3m4!1m2!1d30.3121963!2d59.9375356!3s0x4696311a88481f73:0x2c9b291df8316773!1m0!3e0">Проложить маршрут</a>
         </div>
       </section>
 
-      <section class="map container">
+      <section class="map">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6058926419282!2d30.32256460102018!3d59.938681548565164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1611699840561!5m2!1sru!2sru" width="320" height="252" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <picture>
           <source media="(min-width: 1440px)" srcset="img/background-map-desktop@1x.png 1x, img/background-map-desktop@2x 2x">
           <source media="(min-width: 768px)" srcset="img/background-map-tablet@1x.png 1x, img/background-map-tablet@2x 2x">
-          <img class="map__image" src="img/background-map@1x.png" srcset="img/background-map@2x 2x.png 2x" alt="Карта">
+          <img class="map__image" src="img/background-map@1x.png" srcset="img/background-map@2x.png 2x" alt="Карта">
         </picture>
       </section>
     </main>
@@ -504,5 +504,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

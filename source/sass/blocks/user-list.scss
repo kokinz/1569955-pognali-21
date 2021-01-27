@@ -1,6 +1,7 @@
 .user-list {
   display: flex;
   flex-direction: column;
+  width: 270px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 30px;
@@ -18,6 +19,12 @@
     width: 300px;
     min-height: 50px;
   }
+}
+
+.page-header--no-js .user-list {
+  width: 270px;
+  min-height: 254px;
+  margin-bottom: 0;
 }
 
 .page-header--closed-menu .user-list {

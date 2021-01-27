@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <header class="page-header page-header--closed-menu page-header--inner-page">
@@ -117,19 +117,19 @@
 
         <ul class="country-filter__continent-list">
           <li class="country-filter__continent-item country-filter__continent-item--selected">
-            <a class="country-filter__continent-link">Европа</a>
+            <a class="country-filter__continent-link" href="/europe.html">Европа</a>
           </li>
 
           <li class="country-filter__continent-item">
-            <a class="country-filter__continent-link">Азия</a>
+            <a class="country-filter__continent-link" href="/asia.html">Азия</a>
           </li>
 
           <li class="country-filter__continent-item">
-            <a class="country-filter__continent-link">Америка</a>
+            <a class="country-filter__continent-link" href="/america.html">Америка</a>
           </li>
 
           <li class="country-filter__continent-item">
-            <a class="country-filter__continent-link">Острова</a>
+            <a class="country-filter__continent-link" href="/islands.html">Острова</a>
           </li>
         </ul>
 
@@ -951,7 +951,7 @@
         <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
 
         <form class="companion-filter__form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="companion-filter__fieldset">
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
             <h3 class="companion-filter__fieldset-title">Хобби:</h3>
 
             <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
@@ -974,7 +974,7 @@
               </li>
 
               <li class="companion-filter__checkbox">
-                <input class="companion-filter__input visually-hidden"  type="checkbox"name="hobby" id="hobby-sofa" value="sofa" tabindex="-1">
+                <input class="companion-filter__input visually-hidden"  type="checkbox" name="hobby" id="hobby-sofa" value="sofa" tabindex="-1">
 
                 <label class="companion-filter__label" for="hobby-sofa" tabindex="0">
                   Диван
@@ -1015,7 +1015,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="companion-filter__fieldset">
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--opened">
             <h3 class="companion-filter__fieldset-title">Еда:</h3>
 
             <button class="companion-filter__details-button" type="button" aria-label="Показать больше/Скрыть"></button>
@@ -1530,5 +1530,6 @@
       </a>
     </div>
   </footer>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>

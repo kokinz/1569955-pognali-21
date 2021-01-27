@@ -37,6 +37,13 @@
   }
 }
 
+.page-header--no-js .site-list {
+  display: block;
+  margin: 0;
+  height: 166px;
+  padding-top: 38px;
+}
+
 .page-header--dynamic .site-list {
   @media (min-width: $desktop-width) {
     &::before {
