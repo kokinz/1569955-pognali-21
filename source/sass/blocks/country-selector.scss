@@ -18,6 +18,8 @@
   color: $basic-blue;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 10;
     width: 262px;
     margin-top: 35px;
     margin-left: 28px;
@@ -128,17 +130,21 @@
   border: 1px solid $additional-grey-dark;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
     margin-top: -78px;
-    margin-left: 343px;
-    width: 175px;
+    box-sizing: border-box;
+    margin-left: -28px;
+    width: 576px;
     padding-top: 35px;
-    padding-bottom: 14px;
-    padding-left: 25px;
+    padding-bottom: 47px;
+    padding-left: 395px;
 
     font-size: 20px;
     line-height: 20px;
 
     border: none;
+    box-shadow: 0 8px 16px rgba(54,80,148,.18);
   }
 
   @media (min-width: $desktop-width) {
