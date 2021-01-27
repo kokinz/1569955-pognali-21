@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 87px;
+    height: 102px;
   }
 }
 
@@ -367,6 +367,11 @@
 
     @media (min-width: $tablet-width) {
       width: 688px;
+      padding-top: 0;
     }
   }
+}
+
+.page-header--inner-page .user-list {
+  display: none;
 }

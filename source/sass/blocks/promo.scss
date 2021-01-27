@@ -128,25 +128,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    display: flex;
-    z-index: 1;
-
-    top: -27px;
-    width: 290px;
-    left: calc(50% + 373px);
-  }
 }
 
 .page-header--inner-page .promo__contact-list {
   display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    top: 69px;
-  }
 }
 
 .page-header--dynamic .promo__contact-list {

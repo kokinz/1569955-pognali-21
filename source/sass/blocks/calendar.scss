@@ -135,7 +135,11 @@
   }
 }
 
-.calendar__day-week--shortly {
+.calendar__weekend .calendar__shortly {
+  color: $basic-red;
+}
+
+.calendar__shortly {
   display: none;
 
   @media (min-width: $tablet-width) {

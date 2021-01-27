@@ -149,3 +149,15 @@
 .page__main-link:active {
   opacity: 0.3;
 }
+
+.page-header--dynamic + .page__main {
+  margin-top: 62px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 126px;
+  }
+}

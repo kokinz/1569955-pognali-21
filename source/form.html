@@ -89,15 +89,15 @@
                 </a>
             </li>
           </ul>
-          <ul class="promo__contact-list">
-            <li class="promo__contact-item">
-              <a class="promo__contact-link promo__contact-link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
+          <ul class="contact-list contact-list--dynamic">
+            <li class="contact-list">
+              <a class="contact-list__link contact-list__link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
             </li>
-            <li class="promo__contact-item">
-              <a class="promo__contact-link promo__contact-link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
             </li>
-            <li class="promo__contact-item">
-              <a class="promo__contact-link promo__contact-link--login" href="login.html">
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--login" href="login.html">
                 Авторизация
               </a>
             </li>
@@ -124,12 +124,12 @@
           <div class="profile__photo">
             <picture>
               <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
-              <img class="profile__photo-image" src="img/Demin-mobile@1x.png" srcset="img/Demin-mobile@2x.png 2x" alt="Фото Профиля">
+              <img class="profile__photo-image" src="img/Demin-mobile@1x.png" srcset="img/Demin-mobile@2x.png" alt="Фото Профиля">
             </picture>
           </div>
 
           <button class="profile__change-photo button">
-            <span class="change-photo__hide-text">Сменить</span>
+            <span class="profile__hide-text">Сменить</span>
             Фото
           </button>
 
@@ -144,7 +144,7 @@
 
             <form class="profile__transport-buttons" action="https://echo.htmlacademy.ru" method="GET">
               <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-plane" tabindex="-1" checked>
-              <label class="profile__transport-label transport-label--plane" tabindex="0" aria-label="Авиаперелет" for="transport-plane">
+              <label class="profile__transport-label" tabindex="0" aria-label="Авиаперелет" for="transport-plane">
                 <svg class="profile__transport-icon profile__transport-icon--plane" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
                     <path d="M18.5347 1.18042C17.7301 1.36085 16.9218 1.54212 16.6212 2.03885L14.2941 6.4124L1.79919 9.21454L1.29295 10.612L10.8544 11.4648L9.23212 15.251L5.60602 16.0642L4.69562 17.5523L7.31158 17.8202L7.60988 19.0372C7.74352 19.4686 8.21259 19.7566 8.61297 19.6668L9.82168 19.3958L11.2228 21.6493L12.1332 20.1613L11.2383 16.5103L13.8637 13.3537L18.8731 21.6469L19.8832 20.5657L16.8005 7.98882L19.6314 3.93156C19.9358 3.43399 19.7373 2.62393 19.5378 1.81006C19.439 1.40693 18.9351 1.09063 18.5347 1.18042Z" fill="current"/>
@@ -158,7 +158,7 @@
               </label>
 
               <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-bus" tabindex="-1" checked>
-              <label class="profile__transport-label transport-label--bus" tabindex="0" aria-label="Автотранспорт" for="transport-bus">
+              <label class="profile__transport-label" tabindex="0" aria-label="Автотранспорт" for="transport-bus">
                 <svg class="profile__transport-icon profile__transport-icon--bus" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
                     <path d="M5.75127 14.9286C5.75127 14.4948 5.56417 14.1244 5.18998 13.8175C4.81579 13.5106 4.36426 13.3571 3.8354 13.3571C3.30654 13.3571 2.85501 13.5106 2.48082 13.8175C2.10663 14.1244 1.91953 14.4948 1.91953 14.9286C1.91953 15.3624 2.10663 15.7327 2.48082 16.0396C2.85501 16.3465 3.30654 16.5 3.8354 16.5C4.36426 16.5 4.81579 16.3465 5.18998 16.0396C5.56417 15.7327 5.75127 15.3624 5.75127 14.9286ZM21.0782 14.9286C21.0782 14.4948 20.8911 14.1244 20.5169 13.8175C20.1427 13.5106 19.6912 13.3571 19.1623 13.3571C18.6335 13.3571 18.182 13.5106 17.8078 13.8175C17.4336 14.1244 17.2465 14.4948 17.2465 14.9286C17.2465 15.3624 17.4336 15.7327 17.8078 16.0396C18.182 16.3465 18.6335 16.5 19.1623 16.5C19.6912 16.5 20.1427 16.3465 20.5169 16.0396C20.8911 15.7327 21.0782 15.3624 21.0782 14.9286ZM20.3897 10.067L19.312 5.35268C19.2621 5.16443 19.1499 5.01097 18.9753 4.8923C18.8006 4.77362 18.5986 4.71429 18.3691 4.71429H4.62869C4.39918 4.71429 4.19712 4.77362 4.0225 4.8923C3.84787 5.01097 3.73561 5.16443 3.68572 5.35268L2.60805 10.067C2.55815 10.3125 2.628 10.5294 2.81759 10.7176C3.00719 10.9059 3.25166 11 3.55101 11H19.4467C19.7461 11 19.9906 10.9059 20.1802 10.7176C20.3697 10.5294 20.4396 10.3125 20.3897 10.067ZM17.007 2.55357C17.007 2.38988 16.9371 2.25074 16.7974 2.13616C16.6577 2.02158 16.4881 1.96429 16.2885 1.96429H6.7092C6.50963 1.96429 6.34 2.02158 6.2003 2.13616C6.0606 2.25074 5.99075 2.38988 5.99075 2.55357C5.99075 2.71726 6.0606 2.8564 6.2003 2.97098C6.34 3.08557 6.50963 3.14286 6.7092 3.14286H16.2885C16.4881 3.14286 16.6577 3.08557 16.7974 2.97098C16.9371 2.8564 17.007 2.71726 17.007 2.55357ZM22.9941 11.4542V18.8571H21.0782V20.4286C21.0782 20.8624 20.8911 21.2327 20.5169 21.5396C20.1427 21.8465 19.6912 22 19.1623 22C18.6335 22 18.182 21.8465 17.8078 21.5396C17.4336 21.2327 17.2465 20.8624 17.2465 20.4286V18.8571H5.75127V20.4286C5.75127 20.8624 5.56417 21.2327 5.18998 21.5396C4.81579 21.8465 4.36426 22 3.8354 22C3.30654 22 2.85501 21.8465 2.48082 21.5396C2.10663 21.2327 1.91953 20.8624 1.91953 20.4286V18.8571H0.00366211V11.4542C0.00366211 10.5376 0.128393 9.625 0.377855 8.71652L1.91953 3.14286C2.00934 2.50446 2.49579 1.94382 3.37888 1.46094C4.26198 0.978051 5.4095 0.613839 6.82146 0.368304C8.23342 0.122768 9.79255 0 11.4989 0C13.2052 0 14.7643 0.122768 16.1763 0.368304C17.5882 0.613839 18.7358 0.978051 19.6189 1.46094C20.502 1.94382 20.9884 2.50446 21.0782 3.14286L22.6498 8.71652C22.8793 9.55134 22.9941 10.4639 22.9941 11.4542Z" fill="current"/>
@@ -167,7 +167,7 @@
               </label>
 
               <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-bike" tabindex="-1">
-              <label class="profile__transport-label transport-label--bike" tabindex="0" aria-label="Велосипед" for="transport-bike">
+              <label class="profile__transport-label" tabindex="0" aria-label="Велосипед" for="transport-bike">
                 <svg class="profile__transport-icon profile__transport-icon--bike" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.4297 19.25C16.6123 19.25 15.8133 19.0182 15.1336 18.5838C14.454 18.1494 13.9243 17.532 13.6115 16.8097C13.2987 16.0873 13.2168 15.2925 13.3763 14.5257C13.5358 13.7588 13.9294 13.0544 14.5073 12.5016C15.0853 11.9487 15.8217 11.5722 16.6234 11.4197C17.4251 11.2672 18.2561 11.3455 19.0112 11.6447C19.7664 11.9439 20.4119 12.4506 20.866 13.1006C21.3201 13.7507 21.5625 14.515 21.5625 15.2969C21.5613 16.345 21.1255 17.3498 20.3507 18.0909C19.5759 18.832 18.5254 19.2489 17.4297 19.25ZM17.4297 12.7188C16.8966 12.7188 16.3755 12.87 15.9323 13.1532C15.489 13.4365 15.1435 13.8392 14.9395 14.3103C14.7355 14.7814 14.6822 15.2997 14.7862 15.7998C14.8902 16.3 15.1469 16.7593 15.5238 17.1199C15.9008 17.4804 16.381 17.726 16.9039 17.8255C17.4267 17.9249 17.9686 17.8739 18.4611 17.6788C18.9536 17.4836 19.3746 17.1532 19.6708 16.7292C19.9669 16.3052 20.125 15.8068 20.125 15.2969C20.1242 14.6134 19.8399 13.9581 19.3346 13.4747C18.8294 12.9914 18.1443 12.7195 17.4297 12.7188Z" fill="current"/>
                   <path d="M5.57031 19.25C4.75292 19.25 3.95388 19.0182 3.27425 18.5838C2.59461 18.1494 2.0649 17.532 1.75209 16.8097C1.43929 16.0873 1.35745 15.2925 1.51691 14.5257C1.67638 13.7588 2.06999 13.0544 2.64797 12.5016C3.22596 11.9487 3.96236 11.5722 4.76404 11.4197C5.56573 11.2672 6.3967 11.3455 7.15187 11.6447C7.90705 11.9439 8.5525 12.4506 9.00662 13.1006C9.46074 13.7507 9.70313 14.515 9.70313 15.2969C9.70194 16.345 9.26614 17.3498 8.49134 18.0909C7.71655 18.832 6.66604 19.2489 5.57031 19.25ZM5.57031 12.7188C5.03723 12.7188 4.51612 12.87 4.07288 13.1532C3.62964 13.4365 3.28417 13.8392 3.08017 14.3103C2.87617 14.7814 2.82279 15.2997 2.92679 15.7998C3.03079 16.3 3.28749 16.7593 3.66444 17.1199C4.04139 17.4804 4.52165 17.726 5.04448 17.8255C5.56732 17.9249 6.10926 17.8739 6.60177 17.6788C7.09427 17.4836 7.51522 17.1532 7.81139 16.7292C8.10755 16.3052 8.26563 15.8068 8.26563 15.2969C8.26479 14.6134 7.98056 13.9581 7.47527 13.4747C6.96998 12.9914 6.2849 12.7195 5.57031 12.7188Z" fill="current"/>
@@ -177,7 +177,7 @@
               </label>
 
               <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" tabindex="-1">
-              <label class="profile__transport-label transport-label--on-foot" tabindex="0" aria-label="Пешком" for="transport-on-foot">
+              <label class="profile__transport-label" tabindex="0" aria-label="Пешком" for="transport-on-foot">
                 <svg class="profile__transport-icon profile__transport-icon--on-foot" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.2917 5.50001C17.3502 5.50001 18.2083 4.6792 18.2083 3.66668C18.2083 2.65415 17.3502 1.83334 16.2917 1.83334C15.2331 1.83334 14.375 2.65415 14.375 3.66668C14.375 4.6792 15.2331 5.50001 16.2917 5.50001Z" fill="current"/>
                   <path d="M15.1197 10.0549C15.3397 10.3685 15.6552 10.6097 16.0235 10.7458C16.3917 10.8819 16.7949 10.9063 17.1782 10.8157L20.356 10.0558L19.8931 8.27747L16.7153 9.03739L15.3937 7.14264C15.1114 6.73799 14.6732 6.45658 14.1747 6.3598L10.489 5.65397C10.0767 5.57482 9.64855 5.62772 9.27079 5.80449C8.89302 5.98127 8.58661 6.2721 8.39886 6.63205L6.80995 9.67172L8.52441 10.4921L10.1133 7.45155L11.9984 7.81272L7.12428 15.5833H2.87503V17.4166H7.12428C7.7932 17.4166 8.42282 17.0756 8.76782 16.5266L10.6059 13.5969L15.5595 14.5447L17.2999 19.5396L19.1169 18.9594L17.3775 13.9654C17.2701 13.6588 17.0802 13.3847 16.8268 13.1706C16.5735 12.9566 16.2656 12.8102 15.9342 12.7462L13.0219 12.1898L14.72 9.48197L15.1197 10.0549Z" fill="current"/>
@@ -304,13 +304,13 @@
                   </p>
 
                   <ul class="calendar__week-list">
-                    <li class="calendar__day-week">П<span class="calendar__day-week--shortly">н</span></li>
-                    <li class="calendar__day-week">В<span class="calendar__day-week--shortly">т</span></li>
-                    <li class="calendar__day-week">С<span class="calendar__day-week--shortly">р</span></li>
-                    <li class="calendar__day-week">Ч<span class="calendar__day-week--shortly">т</span></li>
-                    <li class="calendar__day-week">П<span class="calendar__day-week--shortly">т</span></li>
-                    <li class="calendar__day-week calendar__day--weekend">С<span class="calendar__day-week--shortly">б</span></li>
-                    <li class="calendar__day-week calendar__day--weekend">В<span class="calendar__day-week--shortly">с</span></li>
+                    <li class="calendar__day-week">П<span class="calendar__shortly">н</span></li>
+                    <li class="calendar__day-week">В<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week">С<span class="calendar__shortly">р</span></li>
+                    <li class="calendar__day-week">Ч<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week">П<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week calendar__weekend">С<span class="calendar__shortly">б</span></li>
+                    <li class="calendar__day-week calendar__weekend">В<span class="calendar__shortly">с</span></li>
                   </ul>
 
                   <ul class="calendar__dates-list">
