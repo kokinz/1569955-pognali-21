@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="page-header page-header--closed-menu page-header--inner-page">
+      <div class="page-header__container container">
+        <a class="page-header__logo page-header__logo--inner-page" href="index.html"></a>
+
+        <button class="page-header__nav-toggle page-header__nav-toggle--closed-menu" type="button" aria-label="Скрыть/показать меню"></button>
+
+        <nav class="page-header__main-nav">
+          <ul class="site-list site-list--inner-page">
+            <li class="site-list__item">
+              <a class="site-list__link" href="service.html">
+                <span class="site-list__link-text" data-hover="О сервисе">О сервисе</span>
+              </a>
+            </li>
+
+            <li class="site-list__item">
+              <a class="site-list__link" href="">
+                <span class="site-list__link-text" data-hover="Направления">Направления</span>
+              </a>
+            </li>
+
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                <span class="site-list__link-text" data-hover="Попутчики">Попутчики</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="user-list container">
+            <li class="user-list__item user-list__item--login">
+              <a class="user-list__link user-list__link--login" href="login.html">
+                Авторизация
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--phone" href="tel:8-800-555-86-28">
+                <div class="user-list__icon-wrapper user-list__icon-wrapper--phone">
+                  <svg class="user-list__icon user-list__icon--phone" role="img" width="24" height="24" viewBox="0 0 24 24" fill="#FFD74B" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.796875C7.77425 0.796875 3.53833 1.51113 2.00137 2.93476C0.72618 4.11583 0.301098 6.20233 0.157809 7.52341C0.157809 7.52341 0.138062 7.65396 0.138062 7.71011C0.138062 8.22816 0.582782 8.64365 1.12651 8.64365C1.19076 8.64365 3.56809 8.46157 5.00137 8.34956C5.03586 8.34483 5.07062 8.34021 5.10511 8.33091C5.63894 8.31699 6.06902 7.90612 6.06902 7.39738L6.07381 5.55816C6.07381 4.98869 6.5633 4.53117 7.16633 4.53117H16.8336C17.4367 4.53117 17.9263 4.98863 17.9263 5.55816L17.9311 7.39738C17.9311 7.90612 18.3611 8.31699 18.8949 8.33091C18.9292 8.34026 18.9639 8.34483 18.9988 8.34956C20.4322 8.46151 22.8095 8.64365 22.8735 8.64365C23.417 8.64365 23.8621 8.22816 23.8621 7.71011C23.8621 7.65396 23.8423 7.52341 23.8423 7.52341C23.6989 6.20233 23.2743 4.11588 21.9991 2.93476C20.4616 1.51113 16.2257 0.796875 12 0.796875ZM12 12.9335C10.9077 12.9335 10.023 13.769 10.023 14.8006C10.023 15.8322 10.9077 16.6677 12 16.6677C13.0923 16.6677 13.9769 15.8322 13.9769 14.8006C13.9769 13.769 13.0923 12.9335 12 12.9335ZM10.5173 8.73228V7.56533C10.5173 6.92121 9.96363 6.39839 9.28167 6.39839C8.59971 6.39839 8.04608 6.92126 8.04608 7.56533V8.73228L1.37838 15.4588C0.918919 15.8837 0.632177 16.4763 0.632177 17.13V19.0018C0.632177 20.0334 1.51694 20.8689 2.60918 20.8689H3.10346V22.036C3.10346 22.6801 3.65714 23.2028 4.3391 23.2028C5.02106 23.2028 5.57469 22.6801 5.57469 22.036V20.8689H18.4253V22.036C18.4253 22.6801 18.9787 23.2028 19.661 23.2028C20.3429 23.2028 20.8965 22.6801 20.8965 22.036V20.8689H21.3907C22.483 20.8689 23.3677 20.0334 23.3677 19.0018V17.13C23.3677 16.4762 23.081 15.8836 22.6215 15.4588L15.954 8.73228V7.56533C15.954 6.92121 15.4003 6.39839 14.7184 6.39839C14.0364 6.39839 13.4828 6.92126 13.4828 7.56533V8.73228H10.5173ZM12 11.0663C14.1846 11.0663 15.954 12.7374 15.954 14.8006C15.954 16.8638 14.1846 18.5351 12 18.5351C9.81539 18.5351 8.04603 16.8639 8.04603 14.8006C8.04603 12.7374 9.81539 11.0663 12 11.0663Z" fill="currently"/>
+                  </svg>
+                </div>
+
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--mail" href="mailto:mail@htmlacademy.ru">
+                <div class="user-list__icon-wrapper user-list__icon-wrapper--mail">
+                  <svg class="user-list__icon user-list__icon--mail" role="img" width="28" height="19" viewBox="0 0 28 19" fill="#FFD74B" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5439 15.5047L18.0001 9.5111L24.5439 3.5175L23.6516 2.56398L14.1334 11.2819L4.61517 2.56398L3.72284 3.5175L10.2666 9.5111L3.72284 15.5047L4.61517 16.4582L11.2333 10.3965L14.1334 13.0528L17.0334 10.3965L23.6516 16.4582L24.5439 15.5047ZM2.53704 0.0666504C1.31453 0.0666504 0.323486 1.12267 0.323486 2.42075V16.6014C0.323486 17.9016 1.30649 18.9555 2.53704 18.9555H25.7297C26.9522 18.9555 27.9432 17.8995 27.9432 16.6014V2.42075C27.9432 1.12062 26.9602 0.0666504 25.7297 0.0666504H2.53704Z" fill="#currently"/>
+                  </svg>
+                </div>
+
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/" aria-label="Facebook">
+                <svg class="social-list__icon social-list__icon--facebook" role="img" width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.53 27.75H2.71V14.85H0V8.47H2.63C2.43 5.58 2.93 3.47 4.15 2.03C4.73171 1.39087 5.44042 0.8802 6.23079 0.530647C7.02116 0.181094 7.87578 0.000357734 8.74 0L13.52 0V6.15H9.76C9.53848 6.90214 9.4538 7.68794 9.51 8.47H13.51V14.85H9.51L9.53 27.75ZM4.22 26.25H8V13.35H12V10H8V9.24C8 7.24 8 5.45 9 4.78L9.19 4.65H12V1.5H8.78C8.12565 1.49154 7.47682 1.62071 6.87559 1.87911C6.27436 2.13752 5.73416 2.5194 5.29 3C4.29 4.23 3.88 6.29 4.19 9.14L4.29 9.97H1.5V13.35H4.22V26.25Z" fill="#192144"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="https://vk.com/" aria-label="VK">
+                <svg class="social-list__icon social-list__icon--vk" role="img" width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.9461 15.7775C23.2083 15.761 22.4891 15.5431 21.8661 15.1475C21.2157 14.7079 20.6184 14.1945 20.0861 13.6175C19.6461 13.1775 18.9161 12.4375 18.6361 12.4375C18.3561 12.4375 18.1561 13.3575 18.1661 14.0075C18.1703 14.4562 18.0021 14.8894 17.6961 15.2175C17.3481 15.5018 16.9234 15.6758 16.4761 15.7175H14.5561C11.7965 15.6568 9.15414 14.59 7.12606 12.7175C3.44606 9.34753 0.286063 2.90753 0.156063 2.62753C0.0320633 2.39361 -0.0198655 2.12821 0.00683068 1.86481C0.0335268 1.6014 0.137651 1.35181 0.306063 1.14753C0.687199 0.829675 1.16985 0.659328 1.66606 0.667532H5.74606H5.86606C6.20364 0.716784 6.52722 0.835995 6.81606 1.01753C7.08788 1.1998 7.30552 1.45198 7.44606 1.74753C7.87724 2.6706 8.37175 3.56273 8.92606 4.41753C10.2361 6.41753 10.8161 6.87753 11.0261 6.97753C11.2597 6.03979 11.324 5.06788 11.2161 4.10753C11.2511 3.67014 11.179 3.2308 11.0061 2.82753C10.7865 2.65191 10.5169 2.55038 10.2361 2.53753L9.50606 1.84753C9.36606 1.18753 10.0961 0.617532 10.6061 0.397532C11.6238 0.0786297 12.6916 -0.0501836 13.7561 0.017532H14.4661C15.1881 -0.00127074 15.9099 0.0658674 16.6161 0.217532C18.3161 0.577532 18.2561 1.94753 18.1861 3.52753C18.1861 3.98753 18.1361 4.52753 18.1361 5.14753C18.1361 5.29753 18.1361 5.45753 18.1361 5.62753C18.0967 6.06289 18.1271 6.50174 18.2261 6.92753C19.0586 6.23108 19.7597 5.39116 20.2961 4.44753C20.875 3.55527 21.3832 2.61908 21.8161 1.64753C21.9479 1.34025 22.1739 1.08272 22.4614 0.912012C22.7489 0.741299 23.0832 0.666204 23.4161 0.697532H27.6961C27.8224 0.685471 27.9497 0.685471 28.0761 0.697532C29.0761 0.697532 29.6661 0.987532 29.9061 1.54753C30.1461 2.10753 30.0761 3.20753 27.5461 6.15753L26.5461 7.28753C26.0616 7.75797 25.6443 8.29301 25.3061 8.87753C25.6848 9.30811 26.1147 9.69093 26.5861 10.0175C27.7353 10.8835 28.7468 11.9186 29.5861 13.0875C29.7829 13.3148 29.9117 13.593 29.9576 13.8901C30.0036 14.1873 29.965 14.4914 29.8461 14.7675C29.6365 15.0734 29.3561 15.3241 29.0288 15.4982C28.7014 15.6723 28.3368 15.7647 27.9661 15.7675L24.1761 15.8175L23.9461 15.7775ZM18.6361 10.9375C19.5361 10.9375 20.3161 11.7275 21.1461 12.5575C21.5944 13.0471 22.0977 13.4833 22.6461 13.8575C23.0607 14.1333 23.5481 14.2795 24.0461 14.2775H24.1461L27.9461 14.2275C28.1335 14.2168 28.317 14.1692 28.4861 14.0875L28.3861 13.9275C27.6291 12.8959 26.7263 11.9797 25.7061 11.2075C24.5161 10.2075 23.9061 9.73753 23.8361 8.96753C23.7661 8.19753 24.3261 7.52753 25.4461 6.25753L26.4461 5.14753C27.2903 4.28639 27.9834 3.28908 28.4961 2.19753C28.2729 2.1843 28.0492 2.1843 27.8261 2.19753H23.4561C23.377 2.17986 23.2951 2.17986 23.2161 2.19753C22.7532 3.25898 22.2012 4.27929 21.5661 5.24753C19.6761 8.06753 18.7861 8.44753 18.1561 8.44753C17.9607 8.44753 17.7684 8.39945 17.5961 8.30753C16.5961 7.73753 16.5961 6.46753 16.6561 5.54753C16.6561 5.39753 16.6561 5.24753 16.6561 5.11753C16.6561 4.46753 16.6561 3.90753 16.7061 3.42753C16.7861 1.74753 16.7061 1.73753 16.3261 1.64753C15.7138 1.52655 15.09 1.4729 14.4661 1.48753H13.7761C13.1411 1.47441 12.5061 1.50784 11.8761 1.58753C11.9715 1.65784 12.0558 1.74212 12.1261 1.83753C12.5385 2.48787 12.7442 3.24794 12.7161 4.01753C12.8461 5.66753 12.7761 7.81753 11.7161 8.33753C11.5284 8.42537 11.3233 8.4698 11.1161 8.46753C10.1861 8.46753 9.26606 7.58753 7.69606 5.20753C7.09358 4.29624 6.5556 3.34392 6.08606 2.35753L6.00606 2.25753C5.90508 2.20606 5.79736 2.16903 5.68606 2.14753H1.68606H1.61606C2.20606 3.36753 5.00606 8.76753 8.13606 11.5975C9.89364 13.2122 12.1708 14.1451 14.5561 14.2275H16.4061C16.5004 14.2074 16.5914 14.1737 16.6761 14.1275C16.6761 14.1275 16.6761 14.1275 16.6761 14.0375C16.6761 13.7675 16.6761 11.4375 18.2561 11.0375C18.3784 10.9894 18.5059 10.9558 18.6361 10.9375Z" fill="#192144"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/" aria-label="Instagram">
+                <svg class="social-list__icon social-list__icon--instagram" role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.2802 2.40088C18.4252 2.40341 19.5225 2.85937 20.3321 3.66898C21.1417 4.47858 21.5977 5.57592 21.6002 6.72088V17.2809C21.5977 18.4258 21.1417 19.5232 20.3321 20.3328C19.5225 21.1424 18.4252 21.5983 17.2802 21.6009H6.7202C5.57691 21.5958 4.48204 21.1387 3.6745 20.3294C2.86696 19.5201 2.41233 18.4242 2.4098 17.2809V6.72088C2.41233 5.57758 2.86696 4.48169 3.6745 3.67235C4.48204 2.86302 5.57691 2.40594 6.7202 2.40088H17.2802ZM17.2802 0.960876H6.7202C5.19256 0.960876 3.72748 1.56773 2.64727 2.64794C1.56706 3.72815 0.960205 5.19323 0.960205 6.72088L0.960205 17.2809C0.960205 18.8085 1.56706 20.2736 2.64727 21.3538C3.72748 22.434 5.19256 23.0409 6.7202 23.0409H17.2802C18.8078 23.0409 20.2729 22.434 21.3531 21.3538C22.4333 20.2736 23.0402 18.8085 23.0402 17.2809V6.72088C23.0402 5.19323 22.4333 3.72815 21.3531 2.64794C20.2729 1.56773 18.8078 0.960876 17.2802 0.960876V0.960876Z" fill="#192144"/>
+                  <path d="M12.0093 7.75648C12.8504 7.75648 13.6727 8.0059 14.372 8.4732C15.0714 8.94051 15.6165 9.6047 15.9384 10.3818C16.2603 11.1589 16.3445 12.014 16.1804 12.839C16.0163 13.6639 15.6112 14.4217 15.0165 15.0165C14.4217 15.6112 13.6639 16.0163 12.839 16.1804C12.014 16.3445 11.1589 16.2602 10.3818 15.9384C9.60472 15.6165 8.94052 15.0714 8.47321 14.372C8.00591 13.6726 7.75649 12.8504 7.75649 12.0093C7.75522 11.4504 7.86436 10.8968 8.07764 10.3803C8.29091 9.86376 8.60412 9.39443 8.99928 8.99927C9.39444 8.60411 9.86377 8.2909 10.3803 8.07762C10.8969 7.86435 11.4504 7.75521 12.0093 7.75648ZM12.0093 6.31648C10.883 6.31458 9.78137 6.64684 8.84393 7.27122C7.90649 7.89559 7.17533 8.78402 6.74299 9.82408C6.31064 10.8641 6.19653 12.0091 6.4151 13.114C6.63368 14.2189 7.17511 15.2342 7.97088 16.0313C8.76665 16.8284 9.78099 17.3715 10.8855 17.592C11.9901 17.8124 13.1352 17.7002 14.176 17.2697C15.2168 16.8391 16.1065 16.1094 16.7324 15.173C17.3584 14.2366 17.6925 13.1356 17.6925 12.0093C17.6938 11.2621 17.5477 10.5221 17.2626 9.83146C16.9776 9.14084 16.5592 8.51319 16.0313 7.98444C15.5035 7.45569 14.8765 7.03621 14.1864 6.75C13.4962 6.46379 12.7564 6.31647 12.0093 6.31648Z" fill="#192144"/>
+                  <path d="M17.9043 7.41252C18.6148 7.41252 19.1907 6.83658 19.1907 6.12612C19.1907 5.41566 18.6148 4.83972 17.9043 4.83972C17.1939 4.83972 16.6179 5.41566 16.6179 6.12612C16.6179 6.83658 17.1939 7.41252 17.9043 7.41252Z" fill="#192144"/>
+                </svg>
+                </a>
+            </li>
+          </ul>
+          <ul class="contact-list contact-list--dynamic">
+            <li class="contact-list">
+              <a class="contact-list__link contact-list__link--phone" href="tel:8-800-555-86-28" aria-label="Позвонить на номер: 8 800 5558628"></a>
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо mail@htmlacademy.ru"></a>
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link contact-list__link--login" href="login.html">
+                Авторизация
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page__main page__main--inner-page">
+      <div class="page__main-title-wrapper">
+        <h1 class="page__main-title">Направления</h1>
+      </div>
+
+      <section class="profile">
+        <div class="profile__wrapper container">
+          <h2 class="visually-hidden">Настройки профиля</h2>
+
+          <p class="profile__level level level--big level--80">
+            <b class="profile__level-number level-number level-number--big">80</b>
+
+            <b class="profile__level-word level-word level-word--big">level</b>
+          </p>
+
+          <div class="profile__photo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/Demin-tablet@1x.png 1x, img/Demin-tablet@2x.png 2x">
+              <img class="profile__photo-image" src="img/Demin-mobile@1x.png" srcset="img/Demin-mobile@2x.png" alt="Фото Профиля">
+            </picture>
+          </div>
+
+          <button class="profile__change-photo button">
+            <span class="profile__hide-text">Сменить</span>
+            Фото
+          </button>
+
+          <div class="profile__tags">
+            <h3 class="profile__tags-title">Тэги</h3>
+
+            <textarea class="profile__tags-textarea" rows="2">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+
+          <div class="profile__transport">
+            <h3 class="profile__transport-title">Транспорт</h3>
+
+            <form class="profile__transport-buttons" action="https://echo.htmlacademy.ru" method="GET">
+              <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-plane" tabindex="-1" checked>
+              <label class="profile__transport-label" tabindex="0" aria-label="Авиаперелет" for="transport-plane">
+                <svg class="profile__transport-icon profile__transport-icon--plane" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M18.5347 1.18042C17.7301 1.36085 16.9218 1.54212 16.6212 2.03885L14.2941 6.4124L1.79919 9.21454L1.29295 10.612L10.8544 11.4648L9.23212 15.251L5.60602 16.0642L4.69562 17.5523L7.31158 17.8202L7.60988 19.0372C7.74352 19.4686 8.21259 19.7566 8.61297 19.6668L9.82168 19.3958L11.2228 21.6493L12.1332 20.1613L11.2383 16.5103L13.8637 13.3537L18.8731 21.6469L19.8832 20.5657L16.8005 7.98882L19.6314 3.93156C19.9358 3.43399 19.7373 2.62393 19.5378 1.81006C19.439 1.40693 18.9351 1.09063 18.5347 1.18042Z" fill="current"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="23" height="22" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </label>
+
+              <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-bus" tabindex="-1" checked>
+              <label class="profile__transport-label" tabindex="0" aria-label="Автотранспорт" for="transport-bus">
+                <svg class="profile__transport-icon profile__transport-icon--bus" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M5.75127 14.9286C5.75127 14.4948 5.56417 14.1244 5.18998 13.8175C4.81579 13.5106 4.36426 13.3571 3.8354 13.3571C3.30654 13.3571 2.85501 13.5106 2.48082 13.8175C2.10663 14.1244 1.91953 14.4948 1.91953 14.9286C1.91953 15.3624 2.10663 15.7327 2.48082 16.0396C2.85501 16.3465 3.30654 16.5 3.8354 16.5C4.36426 16.5 4.81579 16.3465 5.18998 16.0396C5.56417 15.7327 5.75127 15.3624 5.75127 14.9286ZM21.0782 14.9286C21.0782 14.4948 20.8911 14.1244 20.5169 13.8175C20.1427 13.5106 19.6912 13.3571 19.1623 13.3571C18.6335 13.3571 18.182 13.5106 17.8078 13.8175C17.4336 14.1244 17.2465 14.4948 17.2465 14.9286C17.2465 15.3624 17.4336 15.7327 17.8078 16.0396C18.182 16.3465 18.6335 16.5 19.1623 16.5C19.6912 16.5 20.1427 16.3465 20.5169 16.0396C20.8911 15.7327 21.0782 15.3624 21.0782 14.9286ZM20.3897 10.067L19.312 5.35268C19.2621 5.16443 19.1499 5.01097 18.9753 4.8923C18.8006 4.77362 18.5986 4.71429 18.3691 4.71429H4.62869C4.39918 4.71429 4.19712 4.77362 4.0225 4.8923C3.84787 5.01097 3.73561 5.16443 3.68572 5.35268L2.60805 10.067C2.55815 10.3125 2.628 10.5294 2.81759 10.7176C3.00719 10.9059 3.25166 11 3.55101 11H19.4467C19.7461 11 19.9906 10.9059 20.1802 10.7176C20.3697 10.5294 20.4396 10.3125 20.3897 10.067ZM17.007 2.55357C17.007 2.38988 16.9371 2.25074 16.7974 2.13616C16.6577 2.02158 16.4881 1.96429 16.2885 1.96429H6.7092C6.50963 1.96429 6.34 2.02158 6.2003 2.13616C6.0606 2.25074 5.99075 2.38988 5.99075 2.55357C5.99075 2.71726 6.0606 2.8564 6.2003 2.97098C6.34 3.08557 6.50963 3.14286 6.7092 3.14286H16.2885C16.4881 3.14286 16.6577 3.08557 16.7974 2.97098C16.9371 2.8564 17.007 2.71726 17.007 2.55357ZM22.9941 11.4542V18.8571H21.0782V20.4286C21.0782 20.8624 20.8911 21.2327 20.5169 21.5396C20.1427 21.8465 19.6912 22 19.1623 22C18.6335 22 18.182 21.8465 17.8078 21.5396C17.4336 21.2327 17.2465 20.8624 17.2465 20.4286V18.8571H5.75127V20.4286C5.75127 20.8624 5.56417 21.2327 5.18998 21.5396C4.81579 21.8465 4.36426 22 3.8354 22C3.30654 22 2.85501 21.8465 2.48082 21.5396C2.10663 21.2327 1.91953 20.8624 1.91953 20.4286V18.8571H0.00366211V11.4542C0.00366211 10.5376 0.128393 9.625 0.377855 8.71652L1.91953 3.14286C2.00934 2.50446 2.49579 1.94382 3.37888 1.46094C4.26198 0.978051 5.4095 0.613839 6.82146 0.368304C8.23342 0.122768 9.79255 0 11.4989 0C13.2052 0 14.7643 0.122768 16.1763 0.368304C17.5882 0.613839 18.7358 0.978051 19.6189 1.46094C20.502 1.94382 20.9884 2.50446 21.0782 3.14286L22.6498 8.71652C22.8793 9.55134 22.9941 10.4639 22.9941 11.4542Z" fill="current"/>
+                  </g>
+                </svg>
+              </label>
+
+              <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-bike" tabindex="-1">
+              <label class="profile__transport-label" tabindex="0" aria-label="Велосипед" for="transport-bike">
+                <svg class="profile__transport-icon profile__transport-icon--bike" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.4297 19.25C16.6123 19.25 15.8133 19.0182 15.1336 18.5838C14.454 18.1494 13.9243 17.532 13.6115 16.8097C13.2987 16.0873 13.2168 15.2925 13.3763 14.5257C13.5358 13.7588 13.9294 13.0544 14.5073 12.5016C15.0853 11.9487 15.8217 11.5722 16.6234 11.4197C17.4251 11.2672 18.2561 11.3455 19.0112 11.6447C19.7664 11.9439 20.4119 12.4506 20.866 13.1006C21.3201 13.7507 21.5625 14.515 21.5625 15.2969C21.5613 16.345 21.1255 17.3498 20.3507 18.0909C19.5759 18.832 18.5254 19.2489 17.4297 19.25ZM17.4297 12.7188C16.8966 12.7188 16.3755 12.87 15.9323 13.1532C15.489 13.4365 15.1435 13.8392 14.9395 14.3103C14.7355 14.7814 14.6822 15.2997 14.7862 15.7998C14.8902 16.3 15.1469 16.7593 15.5238 17.1199C15.9008 17.4804 16.381 17.726 16.9039 17.8255C17.4267 17.9249 17.9686 17.8739 18.4611 17.6788C18.9536 17.4836 19.3746 17.1532 19.6708 16.7292C19.9669 16.3052 20.125 15.8068 20.125 15.2969C20.1242 14.6134 19.8399 13.9581 19.3346 13.4747C18.8294 12.9914 18.1443 12.7195 17.4297 12.7188Z" fill="current"/>
+                  <path d="M5.57031 19.25C4.75292 19.25 3.95388 19.0182 3.27425 18.5838C2.59461 18.1494 2.0649 17.532 1.75209 16.8097C1.43929 16.0873 1.35745 15.2925 1.51691 14.5257C1.67638 13.7588 2.06999 13.0544 2.64797 12.5016C3.22596 11.9487 3.96236 11.5722 4.76404 11.4197C5.56573 11.2672 6.3967 11.3455 7.15187 11.6447C7.90705 11.9439 8.5525 12.4506 9.00662 13.1006C9.46074 13.7507 9.70313 14.515 9.70313 15.2969C9.70194 16.345 9.26614 17.3498 8.49134 18.0909C7.71655 18.832 6.66604 19.2489 5.57031 19.25ZM5.57031 12.7188C5.03723 12.7188 4.51612 12.87 4.07288 13.1532C3.62964 13.4365 3.28417 13.8392 3.08017 14.3103C2.87617 14.7814 2.82279 15.2997 2.92679 15.7998C3.03079 16.3 3.28749 16.7593 3.66444 17.1199C4.04139 17.4804 4.52165 17.726 5.04448 17.8255C5.56732 17.9249 6.10926 17.8739 6.60177 17.6788C7.09427 17.4836 7.51522 17.1532 7.81139 16.7292C8.10755 16.3052 8.26563 15.8068 8.26563 15.2969C8.26479 14.6134 7.98056 13.9581 7.47527 13.4747C6.96998 12.9914 6.2849 12.7195 5.57031 12.7188Z" fill="current"/>
+                  <path d="M14.375 5.50001C14.5643 5.50064 14.7519 5.46536 14.9269 5.39622C15.1019 5.32707 15.2608 5.22543 15.3945 5.09716C15.5282 4.9689 15.634 4.81657 15.7057 4.64896C15.7775 4.48136 15.8137 4.30182 15.8125 4.12072C15.8146 3.94052 15.7791 3.76173 15.7081 3.5948C15.6371 3.42788 15.5321 3.27617 15.399 3.14854C15.266 3.02091 15.1078 2.91993 14.9335 2.85151C14.7592 2.78308 14.5724 2.74857 14.384 2.75001C14.1952 2.74945 14.0082 2.78445 13.8335 2.85303C13.6589 2.92161 13.5001 3.02242 13.3662 3.1497C13.2323 3.27698 13.1259 3.42825 13.0531 3.59485C12.9803 3.76146 12.9426 3.94015 12.942 4.12072C12.9414 4.30128 12.978 4.48019 13.0497 4.64723C13.1214 4.81427 13.2268 4.96617 13.3599 5.09425C13.4929 5.22233 13.6511 5.32408 13.8252 5.3937C13.9994 5.46332 14.1862 5.49945 14.375 5.50001Z" fill="current"/>
+                  <path d="M16.511 8.25007H14.5453C14.513 8.25008 14.4814 8.24178 14.4536 8.22606C14.4259 8.21033 14.4031 8.18776 14.3876 8.1607L12.9618 5.6612C12.8613 5.47545 12.7165 5.31494 12.5392 5.19266C12.3618 5.07037 12.1568 4.98976 11.9408 4.95733C11.7248 4.92491 11.5039 4.94158 11.2959 5.00601C11.0879 5.07044 10.8986 5.18082 10.7435 5.3282L7.60527 8.3532C7.34163 8.61059 7.19197 8.95537 7.1875 9.3157C7.1875 10.0634 7.75352 10.3298 8.01855 10.4801C9.29883 11.1857 10.2004 11.7018 10.695 11.9884C10.7213 12.0037 10.743 12.0252 10.7581 12.0508C10.7732 12.0765 10.7812 12.1054 10.7813 12.1349V15.1049C10.7813 15.4748 11.0786 15.7924 11.4654 15.8109C11.5625 15.8153 11.6596 15.8009 11.7507 15.7685C11.8418 15.736 11.9251 15.6863 11.9955 15.6222C12.0659 15.5581 12.122 15.4809 12.1604 15.3955C12.1988 15.3101 12.2186 15.2181 12.2188 15.1251V11.4298C12.2188 11.3206 12.1917 11.213 12.1397 11.1159C12.0877 11.0188 12.0122 10.9349 11.9196 10.8712L10.2575 9.72777C10.2366 9.71349 10.2192 9.6951 10.2064 9.67384C10.1935 9.65259 10.1856 9.62895 10.1832 9.60453C10.1807 9.5801 10.1837 9.55545 10.192 9.53224C10.2004 9.50903 10.2138 9.48779 10.2314 9.46995L12.1181 7.54538C12.1375 7.52558 12.1614 7.51044 12.1881 7.50119C12.2147 7.49193 12.2432 7.48884 12.2714 7.49215C12.2995 7.49546 12.3264 7.50508 12.3499 7.52023C12.3734 7.53538 12.3928 7.55563 12.4065 7.57933L13.3867 9.27144C13.449 9.3787 13.5402 9.46806 13.6508 9.53025C13.7614 9.59243 13.8873 9.62517 14.0156 9.62507H16.5313C16.6286 9.62518 16.725 9.60636 16.8145 9.56976C16.9041 9.53316 16.9849 9.47954 17.0521 9.41215C17.1193 9.34477 17.1715 9.26502 17.2055 9.17775C17.2396 9.09048 17.2547 8.99751 17.25 8.90448C17.2311 8.53452 16.8978 8.25007 16.511 8.25007Z" fill="current"/>
+                </svg>
+              </label>
+
+              <input class="profile__transport-input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" tabindex="-1">
+              <label class="profile__transport-label" tabindex="0" aria-label="Пешком" for="transport-on-foot">
+                <svg class="profile__transport-icon profile__transport-icon--on-foot" role="img" width="23" height="22" viewBox="0 0 23 22" fill="#1D2E5B" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.2917 5.50001C17.3502 5.50001 18.2083 4.6792 18.2083 3.66668C18.2083 2.65415 17.3502 1.83334 16.2917 1.83334C15.2331 1.83334 14.375 2.65415 14.375 3.66668C14.375 4.6792 15.2331 5.50001 16.2917 5.50001Z" fill="current"/>
+                  <path d="M15.1197 10.0549C15.3397 10.3685 15.6552 10.6097 16.0235 10.7458C16.3917 10.8819 16.7949 10.9063 17.1782 10.8157L20.356 10.0558L19.8931 8.27747L16.7153 9.03739L15.3937 7.14264C15.1114 6.73799 14.6732 6.45658 14.1747 6.3598L10.489 5.65397C10.0767 5.57482 9.64855 5.62772 9.27079 5.80449C8.89302 5.98127 8.58661 6.2721 8.39886 6.63205L6.80995 9.67172L8.52441 10.4921L10.1133 7.45155L11.9984 7.81272L7.12428 15.5833H2.87503V17.4166H7.12428C7.7932 17.4166 8.42282 17.0756 8.76782 16.5266L10.6059 13.5969L15.5595 14.5447L17.2999 19.5396L19.1169 18.9594L17.3775 13.9654C17.2701 13.6588 17.0802 13.3847 16.8268 13.1706C16.5735 12.9566 16.2656 12.8102 15.9342 12.7462L13.0219 12.1898L14.72 9.48197L15.1197 10.0549Z" fill="current"/>
+                </svg>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-plans">
+        <div class="my-plans__wrapper container">
+          <h2 class="my-plans__title">Мои планы:</h2>
+
+          <ol class="my-plans__list">
+            <li class="my-plans__item">
+              <p class="my-plans__countries">Франция, Италия</p>
+
+              <span class="my-plans__companions">3 попутчика</span>
+
+              <span class="my-plans__dates">26 мар <span class="symbol">—</span> 29 мар</span>
+
+              <a href="change.html" class="my-plans__change">Изменить</a>
+            </li>
+
+            <li class="my-plans__item">
+              <p class="my-plans__countries">Тайланд, Индонезия</p>
+
+              <span class="my-plans__companions">1 попутчик</span>
+
+              <span class="my-plans__dates">1 июл <span class="symbol">—</span> 15 июл</span>
+
+              <a href="change.html" class="my-plans__change">Изменить</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="add-plan">
+        <div class="add-plan__wrapper container">
+          <h2 class="add-plan__title">Добавить план:</h2>
+
+          <ul class="add-plan__progress-list">
+            <li class="add-plan__progress-item">
+              <a href="#dates" class="add-plan__progress-link add-plan__progress-link--current" aria-label="Даты"></a>
+            </li>
+
+            <li class="add-plan__progress-item">
+              <a href="#route" class="add-plan__progress-link" aria-label="Маршрут"></a>
+            </li>
+
+            <li class="add-plan__progress-item">
+              <a href="#plans" class="add-plan__progress-link" aria-label="Развлечения"></a>
+            </li>
+          </ul>
+
+          <form class="add-plan__form travel-form" action="https://echo.htmlacademy.ru" method="GET">
+            <ol class="add-plan__steps-list">
+              <li class="add-plan__steps-item add-plan__steps-item--dates" id="dates">
+                <h3 class="add-plan__steps-title">Шаг 1. <br class="br br--mobile br--tablet">Даты пребывания</h3>
+
+                <p class="add-plan__steps-description">
+                  Укажите предпочтительное количество попутчиков, которых <br class="br br--desktop"> вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+                </p>
+
+                <ul class="add-plan__navigation">
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link add-plan__navigation-link--current" href="#dates">Даты</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#route">Маршрут</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#plans">Развлечения</a>
+                  </li>
+                </ul>
+
+                <fieldset class="travel-form__field travel-form__field--companions">
+                  <label class="travel-form__label travel-form__label--companions" for="companions">
+                    <span class="travel-form__label-name">Ищу попутчиков:</span>
+
+                    <span class="travel-form__label-persons">Чел.</span>
+                  </label>
+
+                  <div class="travel-form__input-wrapper">
+                    <button class="travel-form__button travel-form__button--subtract" type="button" aria-label="Убавить"></button>
+
+                    <input class="travel-form__input" type="number" name="companions" id="companions" value="2">
+
+                    <button class="travel-form__button travel-form__button--add" type="button" aria-label="Прибавить"></button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="travel-form__field travel-form__field--days">
+                  <label class="travel-form__label travel-form__label--days" for="days">
+                    <span class="travel-form__label-name">Длительность:</span>
+
+                    <span class="travel-form__label-days">Дн.</span>
+                  </label>
+
+                  <div class="travel-form__input-wrapper">
+                    <button class="travel-form__button travel-form__button--subtract" type="button" aria-label="Убавить"></button>
+
+                    <input class="travel-form__input" type="number" name="days" id="days" value="2">
+
+                    <button class="travel-form__button travel-form__button--add" type="button" aria-label="Прибавить"></button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="travel-form__field travel-form__field--kids">
+                  <input class="travel-form__input-checkbox travel-form__input-checkbox--kids visually-hidden" tabindex="-1" type="checkbox" checked name="kids" id="kids">
+                  <label class="travel-form__label travel-form__label--kids" tabindex="0" for="kids">Можно с детьми</label>
+                </fieldset>
+
+                <div class="travel-form__calendar calendar">
+                  <p class="calendar__month-wrapper">
+                    <button class="calendar__month-button calendar__month-button--prev" type="button" aria-label="Предыдущий месяц"></button>
+
+                    <span class="calendar__month">Март 2019</span>
+
+                    <button class="calendar__month-button calendar__month-button--next" type="button" aria-label="Следующий месяц"></button>
+                  </p>
+
+                  <ul class="calendar__week-list">
+                    <li class="calendar__day-week">П<span class="calendar__shortly">н</span></li>
+                    <li class="calendar__day-week">В<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week">С<span class="calendar__shortly">р</span></li>
+                    <li class="calendar__day-week">Ч<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week">П<span class="calendar__shortly">т</span></li>
+                    <li class="calendar__day-week calendar__weekend">С<span class="calendar__shortly">б</span></li>
+                    <li class="calendar__day-week calendar__weekend">В<span class="calendar__shortly">с</span></li>
+                  </ul>
+
+                  <ul class="calendar__dates-list">
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--disabled">26</li>
+                    <li class="calendar__date calendar__date--disabled">27</li>
+                    <li class="calendar__date calendar__date--disabled">28</li>
+                    <li class="calendar__date calendar__date--disabled">1<span class="br br--desktop">&ensp;Мар</span></li>
+                    <li class="calendar__date calendar__date--disabled">2</li>
+                    <li class="calendar__date calendar__date--disabled">3</li>
+                    <li class="calendar__date calendar__date--disabled">4</li>
+                    <li class="calendar__date calendar__date--disabled">5</li>
+                    <li class="calendar__date calendar__date--disabled">6</li>
+                    <li class="calendar__date calendar__date--disabled">7</li>
+                    <li class="calendar__date calendar__date--disabled">8</li>
+                    <li class="calendar__date calendar__date--disabled">9</li>
+                    <li class="calendar__date calendar__date--disabled">10</li>
+                    <li class="calendar__date calendar__date--disabled">11</li>
+                    <li class="calendar__date calendar__date--disabled">12</li>
+                    <li class="calendar__date calendar__date--disabled">13</li>
+                    <li class="calendar__date calendar__date--disabled">14</li>
+                    <li class="calendar__date calendar__date--disabled">15</li>
+                    <li class="calendar__date calendar__date--disabled">16</li>
+                    <li class="calendar__date calendar__date--disabled">17</li>
+                    <li class="calendar__date calendar__date--disabled">18</li>
+                    <li class="calendar__date calendar__date--disabled">19</li>
+                    <li class="calendar__date calendar__date--disabled">20</li>
+                    <li class="calendar__date calendar__date--disabled">21</li>
+                    <li class="calendar__date calendar__date--disabled">22</li>
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--selected calendar__date--current calendar__date--first">26<span class="calendar__first-date">Заезд</span></li>
+                    <li class="calendar__date calendar__date--selected">27</li>
+                    <li class="calendar__date calendar__date--selected calendar__date--last">28<span class="calendar__last-date">Выезд</span></li>
+                    <li class="calendar__date">29</li>
+                    <li class="calendar__date">30</li>
+                    <li class="calendar__date">31</li>
+                    <li class="calendar__date">1<span class="br br--desktop">&ensp;Апр</span></li>
+                    <li class="calendar__date">2</li>
+                    <li class="calendar__date">3</li>
+                    <li class="calendar__date">4</li>
+                    <li class="calendar__date">5</li>
+                  </ul>
+                </div>
+
+                <a class="travel-form__next-step" href="#route">Следующий шаг</a>
+              </li>
+
+              <li class="add-plan__steps-item add-plan__steps-item--route" id="route">
+                <h3 class="add-plan__steps-title">Шаг 2. <br class="br br--mobile br--tablet">Маршрут</h3>
+
+                <p class="add-plan__steps-description">
+                  Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+                </p>
+
+                <ul class="add-plan__navigation">
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#dates">Даты</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item add-plan__navigation-item--current">
+                    <a class="add-plan__navigation-link add-plan__navigation-link--current" href="#route">Маршрут</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#plans">Развлечения</a>
+                  </li>
+                </ul>
+
+                <ul class="travel-form__route-list">
+                  <li class="travel-form__route-item travel-form__route-item--selected">
+                    <span class="travel-form__route-name">Босния и Герцеговина</span>
+
+                    <div class="travel-form__route-flag">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img//Bosnia-flag-tablet.png">
+                        <img class="travel-form__flag-image" src="img/Bosnia-flag.png" alt="Флаг страны">
+                      </picture>
+                    </div>
+
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
+
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
+                  </li>
+
+                  <li class="travel-form__route-item travel-form__route-item--selected">
+                    <span class="travel-form__route-name">Чехия</span>
+
+                    <div class="travel-form__route-flag">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img//Czech-flag-tablet.png">
+                        <img class="travel-form__flag-image" src="img/Czech-flag.png" alt="Флаг страны">
+                      </picture>
+                    </div>
+
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
+
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
+                  </li>
+
+                  <li class="travel-form__route-item travel-form__route-item--menu-opened">
+                    <span class="travel-form__route-name">Выберите страну</span>
+
+                    <button class="travel-form__route-selection" type="button" aria-label="Выбрать страну"></button>
+
+                    <button class="travel-form__route-delete" type="button" aria-label="Удалить страну"></button>
+
+                    <div class="travel-form__drop-menu country-selector">
+                      <ul class="country-selector__list">
+                        <li class="country-selector__item country-selector__item--selected">
+                          А
+                          <ul class="country-selector__country-list">
+                            <li class="country-selector__country-name">Австралия</li>
+                            <li class="country-selector__country-name">Австрия</li>
+                            <li class="country-selector__country-name">Азербайджан</li>
+                            <li class="country-selector__country-name">Албания</li>
+                            <li class="country-selector__country-name">Алжир</li>
+                            <li class="country-selector__country-name">Ангола</li>
+                            <li class="country-selector__country-name">Андорра</li>
+                            <li class="country-selector__country-name">Антигуа и Барбуда</li>
+                            <li class="country-selector__country-name">Аргентина</li>
+                            <li class="country-selector__country-name">Армения</li>
+                            <li class="country-selector__country-name">Афганистан</li>
+                          </ul>
+                        </li>
+                        <li class="country-selector__item">
+                          Б
+                        </li>
+                        <li class="country-selector__item">
+                          В
+                        </li>
+                        <li class="country-selector__item">
+                          Г
+                        </li>
+                        <li class="country-selector__item">
+                          Д
+                        </li>
+                        <li class="country-selector__item">
+                          Е
+                        </li>
+                        <li class="country-selector__item">
+                          З
+                        </li>
+                        <li class="country-selector__item">
+                          И
+                        </li>
+                        <li class="country-selector__item">
+                          К
+                        </li>
+                        <li class="country-selector__item">
+                          Л
+                        </li>
+                        <li class="country-selector__item">
+                          М
+                        </li>
+                        <li class="country-selector__item">
+                          Н
+                        </li>
+                        <li class="country-selector__item">
+                          О
+                        </li>
+                        <li class="country-selector__item">
+                          П
+                        </li>
+                        <li class="country-selector__item">
+                          P
+                        </li>
+                        <li class="country-selector__item">
+                          С
+                        </li>
+                        <li class="country-selector__item">
+                          Т
+                        </li>
+                        <li class="country-selector__item">
+                          У
+                        </li>
+                        <li class="country-selector__item">
+                          Ф
+                        </li>
+                        <li class="country-selector__item">
+                          Х
+                        </li>
+                        <li class="country-selector__item">
+                          Ч
+                        </li>
+                        <li class="country-selector__item">
+                          Ш
+                        </li>
+                        <li class="country-selector__item">
+                          Э
+                        </li>
+                        <li class="country-selector__item">
+                          Ю
+                        </li>
+                        <li class="country-selector__item">
+                          Я
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="travel-form__route-item">
+                    <button class="travel-form__add-country" type="button">Добавить страну</button>
+                  </li>
+                </ul>
+
+                <a class="travel-form__next-step" href="#plans">Следующий шаг</a>
+
+                <a class="travel-form__prev-step" href="#dates">На шаг назад</a>
+              </li>
+
+              <li class="add-plan__steps-item add-plan__steps-item--plans" id="plans">
+                <h3 class="add-plan__steps-title">Шаг 3. <br class="br br--mobile br--tablet">Развлечения</h3>
+
+                <p class="add-plan__steps-description">
+                  Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                </p>
+
+                <ul class="add-plan__navigation">
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#dates">Даты</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item">
+                    <a class="add-plan__navigation-link" href="#route">Маршрут</a>
+                  </li>
+
+                  <li class="add-plan__navigation-item add-plan__navigation-item--current">
+                    <a class="add-plan__navigation-link add-plan__navigation-link--current" href="#plans">Развлечения</a>
+                  </li>
+                </ul>
+
+                <fieldset class="travel-form__field travel-form__field--country travel-form__field--outline">
+                  <label class="travel-form__country-label" for="bosnia">
+                    <span class="travel-form__country-name">Босния и Герцеговина</span>
+
+                    <span class="travel-form__country-flag">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img//Bosnia-flag-tablet.png">
+                        <img class="travel-form__flag-image" src="img/Bosnia-flag.png" alt="Флаг страны">
+                      </picture>
+                    </span>
+                  </label>
+
+                  <textarea class="travel-form__country-plans" name="bosnia" id="bosnia" rows="8" placeholder="План действий" required></textarea>
+                </fieldset>
+
+                <fieldset class="travel-form__field travel-form__field--country">
+                  <label class="travel-form__country-label" for="czechoslovakia">
+                    <span class="travel-form__country-name">Чехия</span>
+
+                    <span class="travel-form__country-flag">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img//Czech-flag-tablet.png">
+                        <img class="travel-form__flag-image" src="img/Czech-flag.png" alt="Флаг страны">
+                      </picture>
+                    </span>
+                  </label>
+
+                  <textarea cols="45" class="travel-form__country-plans" name="czechoslovakia" id="czechoslovakia" rows="8" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </fieldset>
+
+                <button class="travel-form__submit-button" type="submit">Отправить</button>
+
+                <a class="travel-form__prev-step" href="#route">На шаг назад</a>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--inner-page">
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo" href="index.html"></a>
+
+        <ul class="page-footer__social-list social-list">
+          <li class="page-footer__social-item social-list__item">
+            <a class="page-footer__social-link page-footer__social-link--facebook social-list__link social-list__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
+              <svg class="social-list__icon social-list__icon--facebook" role="img" width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.53 27.75H2.71V14.85H0V8.47H2.63C2.43 5.58 2.93 3.47 4.15 2.03C4.73171 1.39087 5.44042 0.8802 6.23079 0.530647C7.02116 0.181094 7.87578 0.000357734 8.74 0L13.52 0V6.15H9.76C9.53848 6.90214 9.4538 7.68794 9.51 8.47H13.51V14.85H9.51L9.53 27.75ZM4.22 26.25H8V13.35H12V10H8V9.24C8 7.24 8 5.45 9 4.78L9.19 4.65H12V1.5H8.78C8.12565 1.49154 7.47682 1.62071 6.87559 1.87911C6.27436 2.13752 5.73416 2.5194 5.29 3C4.29 4.23 3.88 6.29 4.19 9.14L4.29 9.97H1.5V13.35H4.22V26.25Z" fill="#192144"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="page-footer__social-item social-list__item">
+            <a class="page-footer__social-link page-footer__social-link--vkontakte social-list__link social-list__link--vk" href="https://vk.com" aria-label="VK">
+              <svg class="social-list__icon social-list__icon--vk" role="img" width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.9461 15.7775C23.2083 15.761 22.4891 15.5431 21.8661 15.1475C21.2157 14.7079 20.6184 14.1945 20.0861 13.6175C19.6461 13.1775 18.9161 12.4375 18.6361 12.4375C18.3561 12.4375 18.1561 13.3575 18.1661 14.0075C18.1703 14.4562 18.0021 14.8894 17.6961 15.2175C17.3481 15.5018 16.9234 15.6758 16.4761 15.7175H14.5561C11.7965 15.6568 9.15414 14.59 7.12606 12.7175C3.44606 9.34753 0.286063 2.90753 0.156063 2.62753C0.0320633 2.39361 -0.0198655 2.12821 0.00683068 1.86481C0.0335268 1.6014 0.137651 1.35181 0.306063 1.14753C0.687199 0.829675 1.16985 0.659328 1.66606 0.667532H5.74606H5.86606C6.20364 0.716784 6.52722 0.835995 6.81606 1.01753C7.08788 1.1998 7.30552 1.45198 7.44606 1.74753C7.87724 2.6706 8.37175 3.56273 8.92606 4.41753C10.2361 6.41753 10.8161 6.87753 11.0261 6.97753C11.2597 6.03979 11.324 5.06788 11.2161 4.10753C11.2511 3.67014 11.179 3.2308 11.0061 2.82753C10.7865 2.65191 10.5169 2.55038 10.2361 2.53753L9.50606 1.84753C9.36606 1.18753 10.0961 0.617532 10.6061 0.397532C11.6238 0.0786297 12.6916 -0.0501836 13.7561 0.017532H14.4661C15.1881 -0.00127074 15.9099 0.0658674 16.6161 0.217532C18.3161 0.577532 18.2561 1.94753 18.1861 3.52753C18.1861 3.98753 18.1361 4.52753 18.1361 5.14753C18.1361 5.29753 18.1361 5.45753 18.1361 5.62753C18.0967 6.06289 18.1271 6.50174 18.2261 6.92753C19.0586 6.23108 19.7597 5.39116 20.2961 4.44753C20.875 3.55527 21.3832 2.61908 21.8161 1.64753C21.9479 1.34025 22.1739 1.08272 22.4614 0.912012C22.7489 0.741299 23.0832 0.666204 23.4161 0.697532H27.6961C27.8224 0.685471 27.9497 0.685471 28.0761 0.697532C29.0761 0.697532 29.6661 0.987532 29.9061 1.54753C30.1461 2.10753 30.0761 3.20753 27.5461 6.15753L26.5461 7.28753C26.0616 7.75797 25.6443 8.29301 25.3061 8.87753C25.6848 9.30811 26.1147 9.69093 26.5861 10.0175C27.7353 10.8835 28.7468 11.9186 29.5861 13.0875C29.7829 13.3148 29.9117 13.593 29.9576 13.8901C30.0036 14.1873 29.965 14.4914 29.8461 14.7675C29.6365 15.0734 29.3561 15.3241 29.0288 15.4982C28.7014 15.6723 28.3368 15.7647 27.9661 15.7675L24.1761 15.8175L23.9461 15.7775ZM18.6361 10.9375C19.5361 10.9375 20.3161 11.7275 21.1461 12.5575C21.5944 13.0471 22.0977 13.4833 22.6461 13.8575C23.0607 14.1333 23.5481 14.2795 24.0461 14.2775H24.1461L27.9461 14.2275C28.1335 14.2168 28.317 14.1692 28.4861 14.0875L28.3861 13.9275C27.6291 12.8959 26.7263 11.9797 25.7061 11.2075C24.5161 10.2075 23.9061 9.73753 23.8361 8.96753C23.7661 8.19753 24.3261 7.52753 25.4461 6.25753L26.4461 5.14753C27.2903 4.28639 27.9834 3.28908 28.4961 2.19753C28.2729 2.1843 28.0492 2.1843 27.8261 2.19753H23.4561C23.377 2.17986 23.2951 2.17986 23.2161 2.19753C22.7532 3.25898 22.2012 4.27929 21.5661 5.24753C19.6761 8.06753 18.7861 8.44753 18.1561 8.44753C17.9607 8.44753 17.7684 8.39945 17.5961 8.30753C16.5961 7.73753 16.5961 6.46753 16.6561 5.54753C16.6561 5.39753 16.6561 5.24753 16.6561 5.11753C16.6561 4.46753 16.6561 3.90753 16.7061 3.42753C16.7861 1.74753 16.7061 1.73753 16.3261 1.64753C15.7138 1.52655 15.09 1.4729 14.4661 1.48753H13.7761C13.1411 1.47441 12.5061 1.50784 11.8761 1.58753C11.9715 1.65784 12.0558 1.74212 12.1261 1.83753C12.5385 2.48787 12.7442 3.24794 12.7161 4.01753C12.8461 5.66753 12.7761 7.81753 11.7161 8.33753C11.5284 8.42537 11.3233 8.4698 11.1161 8.46753C10.1861 8.46753 9.26606 7.58753 7.69606 5.20753C7.09358 4.29624 6.5556 3.34392 6.08606 2.35753L6.00606 2.25753C5.90508 2.20606 5.79736 2.16903 5.68606 2.14753H1.68606H1.61606C2.20606 3.36753 5.00606 8.76753 8.13606 11.5975C9.89364 13.2122 12.1708 14.1451 14.5561 14.2275H16.4061C16.5004 14.2074 16.5914 14.1737 16.6761 14.1275C16.6761 14.1275 16.6761 14.1275 16.6761 14.0375C16.6761 13.7675 16.6761 11.4375 18.2561 11.0375C18.3784 10.9894 18.5059 10.9558 18.6361 10.9375Z" fill="#192144"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="page-footer__social-item social-list__item">
+            <a class="page-footer__social-link page-footer__social-link--instagram social-list__link social-list__link--instagram" href="https://www.instagram.com" aria-label="Instagram">
+              <svg class="social-list__icon social-list__icon--instagram" role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.2802 2.40088C18.4252 2.40341 19.5225 2.85937 20.3321 3.66898C21.1417 4.47858 21.5977 5.57592 21.6002 6.72088V17.2809C21.5977 18.4258 21.1417 19.5232 20.3321 20.3328C19.5225 21.1424 18.4252 21.5983 17.2802 21.6009H6.7202C5.57691 21.5958 4.48204 21.1387 3.6745 20.3294C2.86696 19.5201 2.41233 18.4242 2.4098 17.2809V6.72088C2.41233 5.57758 2.86696 4.48169 3.6745 3.67235C4.48204 2.86302 5.57691 2.40594 6.7202 2.40088H17.2802ZM17.2802 0.960876H6.7202C5.19256 0.960876 3.72748 1.56773 2.64727 2.64794C1.56706 3.72815 0.960205 5.19323 0.960205 6.72088L0.960205 17.2809C0.960205 18.8085 1.56706 20.2736 2.64727 21.3538C3.72748 22.434 5.19256 23.0409 6.7202 23.0409H17.2802C18.8078 23.0409 20.2729 22.434 21.3531 21.3538C22.4333 20.2736 23.0402 18.8085 23.0402 17.2809V6.72088C23.0402 5.19323 22.4333 3.72815 21.3531 2.64794C20.2729 1.56773 18.8078 0.960876 17.2802 0.960876V0.960876Z" fill="#192144"/>
+                <path d="M12.0093 7.75648C12.8504 7.75648 13.6727 8.0059 14.372 8.4732C15.0714 8.94051 15.6165 9.6047 15.9384 10.3818C16.2603 11.1589 16.3445 12.014 16.1804 12.839C16.0163 13.6639 15.6112 14.4217 15.0165 15.0165C14.4217 15.6112 13.6639 16.0163 12.839 16.1804C12.014 16.3445 11.1589 16.2602 10.3818 15.9384C9.60472 15.6165 8.94052 15.0714 8.47321 14.372C8.00591 13.6726 7.75649 12.8504 7.75649 12.0093C7.75522 11.4504 7.86436 10.8968 8.07764 10.3803C8.29091 9.86376 8.60412 9.39443 8.99928 8.99927C9.39444 8.60411 9.86377 8.2909 10.3803 8.07762C10.8969 7.86435 11.4504 7.75521 12.0093 7.75648ZM12.0093 6.31648C10.883 6.31458 9.78137 6.64684 8.84393 7.27122C7.90649 7.89559 7.17533 8.78402 6.74299 9.82408C6.31064 10.8641 6.19653 12.0091 6.4151 13.114C6.63368 14.2189 7.17511 15.2342 7.97088 16.0313C8.76665 16.8284 9.78099 17.3715 10.8855 17.592C11.9901 17.8124 13.1352 17.7002 14.176 17.2697C15.2168 16.8391 16.1065 16.1094 16.7324 15.173C17.3584 14.2366 17.6925 13.1356 17.6925 12.0093C17.6938 11.2621 17.5477 10.5221 17.2626 9.83146C16.9776 9.14084 16.5592 8.51319 16.0313 7.98444C15.5035 7.45569 14.8765 7.03621 14.1864 6.75C13.4962 6.46379 12.7564 6.31647 12.0093 6.31648Z" fill="#192144"/>
+                <path d="M17.9043 7.41252C18.6148 7.41252 19.1907 6.83658 19.1907 6.12612C19.1907 5.41566 18.6148 4.83972 17.9043 4.83972C17.1939 4.83972 16.6179 5.41566 16.6179 6.12612C16.6179 6.83658 17.1939 7.41252 17.9043 7.41252Z" fill="#192144"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          Разработано
+        </a>
+      </div>
+    </footer>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
